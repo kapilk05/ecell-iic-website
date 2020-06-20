@@ -83,7 +83,7 @@ nav {
 }
 
 .change #line1{
-  transform:translateY(4px) rotateZ(-45deg);
+  transform:translateY(4px) rotateZ(135deg);
 }
 
 .change #line3{
@@ -196,9 +196,12 @@ nav {
 }
 
 .change{
-  display:flex !important;
+  display:block;
 }
  
+.change-row{
+  display:flex !important;
+}
  .menu-bg{
    width:0;
    height:0;
@@ -211,7 +214,7 @@ nav {
  }
  .change-bg{
    width:1550px;
-   height:600px;
+   height:800px;
  }
  
  .menu-heading{
