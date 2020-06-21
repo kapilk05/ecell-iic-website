@@ -113,13 +113,13 @@ nav {
   position:absolute;
   top:80px;
   left:0;
-  width:100%;
+  width:100vw;
   height:100vh;
   overflow:hidden;
 }
 
 .fullscreen-video-wrap video{
-  width:100%;
+  width:100vw;
   height:100vh;
 }
 
@@ -128,7 +128,7 @@ nav {
   position: absolute;
   left:0;
   top:80px;
-  width:100%;
+  width:100vw;
   z-index:1;
   background:rgba(45,0,29,0.35);
   opacity:0.85;
@@ -202,9 +202,11 @@ nav {
 .change-row{
   display:flex !important;
 }
+
  .menu-bg{
    width:0;
    height:0;
+   background-color: black;
    background:-webkit-radial-gradient(circle,#110c11,#0d0e0e) !important ;
    transition:0.3s ease;
    z-index: 1;
@@ -213,8 +215,8 @@ nav {
    z-index:10;
  }
  .change-bg{
-   width:1550px;
-   height:800px;
+   width:100vw;
+   height:100vh;
  }
  
  .menu-heading{
