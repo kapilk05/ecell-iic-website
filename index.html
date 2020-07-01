@@ -16,6 +16,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+
     <script src="js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -33,6 +35,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+
     <title>DJ-Ecell</title>
   </head>
   <body>
@@ -229,7 +233,7 @@
           <div class="content">
             <h3>DJ Talks</h3>
             <p>Synergistic discussion held by Gaurav Jain,Founding member of XBillion Skillz Lab and Shronit Ladhani CEO of  CareerNinja. </p>
-            <a href="#" class="hvr-icon-forward" >
+            <a href="gallery.html" class="hvr-icon-forward" target="_blank">
               Read More
               <i class="zmdi zmdi-arrow-right hvr-icon"></i>
             </a>
@@ -296,6 +300,11 @@
           </div>
         </div>
       </div> 
+    </div>
+    <div class="row">
+      <div class="column col-6 col-sm-12 map">
+        <div id="map"></div>
+      </div>
     </div>
   <main></main>
   
