@@ -526,10 +526,25 @@ select:focus{
 
 
 .radioStudent,.radioBusiness{
-  padding-top:20px;
+ 
+  margin-top:20px;
+  text-align: left;
+  
 }
 
 .location{
   text-align: justify;
   padding-left:15px;
+}
+
+/*Idea Submmission Form*/
+
+#idea_submission,#studentInfo{
+display:none;
+}
+
+.idea_form{
+  width:100vw;
+  height:100vh;
+  padding-top:100px;
 }
