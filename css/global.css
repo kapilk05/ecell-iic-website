@@ -1,57 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@700&display=swap");
 
 * {
-    font-family: "Poppins", sans-serif;
-  }
-
-h1{
-    font-family: 'Roboto Slab', serif !important;
-    font-weight:700;
-    font-size:66px;
+  font-family: "Poppins", sans-serif;
 }
 
-h2{
-    font-weight:600;
-    font-size:46px;
+h1 {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 700;
+  font-size: 66px;
+  padding: 20px 0;
+  text-align: center;
 }
 
-h3{
-    font-weight:500;
-    font-size:26px;
+h2 {
+  font-weight: 600;
+  font-size: 46px;
 }
 
-ul li,a{
-    font-weight:600;
-    font-size:16px;
+h3 {
+  font-weight: 500;
+  font-size: 26px;
 }
 
-a{
-    text-decoration: none !important;
+ul li,
+a {
+  font-weight: 500;
+  font-size: 18px;
 }
 
-p{
-    font-weight:500;
-    font-size:16px;
+a {
+  text-decoration: none !important;
+  /* color: #001e4d !important; */
 }
 
-h6{
-    font-weight:400;
-    font-size:12px;
+p {
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.blue-text{
-    color:#001E4D;
+h6 {
+  font-weight: 400;
+  font-size: 12px;
 }
 
-.peach-text{
-    color:#FE836C;
+.blue-text {
+  color: #001e4d;
 }
 
-.yellow-text{
-    color:#FFA777;
+.peach-text {
+  color: #fe836c;
 }
 
-.light-txt{
-    color: #FFDCC8;
+.yellow-text {
+  color: #ffa777;
 }
 
+.light-txt {
+  color: #ffdcc8;
+}

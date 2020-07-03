@@ -6,19 +6,34 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hover.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-    <script src="js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -39,274 +54,342 @@
 
     <title>DJ-Ecell</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- <a class="navbar-brand ml-auto mr-auto" href="#">Navbar</a> -->
-      <button
+  <body data-spy="scroll" data-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <!-- <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
-        aria-expanded="false"
+        aria-expanded="true"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ml-auto" id="navitems">
-          <a class="nav-link logo" href="#"
+        <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
+          <a class="nav-link logo logo-nav" href="#"
             ><img src="images/logo.png" alt="" />
           </a>
           <li class="nav-item brand-name">
-            <a class="nav-link" href="#">Ecell</a>
+            <a class="nav-link logo-nav" href="#">Ecell</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="#"
               >Get Started <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Startups</a>
+            <a class="nav-link hvr-underline-from-left" href="#">Startups</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link hvr-underline-from-left" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acheivements</a>
+            <a class="nav-link hvr-underline-from-left" href="#"
+              >Acheivements</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link hvr-underline-from-left" href="#events"
+              >Events</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link hvr-underline-from-left" href="#">Team</a>
           </li>
         </ul>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+
         <div id="menu-bar">
-          <div id="hamburger" onclick="onClickMenu()">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
+          <div id="row1" class="row">
+            <div class="col-md-4">
+              <div class="menu-heading">
+                <a href="#" class="hvr-underline-from-left" id="heading">
+                  Associates
+                </a>
+              </div>
+              <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                nostrum.
+              </p>
+              <div class="readmore">
+                <a href="#" class="hvr-icon-forward" id="readmore">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-heading">
+                <a href="#" class="hvr-underline-from-left" id="heading">
+                  Achievements
+                </a>
+              </div>
+              <p class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione, a.
+              </p>
+              <div class="readmore">
+                <a href="#" class="hvr-icon-forward" id="readmore">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="menu-heading">
+                <a href="#" class="hvr-underline-from-left" id="heading">
+                  Events
+                </a>
+              </div>
+              <p class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
+                officiis?
+              </p>
+              <div class="readmore">
+                <a href="#" class="hvr-icon-forward" id="readmore">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
-      
-        <div id="row1" class="row">
+          <div id="row2">
             <div class="col-md-4">
-              <div class="menu-heading">
-                <a href="#" class="hvr-underline-from-left" id="heading">
-                Associates
-                </a>
+              <div class="list-heading">
+                Connect
               </div>
-              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nostrum.</p>
-              <div class="readmore">
-                <a href="#" class="hvr-icon-forward" id="readmore">
-                  Read More
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="menu-heading">
-                <a href="#" class="hvr-underline-from-left" id="heading">
-               Achievements
-              </a>
-              </div>
-              <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, a.</p>
-              <div class="readmore">
-                <a href="#" class="hvr-icon-forward" id="readmore">
-                  Read More
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="menu-heading">
-                <a href="#" class="hvr-underline-from-left" id="heading">
-                Events
-              </a>
-              </div>
-              <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, officiis?</p>
-              <div class="readmore">
-                <a href="#" class="hvr-icon-forward" id="readmore">
-                  Read More
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                </a>
-              </div>
-            </div>
-        </div>
-        <hr>
-        <div id="row2">
-          <div class="col-md-4">
-            <div class="list-heading">
-              Connect
-            </div>
-            <ul class="listitems">
+              <ul class="listitems">
                 <li>
                   <a href="#" class="hvr-icon-forward" id="arrow">
-                  Contact Us
-                    <i class="zmdi zmdi-arrow-right hvr-icon" id="iconid" style="display:none;"></i>
+                    Contact Us
+                    <i
+                      class="zmdi zmdi-arrow-right hvr-icon"
+                      id="iconid"
+                      style="display: none;"
+                    ></i>
                   </a>
                 </li>
-             
-              <li>Submit your Idea</li>
-            </ul> 
-          </div>
-          <div class="col-md-4">
-            <div class="list-heading">
-              Meet our Team
+
+                <li>Submit your Idea</li>
+              </ul>
             </div>
-            <ul class="listitems">
-              <li>Faculty</li>
-              <li>Committee</li>
-              <li>Co-Committee</li>
-            </ul> 
-          </div>
-          <div class="col-md-4">
-            <div class="list-heading">
-              Social Media
+            <div class="col-md-4">
+              <div class="list-heading">
+                Meet our Team
+              </div>
+              <ul class="listitems">
+                <li>Faculty</li>
+                <li>Committee</li>
+                <li>Co-Committee</li>
+              </ul>
             </div>
-            <ul class="listitems">
-              <li>Instagram</li>
-              <li>LinkedIn</li>
-              <li>Twitter</li>
-              <li>Faceevent_img</li>
-            </ul> 
+            <div class="col-md-4">
+              <div class="list-heading">
+                Social Media
+              </div>
+              <ul class="listitems">
+                <li>Instagram</li>
+                <li>LinkedIn</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-        
+      </div>
+
+      <div id="hamburger" onclick="onClickMenu()">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
       </div>
       <div class="menu-bg" id="menu-bg"></div>
     </nav>
-    <header class="v-header container">
-      <div class="fullscreen-video-wrap">
-        <video src="./video/startup.mp4" autoplay="true" loop="true" muted></video>
-      </div>
-      <div class="header-overlay"></div>
+
+    <!--    Video   -->
+    <div class="fullscreen-video-wrap">
+      <video
+        src="./video/startup.mp4"
+        autoplay="true"
+        loop="true"
+        muted
+      ></video>
+    </div>
+    <div class="header-overlay"></div>
+
+    <!--    Hero Section    -->
+    <div class="v-header container">
       <div class="header-content text-md-center">
-        <h1>The destination of innovation,<br> the store house of ideas</h1>
-        <p>We are here to provide a healthy ecosystem to make your idea happen,<br>to make you an entrepreneur</p>
+        <h1>
+          The destination of innovation, the store house of ideas
+        </h1>
+        <p>
+          We are here to provide a healthy ecosystem to make your idea happen,
+          to make you an entrepreneur
+        </p>
         <a class="btn">Launch your Startup</a>
       </div>
-      <div class="arrow-symbol">
-        <a href="#">
-          <i class="fa fa-angle-down fa-5x" style="color:#fff;"></i>
+      <div class="arrow-symbol" style="z-index: 2;">
+        <a href="#events">
+          <i class="fa fa-angle-down fa-5x" style="color: #fff;"></i>
         </a>
       </div>
-    </header>
-    <div class="section-holder">
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/Genesis/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>Genesis</h3>
-            <p>An interactive session conducted by a well known digital content creator Viraj Ghelani.</p>
-              <a href="#" class="hvr-icon-forward">
-                Read More
-                <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-              </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/Python workshop/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>Python Workshop</h3>
-            <p>Informative session addressed by Jinesh Doshi and Nimesh Bumb from 'Masterbridge'.</p>
-            <a href="#" class="hvr-icon-forward">
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/DJ Talks/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>DJ Talks</h3>
-            <p>Synergistic discussion held by Gaurav Jain,Founding member of XBillion Skillz Lab and Shronit Ladhani CEO of  CareerNinja. </p>
-            <a href="gallery.html" class="hvr-icon-forward" target="_blank">
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>Business Canvas Workshop</h3>
-            <p>Guidance on businesss canvas model given by a PhD entrepreneur,Dr.Indira Singh.</p>
-            <a href="#" class="hvr-icon-forward" >
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/Faculty meetup/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>Faculty Meetup</h3>
-            <p>Meeting organised to convert SIH ideas and project into a full fledged startup.</p>
-            <a href="#" class="hvr-icon-forward" >
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/Financial planning/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>Financial Advisory</h3>
-            <p>Seminar regarding financial planning for students carried out by Alpa Shah,TEDxGateway speaker.</p>
-            <a href="#" class="hvr-icon-forward" >
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-        </div>
-      </div> 
-      <div class="card-container">
-        <div class="card">
-          <div class="img-holder">
-            <img src="./images/Rush hour/event_img.jpg" class="event">
-          </div>
-          <div class="content">
-            <h3>Rush Hour 2020</h3>
-            <p>Committee's flagship event and an awaited sales competiton of the year.</p>
-            <a href="#" class="hvr-icon-forward" >
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-        </div>
-      </div> 
     </div>
-    <div class="row">
-      <div class="column col-6 col-sm-12 map">
-        <div id="map"></div>
+
+    <!--    Main content    -->
+    <main>
+      <!--    Events    -->
+      <div id="events" class="section-holder">
+        <h1 class="peach-text">Events</h1>
+        <div class="cards">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img src="./images/Genesis/event_img.jpg" class="event" />
+              </div>
+              <div class="content">
+                <h3>Genesis</h3>
+                <p>
+                  An interactive session conducted by a well known digital
+                  content creator Viraj Ghelani.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img
+                  src="./images/Python workshop/event_img.jpg"
+                  class="event"
+                />
+              </div>
+              <div class="content">
+                <h3>Python Workshop</h3>
+                <p>
+                  Informative session addressed by Jinesh Doshi and Nimesh Bumb
+                  from 'Masterbridge'.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img src="./images/DJ Talks/event_img.jpg" class="event" />
+              </div>
+              <div class="content">
+                <h3>DJ Talks</h3>
+                <p>
+                  Synergistic discussion held by Gaurav Jain,Founding member of
+                  XBillion Skillz Lab and Shronit Ladhani CEO of  CareerNinja.
+                </p>
+                <a href="gallery.html" class="hvr-icon-forward" target="_blank">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img src="./images/event_img.jpg" class="event" />
+              </div>
+              <div class="content">
+                <h3>Business Canvas Workshop</h3>
+                <p>
+                  Guidance on businesss canvas model given by a PhD
+                  entrepreneur,Dr.Indira Singh.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img
+                  src="./images/Faculty meetup/event_img.jpg"
+                  class="event"
+                />
+              </div>
+              <div class="content">
+                <h3>Faculty Meetup</h3>
+                <p>
+                  Meeting organised to convert SIH ideas and project into a full
+                  fledged startup.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img
+                  src="./images/Financial planning/event_img.jpg"
+                  class="event"
+                />
+              </div>
+              <div class="content">
+                <h3>Financial Advisory</h3>
+                <p>
+                  Seminar regarding financial planning for students carried out
+                  by Alpa Shah,TEDxGateway speaker.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-holder">
+                <img src="./images/Rush hour/event_img.jpg" class="event" />
+              </div>
+              <div class="content">
+                <h3>Rush Hour 2020</h3>
+                <p>
+                  Committee's flagship event and an awaited sales competiton of
+                  the year.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  <main></main>
-  
+      <div class="row">
+        <div class="column col-6 col-sm-12 map">
+          <div id="map"></div>
+        </div>
+      </div>
+    </main>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
   </body>
- </html>
+</html>
