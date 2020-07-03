@@ -40,7 +40,7 @@ h6{
 }
 
 .blue-text{
-    color:#001E4D;
+    color:#001E4D !important;
 }
 
 .peach-text{
@@ -55,3 +55,18 @@ h6{
     color: #FFDCC8;
 }
 
+button {
+    border: none;
+    padding: 10px 35px;
+    margin: 0 10px;
+    border-radius: 0.4em;
+  }
+  .primary {
+    color: #fff;
+    background:#FE836C ;
+  }
+  .secondary {
+    color:#FE836C;
+    background: rgba(255, 255, 255, 0);
+    border: #FE836C 1.8px solid;
+  }
