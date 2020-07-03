@@ -1,3 +1,7 @@
+* {
+  transition: all ease-in-out 0.3s;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -380,7 +384,7 @@ hr {
 }
 
 .section-holder {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 70px 30px;
 }
 
@@ -480,35 +484,33 @@ hr {
   }
 }
 
-.contact{
-  width:100vw;
-  height:100vh;
-
+.contact {
+  width: 100vw;
+  height: 100vh;
 }
 /*Map*/
 
-#map { 
-  position: absolute; 
-  top: 0; 
-  bottom: 0; 
-  width:100%;
- 
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /*Contact Form*/
-.form-wrap{
-padding-right:70px;
+.form-wrap {
+  padding-right: 70px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea,
-select{
+select {
   height: 60px;
   box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04);
   width: 100%;
-  margin-top:20px !important;
+  margin-top: 20px !important;
   background: transparent;
   border: none;
   border-bottom: 1px solid #000000;
@@ -518,18 +520,18 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus,
-select:focus{
+select:focus {
   border: none;
   outline: none;
   border-bottom: 1px solid #000000;
 }
 
-
-.radioStudent,.radioBusiness{
-  padding-top:20px;
+.radioStudent,
+.radioBusiness {
+  padding-top: 20px;
 }
 
-.location{
+.location {
   text-align: justify;
-  padding-left:15px;
+  padding-left: 15px;
 }

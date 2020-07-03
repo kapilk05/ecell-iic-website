@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no"
+    />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hover.css" />
@@ -77,7 +80,7 @@
             <a class="nav-link logo-nav" href="#">Ecell</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#"
+            <a class="nav-link hvr-underline-from-left" href="#features"
               >Get Started <span class="sr-only">(current)</span></a
             >
           </li>
@@ -242,6 +245,39 @@
 
     <!--    Main content    -->
     <main>
+      <!--    Get Started    -->
+      <div id="features" class="container section-holder">
+        <h1 class="peach-text">Get Started</h1>
+        <div class="row">
+          <div class="feature col-md-4">
+            <span class="circle"></span>
+            <h2>Mentorship</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+              vero sint a. Provident doloremque in, voluptas ducimus ratione
+              quae error veniam consequatur, hic, odit ad.
+            </p>
+          </div>
+          <div class="feature col-md-4">
+            <span class="circle"></span>
+            <h2>Mentorship</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+              vero sint a. Provident doloremque in, voluptas ducimus ratione
+              quae error veniam consequatur, hic, odit ad.
+            </p>
+          </div>
+          <div class="feature col-md-4">
+            <span class="circle"></span>
+            <h2>Mentorship</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+              vero sint a. Provident doloremque in, voluptas ducimus ratione
+              quae error veniam consequatur, hic, odit ad.
+            </p>
+          </div>
+        </div>
+      </div>
       <!--    Events    -->
       <div id="events" class="section-holder">
         <h1 class="peach-text">Events</h1>
@@ -383,57 +419,73 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container contact">
-      <h3 class="blue-text">Contact Us</h3>
-    <div class="row map">
-      <div class="col-md-6 col-sm-12 map">
-        <div id="map"></div>
-      </div>
-      <div class="col-md-6 col-sm-12" style="background-color:#faf0e6">
-        <form name="e-cell" id="idea">
-            <div class="col-md-12">
-              <input name="name" type="text" placeholder="Full Name"><br>
-            </div>
-            <div class="col-md-12">
-              <input name="email" type="email" placeholder="Email" required><br>
-            </div>
-            <div class="col-md-12">
-              <textarea rows="4" cols="100" name="idea" form="idea" placeholder="Message"></textarea>
-            </div>
-            <div class="submit_form" style="text-align:center;">
-              <button class="primary" type="submit" style="margin-top:30px;margin-bottom:30px;">Send</button>
-            </div>
-            <div class="location">
-              <h3>Find Us</h3>
-              <h4>Location</h4>
-              <p>
-                Dwarkadas J Sanghvi<br>
-                Gulmohar Road, J. V. P. D Scheme,<br>
-                VileParle(W) Mumbai
-              </p>
-              <h4>Email</h4>
-              <p>ecell.djsce@gmail.com</p>
-            </div>
-          </form>
+      <div class="container contact">
+        <h3 class="blue-text">Contact Us</h3>
+        <div class="row map">
+          <div class="col-md-6 col-sm-12 map">
+            <div id="map"></div>
+          </div>
+          <div class="col-md-6 col-sm-12" style="background-color: #faf0e6;">
+            <form name="e-cell" id="idea">
+              <div class="col-md-12">
+                <input name="name" type="text" placeholder="Full Name" /><br />
+              </div>
+              <div class="col-md-12">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                /><br />
+              </div>
+              <div class="col-md-12">
+                <textarea
+                  rows="4"
+                  cols="100"
+                  name="idea"
+                  form="idea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="submit_form" style="text-align: center;">
+                <button
+                  class="primary"
+                  type="submit"
+                  style="margin-top: 30px; margin-bottom: 30px;"
+                >
+                  Send
+                </button>
+              </div>
+              <div class="location">
+                <h3>Find Us</h3>
+                <h4>Location</h4>
+                <p>
+                  Dwarkadas J Sanghvi<br />
+                  Gulmohar Road, J. V. P. D Scheme,<br />
+                  VileParle(W) Mumbai
+                </p>
+                <h4>Email</h4>
+                <p>ecell.djsce@gmail.com</p>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
-  </div>
-      <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center:[72.837424,19.108731],
-        zoom: 8
-        });
-        
-        var marker = new mapboxgl.Marker()
-        .setLngLat([72.837424,19.108731])
+      </div>
+    </main>
+    <script src="js/nav.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [72.837424, 19.108731],
+        zoom: 8,
+      });
+
+      var marker = new mapboxgl.Marker()
+        .setLngLat([72.837424, 19.108731])
         .addTo(map);
-      </script>
-   
-  <main></main>
-  
+    </script>
   </body>
 </html>
