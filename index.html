@@ -57,7 +57,7 @@
 
     <title>DJ-Ecell</title>
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body data-spy="scroll" data-target="#navbar" class="blue-text">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
       <!-- <button
         class="navbar-toggler"
@@ -278,6 +278,7 @@
           </div>
         </div>
       </div>
+
       <!--    Events    -->
       <div id="events" class="section-holder">
         <h1 class="peach-text">Events</h1>
@@ -342,13 +343,13 @@
           <div class="card-container">
             <div class="card">
               <div class="img-holder">
-                <img src="./images/event_img.jpg" class="event" />
+                <img src="./images/BCW/event_img.png" class="event" />
               </div>
               <div class="content">
                 <h3>Business Canvas Workshop</h3>
                 <p>
                   Guidance on businesss canvas model given by a PhD
-                  entrepreneur,Dr.Indira Singh.
+                  entrepreneur, Dr.Indira Singh.
                 </p>
                 <a href="#" class="hvr-icon-forward">
                   Read More
@@ -419,8 +420,10 @@
           </div>
         </div>
       </div>
+
+      <!--    Contact Form    -->
       <div class="container contact">
-        <h3 class="blue-text">Contact Us</h3>
+        <h1>Contact Us</h1>
         <div class="row map">
           <div class="col-md-6 col-sm-12 map">
             <div id="map"></div>
@@ -471,21 +474,138 @@
           </div>
         </div>
       </div>
-    </main>
-    <script src="js/nav.js"></script>
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
-      var map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11",
-        center: [72.837424, 19.108731],
-        zoom: 8,
-      });
 
-      var marker = new mapboxgl.Marker()
-        .setLngLat([72.837424, 19.108731])
-        .addTo(map);
-    </script>
+      <!--    Idea Submission    -->
+      <button class="button" onclick="showForm()" style="margin-top: 50px;">
+        Submit Idea
+      </button>
+      <div class="container" id="idea_submission">
+        <div class="row">
+          <div class="col-md-2"></div>
+
+          <div class="col-md-8 idea_form">
+            <h3>Submit your Idea</h3>
+            <input name="name" type="text" placeholder="Full Name" /><br />
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                /><br />
+              </div>
+              <div class="col-md-6">
+                <input
+                  name="contact"
+                  type="tel"
+                  placeholder="Contact Number"
+                /><br />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 radioStudent">
+                Are you a student?<br />
+                <div class="radioButton">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="student"
+                    value="Yes"
+                    onclick="showStudent();"
+                  />
+                  <label for="Yes">Yes</label><br />
+                  <input type="radio" id="No" name="student" value="No" />
+                  <label for="No">No</label><br />
+                </div>
+              </div>
+              <div class="col-md-6 radioBusiness">
+                Type of business
+                <select id="business" name="business">
+                  <option value="None">Select</option
+                  ><br />
+                  <option value="Sole Proprietorship"
+                    >Sole Proprietorship</option
+                  ><br />
+                  <option value="Partnership">Partnership</option
+                  ><br /> </select
+                ><br />
+              </div>
+            </div>
+            <div class="row" id="studentInfo">
+              <div class="col-md-6">
+                <select id="stream" name="stream">
+                  <option value="None">Stream</option
+                  ><br />
+                  <option value="CSE">CSE</option
+                  ><br />
+                  <option value="Computer">Computer</option
+                  ><br />
+                  <option value="IT">IT </option
+                  ><br />
+                  <option value="EXTC">EXTC</option
+                  ><br />
+                  <option value="Electronics">Electronics </option
+                  ><br />
+                  <option value="Chemical">Chemical</option
+                  ><br />
+                  <option value="Mechanical">Mechanical</option
+                  ><br /> </select
+                ><br />
+              </div>
+              <div class="col-md-6">
+                <select id="year" name="year">
+                  <option value="None">Year</option
+                  ><br />
+                  <option value="FE">FE</option
+                  ><br />
+                  <option value="SE">SE</option
+                  ><br />
+                  <option value="TE">TE</option
+                  ><br />
+                  <option value="BE">BE </option
+                  ><br /> </select
+                ><br />
+              </div>
+            </div>
+            <textarea
+              rows="4"
+              cols="72"
+              name="idea"
+              form="idea"
+              placeholder="Tell us about your idea!"
+            ></textarea>
+            <button class="primary" type="submit" style="margin-top: 10px;">
+              Submit
+            </button>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <script src="js/nav.js"></script>
+      <script>
+        mapboxgl.accessToken =
+          "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
+        var map = new mapboxgl.Map({
+          container: "map",
+          style: "mapbox://styles/mapbox/streets-v11",
+          center: [72.837424, 19.108731],
+          zoom: 8,
+        });
+
+        var marker = new mapboxgl.Marker()
+          .setLngLat([72.837424, 19.108731])
+          .addTo(map);
+
+        function showForm() {
+          document.getElementById("idea_submission").style.display = "block";
+        }
+
+        function showStudent() {
+          document.getElementById("studentInfo").style.display = "flex";
+        }
+      </script>
+    </main>
   </body>
 </html>

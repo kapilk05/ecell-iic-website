@@ -47,11 +47,11 @@ nav {
 }
 
 .scrolled a {
-  color: #0d0e0ebf !important;
+  color: #291b1b !important;
 }
 
 .scrolled .line {
-  background: #0d0e0ebf;
+  background: #291b1b;
 }
 
 .logo {
@@ -311,7 +311,7 @@ hr {
 /*Event*/
 
 .card-container {
-  margin-right: 25px;
+  margin: 0 20px;
 }
 
 .card {
@@ -320,6 +320,10 @@ hr {
   height: 400px;
   transition: 0.3s ease-out;
   border-radius: 10px !important;
+  margin: auto;
+  text-align: left;
+  border: none !important;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.137);
 }
 /* 
 .card:not(nth-child(1)) {
@@ -391,7 +395,7 @@ hr {
 .cards {
   display: flex;
   overflow-x: auto;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .cards::-webkit-scrollbar {
@@ -412,12 +416,12 @@ hr {
 
 #events a,
 #menu-bar a {
-  color: #001e4d;
+  color: #291b1b;
 }
 
 #events i,
 #menu-bar i {
-  color: #f74539;
+  color: #fe836c;
 }
 
 /*Events Gallery*/
@@ -528,10 +532,28 @@ select:focus {
 
 .radioStudent,
 .radioBusiness {
-  padding-top: 20px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .location {
   text-align: justify;
   padding-left: 15px;
+}
+
+/*Idea Submmission Form*/
+
+#idea_submission,
+#studentInfo {
+  display: none;
+}
+
+.idea_form {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+g[fill="#3FB1CE"] {
+  fill: #f74539;
 }

@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 ul li,
@@ -36,6 +36,7 @@ a {
 p {
   font-weight: 400;
   font-size: 16px;
+  color: #291b1bb4;
 }
 
 h6 {
@@ -44,7 +45,7 @@ h6 {
 }
 
 .blue-text {
-  color: #001e4d;
+  color: #1f1414;
 }
 
 .peach-text {
@@ -56,17 +57,17 @@ h6 {
 }
 
 button {
-    border: none;
-    padding: 10px 35px;
-    margin: 0 10px;
-    border-radius: 0.4em;
-  }
-  .primary {
-    color: #fff;
-    background:#FE836C ;
-  }
-  .secondary {
-    color:#FE836C;
-    background: rgba(255, 255, 255, 0);
-    border: #FE836C 1.8px solid;
-  }
+  border: none;
+  padding: 10px 35px;
+  margin: 0 10px;
+  border-radius: 0.4em;
+}
+.primary {
+  color: #fff;
+  background: #fe836c;
+}
+.secondary {
+  color: #fe836c;
+  background: rgba(255, 255, 255, 0);
+  border: #fe836c 1.8px solid;
+}
