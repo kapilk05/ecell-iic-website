@@ -609,21 +609,10 @@
           container: "map",
           style: "mapbox://styles/mapbox/streets-v11",
           center: [72.837424, 19.108731],
-          zoom: 8,
+          zoom:12.5,
         });
          // disable map zoom when using scroll
           map.scrollZoom.disable();
-        var layerList = document.getElementById('menu');
-          var inputs = layerList.getElementsByTagName('input');
-
-          function switchLayer(layer) {
-            var layerId = layer.target.id;
-            map.setStyle('mapbox://styles/mapbox/' + layerId);
-          }
-
-          for (var i = 0; i < inputs.length; i++) {
-            inputs[i].onclick = switchLayer;
-          }
         var marker = new mapboxgl.Marker()
         .setLngLat([72.837424,19.108731])
         .addTo(map);
@@ -633,6 +622,10 @@
 
         function showForm() {
           document.getElementById("idea_submission").style.display = "block";
+           $('html,body').animate({
+            scrollTop: $("#idea_submission").offset().top
+          },
+            'slow');
         }
 
         function showStudent() {
