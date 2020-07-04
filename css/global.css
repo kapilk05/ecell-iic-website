@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@700&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   font-weight: 300 !important;
-  font-size: 20px;
+  font-size: 1.5em !important;
 }
 
 ul li,
@@ -40,8 +40,8 @@ p {
 }
 
 h6 {
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 400 !important;
+  font-size: 12px !important;
 }
 
 .blue-text {

@@ -565,7 +565,7 @@ select:focus {
 .circle {
   height: 75px;
   width: 75px;
-  box-shadow: 0 9px 30px -6px rgba(44, 168, 255, 0.3);
+  box-shadow: 0 9px 30px -6px #f746393a;
   border-radius: 50%;
   display: inline-block;
 }
@@ -577,4 +577,19 @@ select:focus {
   height: 100%;
   width: 50%;
   font-size: 3em;
+  color: #f74539;
+}
+
+.feature:hover .circle {
+  transform: translateY(-10px);
+  box-shadow: 0 9px 30px -6px #f746396c;
+}
+
+.feature:hover h3 {
+  color: #f74539;
+}
+
+.feature {
+  margin: auto;
+  padding: 50px 0;
 }
