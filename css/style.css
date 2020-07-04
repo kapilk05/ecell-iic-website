@@ -46,7 +46,7 @@ nav {
   background: #fff;
 }
 
-.scrolled a {
+.scrolled .nav-link {
   color: #291b1b !important;
 }
 
@@ -185,12 +185,13 @@ nav {
 .btn {
   background-color: #f74539;
   border: none;
-  color: #fff;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 600;
   border-radius: 4px;
   height: 48px;
-  padding-top: 10px !important;
+  margin: 20px;
+  padding: 10px 25px !important;
 }
 
 .arrow-symbol {
@@ -393,7 +394,9 @@ hr {
 
 .section-holder {
   /* min-height: 100vh; */
-  padding: 70px 30px;
+  padding: 0 30px;
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .cards {
@@ -527,7 +530,7 @@ select {
   margin-top: 20px !important;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #fff;
 }
 
 input[type="text"]:focus,
@@ -537,7 +540,7 @@ textarea:focus,
 select:focus {
   border: none;
   outline: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #fff;
 }
 
 .radioStudent,
@@ -549,6 +552,10 @@ select:focus {
 .location {
   text-align: justify;
   padding-left: 15px;
+}
+
+select {
+  color: #fff;
 }
 
 /*Idea Submmission Form*/
@@ -575,7 +582,7 @@ select:focus {
   margin: 1.5em;
 }
 
-#features i,
+#features i:not(.zmdi),
 #features ion-icon,
 #features .iconify {
   margin: auto;
@@ -589,15 +596,15 @@ select:focus {
   padding: 10px 0;
 }
 
-.feature h3 {
+.feature h4 {
   color: #2c2c2c;
   padding: 0 15px;
-  font-size: 1.5em;
 }
 
 .green i,
 .green ion-icon,
-.green .iconify {
+.green .iconify,
+.green:hover h4 {
   color: #18ce0f;
 }
 
@@ -610,13 +617,10 @@ select:focus {
   box-shadow: 0 15px 35px 0 rgba(24, 206, 15, 0.35);
 }
 
-.green:hover h3 {
-  color: #18ce0f;
-}
-
 .blue i,
 .blue ion-icon,
-.blue .iconify {
+.blue .iconify,
+.blue:hover h4 {
   color: #2ca8ff;
 }
 
@@ -629,13 +633,10 @@ select:focus {
   box-shadow: 0 15px 35px 0 rgba(44, 168, 255, 0.35);
 }
 
-.blue:hover h3 {
-  color: #2ca8ff;
-}
-
 .yellow i,
 .yellow ion-icon,
-.yellow .iconify {
+.yellow .iconify,
+.yellow:hover h4 {
   color: #ffb236;
 }
 
@@ -648,14 +649,11 @@ select:focus {
   box-shadow: 0 15px 35px 0 #ffb236a6;
 }
 
-.yellow:hover h3 {
-  color: #ffb236;
-}
-
 .purple i,
 .purple ion-icon,
-.purple .iconify {
-  color: #c760da;
+.purple .iconify,
+.purple:hover h4 {
+  color: #ab2bc2;
 }
 
 .purple .circle {
@@ -666,14 +664,10 @@ select:focus {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px 0 #c760da85;
 }
-
-.purple:hover h3 {
-  color: #c760da;
-}
-
 .red i,
 .red ion-icon,
-.red .iconify {
+.red .iconify,
+.red:hover h4 {
   color: #f96332;
 }
 
@@ -686,6 +680,21 @@ select:focus {
   box-shadow: 0 15px 30px 0 rgba(249, 99, 50, 0.35);
 }
 
-.red:hover h3 {
-  color: #f96332;
+.cta {
+  padding: 0;
+}
+
+.main {
+  margin: auto;
+}
+
+.wrapper {
+  color: #fff;
+  background: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  margin: 70px 0 20px 0;
+}
+
+.btn:focus {
+  outline: none !important;
 }
