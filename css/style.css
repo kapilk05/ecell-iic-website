@@ -336,8 +336,10 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .event {
@@ -567,9 +569,10 @@ select:focus {
 .circle {
   height: 75px;
   width: 75px;
-  box-shadow: 0 9px 30px -6px #f746393a;
+  /* box-shadow: 0 9px 30px -6px #f746393a; */
   border-radius: 50%;
   display: inline-block;
+  margin: 1.5em;
 }
 
 #features i,
@@ -579,19 +582,110 @@ select:focus {
   height: 100%;
   width: 50%;
   font-size: 3em;
-  color: #f74539;
-}
-
-.feature:hover .circle {
-  transform: translateY(-10px);
-  box-shadow: 0 9px 30px -6px #f746396c;
-}
-
-.feature:hover h3 {
-  color: #f74539;
 }
 
 .feature {
   margin: auto;
-  padding: 50px 0;
+  padding: 10px 0;
+}
+
+.feature h3 {
+  color: #2c2c2c;
+  padding: 0 15px;
+  font-size: 1.5em;
+}
+
+.green i,
+.green ion-icon,
+.green .iconify {
+  color: #18ce0f;
+}
+
+.green .circle {
+  box-shadow: 0 9px 30px -6px rgba(24, 206, 15, 0.3);
+}
+
+.green:hover .circle {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px 0 rgba(24, 206, 15, 0.35);
+}
+
+.green:hover h3 {
+  color: #18ce0f;
+}
+
+.blue i,
+.blue ion-icon,
+.blue .iconify {
+  color: #2ca8ff;
+}
+
+.blue .circle {
+  box-shadow: 0 9px 30px -6px rgba(44, 168, 255, 0.3);
+}
+
+.blue:hover .circle {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px 0 rgba(44, 168, 255, 0.35);
+}
+
+.blue:hover h3 {
+  color: #2ca8ff;
+}
+
+.yellow i,
+.yellow ion-icon,
+.yellow .iconify {
+  color: #ffb236;
+}
+
+.yellow .circle {
+  box-shadow: 0 9px 30px -6px #ffb2369f;
+}
+
+.yellow:hover .circle {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px 0 #ffb236a6;
+}
+
+.yellow:hover h3 {
+  color: #ffb236;
+}
+
+.purple i,
+.purple ion-icon,
+.purple .iconify {
+  color: #c760da;
+}
+
+.purple .circle {
+  box-shadow: 0 9px 30px -6px #c860da77;
+}
+
+.purple:hover .circle {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px 0 #c760da85;
+}
+
+.purple:hover h3 {
+  color: #c760da;
+}
+
+.red i,
+.red ion-icon,
+.red .iconify {
+  color: #f96332;
+}
+
+.red .circle {
+  box-shadow: 0 9px 30px -6px rgba(249, 99, 50, 0.3);
+}
+
+.red:hover .circle {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px 0 rgba(249, 99, 50, 0.35);
+}
+
+.red:hover h3 {
+  color: #f96332;
 }
