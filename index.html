@@ -20,13 +20,10 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       rel="stylesheet"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -55,6 +52,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://use.fontawesome.com/314c24a530.js"></script>
     <title>DJ-Ecell</title>
   </head>
   <body data-spy="scroll" data-target="#navbar">
@@ -631,6 +629,150 @@
         </div>
       </div>
 
+      <!--    Idea Submission    -->
+      <div class="container" id="idea_submission">
+        <div class="row">
+          <div class="col-md-2"></div>
+
+          <div class="col-md-8 idea_form">
+            <h3>Submit your Idea</h3>
+            <input name="name" type="text" placeholder="Full Name" /><br />
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                /><br />
+              </div>
+              <div class="col-md-6">
+                <input
+                  name="contact"
+                  type="tel"
+                  placeholder="Contact Number"
+                /><br />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 radioStudent">
+                Are you a student?<br />
+                <div class="radioButton">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="student"
+                    value="Yes"
+                    onclick="showStudent();"
+                  />
+                  <label for="Yes">Yes</label><br />
+                  <input type="radio" id="No" name="student" value="No" />
+                  <label for="No">No</label><br />
+                </div>
+              </div>
+              <div class="col-md-6 radioBusiness">
+                Type of business
+                <select id="business" name="business">
+                  <option value="None">Select</option
+                  ><br />
+                  <option value="Sole Proprietorship"
+                    >Sole Proprietorship</option
+                  ><br />
+                  <option value="Partnership">Partnership</option
+                  ><br /> </select
+                ><br />
+              </div>
+            </div>
+            <div class="row" id="studentInfo">
+              <div class="col-md-6">
+                <select id="stream" name="stream">
+                  <option value="None">Stream</option
+                  ><br />
+                  <option value="CSE">CSE</option
+                  ><br />
+                  <option value="Computer">Computer</option
+                  ><br />
+                  <option value="IT">IT </option
+                  ><br />
+                  <option value="EXTC">EXTC</option
+                  ><br />
+                  <option value="Electronics">Electronics </option
+                  ><br />
+                  <option value="Chemical">Chemical</option
+                  ><br />
+                  <option value="Mechanical">Mechanical</option
+                  ><br /> </select
+                ><br />
+              </div>
+              <div class="col-md-6">
+                <select id="year" name="year">
+                  <option value="None">Year</option
+                  ><br />
+                  <option value="FE">FE</option
+                  ><br />
+                  <option value="SE">SE</option
+                  ><br />
+                  <option value="TE">TE</option
+                  ><br />
+                  <option value="BE">BE </option
+                  ><br /> </select
+                ><br />
+              </div>
+            </div>
+            <textarea
+              rows="4"
+              cols="72"
+              name="idea"
+              form="idea"
+              placeholder="Tell us about your idea!"
+            ></textarea>
+            <button class="primary" type="submit" style="margin-top: 10px;">
+              Submit
+            </button>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+      <!--Mission & Vision-->
+      <div class="container">
+        <div class="row section-holder">
+          <div class="col-md-5">
+            <h1 class="blue-text">About Us</h2>
+            <div class="info-horizontal">
+              <div class="icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="description">
+                <h3 class="title">Vision</h3>
+                <p>
+                  To harbour ourselves as an incubation haven and translate to
+                  an ultimate innovation destination by developing a symbolic
+                  relationship between students and professionals entrepreneurs,
+                  mentors, corporates and venture capitalists.
+                </p>
+              </div>
+            </div>
+            <div class="info-horizontal">
+              <div class="icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="description">
+                <h3 class="title">Mission</h3>
+                <p>
+                  To create an umbrella under which our students nurture their
+                  ideas convert them to strong entrepreneurial ventures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="img-container">
+              <img src="./images/mission_vision.jpg" class="mission_vision" />
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="js/nav.js"></script>
       <script>
         mapboxgl.accessToken =
@@ -653,7 +795,7 @@
             {
               scrollTop: $("#idea_submission").offset().top,
             },
-            "slow"
+            100
           );
         }
 

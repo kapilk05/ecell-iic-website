@@ -709,3 +709,59 @@ select {
 .btn:focus {
   outline: none !important;
 }
+
+/*About Us*/
+.info-horizontal {
+  max-width: none;
+  margin: 0 auto;
+  padding: 10px 0 0;
+  text-align: left !important;
+}
+
+.icon {
+  width: 65px !important;
+  height: 65px !important;
+  max-width: 65px;
+  margin-top: 8px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #f96332;
+  position: relative;
+  box-shadow: 0 9px 30px -6px rgba(249, 99, 50, 0.3);
+  float: left;
+}
+
+.description {
+  overflow: hidden;
+}
+
+.description .title {
+  margin: 25px 0 15px;
+  padding: 0 15px;
+}
+
+.description p {
+  padding: 0 15px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.title {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.icon i {
+  display: table;
+  margin: 0 auto;
+  line-height: 2.2;
+  font-size: 1.9em;
+}
+
+.img-container {
+  margin-top: 150px;
+}
+.mission_vision {
+  max-width: 100%;
+  border-radius: 1px;
+}
