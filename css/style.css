@@ -419,6 +419,12 @@ hr {
   .cards {
     display: block;
   }
+  .card {
+    margin-top: 50px;
+  }
+  .row .map {
+    height: 200px !important;
+  }
 }
 
 #events a,
