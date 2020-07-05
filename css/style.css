@@ -427,6 +427,7 @@ hr {
     margin-top: 50px;
   }
   .row .map {
+    width: 100% !important;
     height: 200px !important;
   }
 }
@@ -720,16 +721,15 @@ select {
 .info-horizontal {
   max-width: none;
   margin: 0 auto;
-  padding: 10px 0 0;
+  padding: 35px 0 0;
   text-align: left !important;
 }
 
 .icon {
-  width: 65px !important;
-  height: 65px !important;
+  width: 45px !important;
+  height: 45px !important;
   max-width: 65px;
-  margin-top: 8px;
-  margin: 0 auto;
+  margin-top: 20px;
   border-radius: 50%;
   background-color: #fff;
   color: #f96332;
@@ -743,7 +743,7 @@ select {
 }
 
 .description .title {
-  margin: 25px 0 15px;
+  margin: 28px 0 15px;
   padding: 0 15px;
 }
 
@@ -757,11 +757,11 @@ select {
   padding-top: 30px;
   margin-bottom: 30px;
 }
-.icon i {
-  display: table;
-  margin: 0 auto;
-  line-height: 2.2;
-  font-size: 1.9em;
+.icon ion-icon {
+  margin-left: 12px;
+  height: 100%;
+  width: 50%;
+  font-size: 3em;
 }
 
 .img-container {
