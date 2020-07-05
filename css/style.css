@@ -41,6 +41,11 @@ nav a {
   font-weight: 600;
 }
 
+.nav-link:hover,
+.active {
+  opacity: 100% !important;
+}
+
 .nav-link {
   /* color: #ffffff; */
   border-radius: 0 !important;
@@ -60,7 +65,8 @@ nav a {
 }
 
 .scrolled .nav-link {
-  color: #291b1ba9 !important;
+  color: #291b1bd5 !important;
+  opacity: 50%;
 }
 
 .scrolled .line {
