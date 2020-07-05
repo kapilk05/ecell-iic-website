@@ -20,13 +20,10 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
       rel="stylesheet"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -55,6 +52,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://use.fontawesome.com/314c24a530.js"></script>
     <title>DJ-Ecell</title>
   </head>
   <body data-spy="scroll" data-target="#navbar">
@@ -205,12 +203,9 @@
         </div>
       </div>
 
-      <div id="hamburger" onclick="onClickMenu()">
-        <div class="line" id="line1"></div>
-        <div class="line" id="line2"></div>
-        <div class="line" id="line3"></div>
-      </div>
-      <div class="menu-bg" id="menu-bg"></div>
+      <a class="btn hvr-icon-forward">
+        Get in touch
+      </a>
     </nav>
 
     <!--    Video   -->
@@ -234,7 +229,10 @@
           We are here to provide a healthy ecosystem to make your idea happen,
           to make you an entrepreneur
         </p>
-        <a class="btn">Launch your Startup</a>
+        <a class="btn hvr-icon-forward">
+          Launch your Startup
+          <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+        </a>
       </div>
       <div class="arrow-symbol" style="z-index: 2;">
         <a href="#events">
@@ -246,47 +244,185 @@
     <!--    Main content    -->
     <main>
       <!--    Get Started    -->
-      <div id="features" class="container text-md-center section-holder">
-        <h1 class="blue-text">Get Started</h1>
-        <div class="row">
-          <div class="feature col-md-4 purple">
-            <span class="circle">
-              <ion-icon name="school-outline"></ion-icon>
-            </span>
-            <h3>Mentorship</h3>
-            <p>CloudCheckr provides summary and detailed usage statistics for resources.</p>
+      <div id="features">
+        <div class="container text-md-center section-holder">
+          <h1 class="blue-text">Get Started</h1>
+          <div class="row">
+            <div class="feature col-md-4 purple">
+              <span class="circle">
+                <ion-icon name="school-outline"></ion-icon>
+              </span>
+              <h4>Mentorship</h4>
+              <p>
+                CloudCheckr provides summary and detailed usage statistics for
+                resources.
+              </p>
+            </div>
+            <div class="feature col-md-4 blue">
+              <span class="circle">
+                <ion-icon name="construct-outline"></ion-icon>
+              </span>
+              <h4>Technical Assistance</h4>
+              <p>
+                CloudCheckr provides summary and detailed usage statistics for
+                resources.
+              </p>
+            </div>
+            <div class="feature col-md-4 green">
+              <span class="circle">
+                <span
+                  class="iconify"
+                  data-icon="la:piggy-bank-solid"
+                  data-inline="false"
+                ></span>
+              </span>
+              <h4>VCs & Angel Network</h4>
+              <p>
+                CloudCheckr provides summary and detailed usage statistics for
+                resources.
+              </p>
+            </div>
+            <div class="feature col-md-4 yellow">
+              <span class="circle">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </span>
+              <h4>Accelerators & Incubator</h4>
+              <p>
+                CloudCheckr provides summary and detailed usage statistics for
+                resources.
+              </p>
+            </div>
+            <div class="feature col-md-4 red">
+              <span class="circle">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </span>
+              <h4>Market Advisory</h4>
+              <p>
+                CloudCheckr provides summary and detailed usage statistics for
+                resources.
+              </p>
+            </div>
           </div>
-          <div class="feature col-md-4 blue">
-            <span class="circle">
-              <ion-icon name="construct-outline"></ion-icon>
-            </span>
-            <h3>Technical Assistance</h3>
-            <p>CloudCheckr provides summary and detailed usage statistics for resources.</p>
-          </div>
-          <div class="feature col-md-4 green">
-            <span class="circle">
-              <span
-                class="iconify"
-                data-icon="la:piggy-bank-solid"
-                data-inline="false"
-              ></span>
-            </span>
-            <h3>VCs & Angel Network</h3>
-            <p>CloudCheckr provides summary and detailed usage statistics for resources.</p>
-          </div>
-          <div class="feature col-md-4 yellow">
-            <span class="circle">
-              <ion-icon name="rocket-outline"></ion-icon>
-            </span>
-            <h3>Accelerators & Incubator</h3>
-            <p>CloudCheckr provides summary and detailed usage statistics for resources.</p>
-          </div>
-          <div class="feature col-md-4 red">
-            <span class="circle">
-              <ion-icon name="trending-up-outline"></ion-icon>
-            </span>
-            <h3>Market Advisory</h3>
-            <p>CloudCheckr provides summary and detailed usage statistics for resources.</p>
+        </div>
+        <!--  Get Started -->
+        <div class="wrapper">
+          <div class="main container section-holder">
+            <h4>Have a business idea?</h4>
+            <h1 class="cta">Launch your startup!</h1>
+            <button class="btn hvr-icon-forward" onclick="showForm()">
+              Get Started
+              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+            </button>
+
+            <!--    Idea Submission Form    -->
+            <div class="container" id="idea_submission">
+              <div class="row">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 idea_form">
+                  <h1>Submit your Idea</h1>
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Full Name"
+                  /><br />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        required
+                      /><br />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        name="contact"
+                        type="tel"
+                        placeholder="Contact Number"
+                      /><br />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 radioStudent">
+                      Are you a student?<br />
+                      <div class="radioButton">
+                        <input
+                          type="radio"
+                          id="male"
+                          name="student"
+                          value="Yes"
+                          onclick="showStudent();"
+                        />
+                        <label for="Yes">Yes</label><br />
+                        <input type="radio" id="No" name="student" value="No" />
+                        <label for="No">No</label><br />
+                      </div>
+                    </div>
+                    <div class="col-md-6 radioBusiness">
+                      Type of business
+                      <select id="business" name="business">
+                        <option value="None">Select</option
+                        ><br />
+                        <option value="Sole Proprietorship"
+                          >Sole Proprietorship</option
+                        ><br />
+                        <option value="Partnership">Partnership</option
+                        ><br /> </select
+                      ><br />
+                    </div>
+                  </div>
+                  <div class="row" id="studentInfo">
+                    <div class="col-md-6">
+                      <select id="stream" name="stream">
+                        <option value="None">Stream</option
+                        ><br />
+                        <option value="CSE">CSE</option
+                        ><br />
+                        <option value="Computer">Computer</option
+                        ><br />
+                        <option value="IT">IT </option
+                        ><br />
+                        <option value="EXTC">EXTC</option
+                        ><br />
+                        <option value="Electronics">Electronics </option
+                        ><br />
+                        <option value="Chemical">Chemical</option
+                        ><br />
+                        <option value="Mechanical">Mechanical</option
+                        ><br /> </select
+                      ><br />
+                    </div>
+                    <div class="col-md-6">
+                      <select id="year" name="year">
+                        <option value="None">Year</option
+                        ><br />
+                        <option value="FE">FE</option
+                        ><br />
+                        <option value="SE">SE</option
+                        ><br />
+                        <option value="TE">TE</option
+                        ><br />
+                        <option value="BE">BE </option
+                        ><br /> </select
+                      ><br />
+                    </div>
+                  </div>
+                  <textarea
+                    rows="4"
+                    cols="72"
+                    name="idea"
+                    form="idea"
+                    placeholder="Tell us about your idea!"
+                  ></textarea>
+                  <button class="btn" type="submit" style="margin-top: 10px;">
+                    Submit
+                  </button>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -297,129 +433,142 @@
         <div class="cards">
           <div class="card-container">
             <div class="card">
-              <div class="img-holder" style="background-image: url(../images/Genesis/event_img.jpg);">
+              <div
+                class="img-holder"
+                style="background-image: url(../images/Genesis/event_img.jpg);"
+              >
                 <!--<img src="./images/Genesis/event_img.jpg" class="event" />-->
               </div>
-                <div class="content">
-                  <h3>Genesis</h3>
-                  <p>
-                    An interactive session conducted by a well known digital
-                    content creator Viraj Ghelani.
-                  </p>
-                  <a href="#" class="hvr-icon-forward">
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+              <div class="content">
+                <h3>Genesis</h3>
+                <p>
+                  An interactive session conducted by a well known digital
+                  content creator Viraj Ghelani.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-holder" style="background-image: url(../images/pythonWorkshop/event_img.jpg);">
-                </div>
-                <div class="content">
-                  <h3>Python Workshop</h3>
-                  <p>
-                    Informative session addressed by Jinesh Doshi and Nimesh
-                    Bumb from 'Masterbridge'.
-                  </p>
-                  <a href="#" class="hvr-icon-forward">
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/pythonWorkshop/event_img.jpg);
+                "
+              ></div>
+              <div class="content">
+                <h3>Python Workshop</h3>
+                <p>
+                  Informative session addressed by Jinesh Doshi and Nimesh Bumb
+                  from 'Masterbridge'.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-holder" style="background-image: url(../images/DJTalks/event_img.jpg);">
-                  
-                </div>
-                <div class="content">
-                  <h3>DJ Talks</h3>
-                  <p>
-                    Synergistic discussion held by Gaurav Jain,Founding member
-                    of XBillion Skillz Lab and Shronit Ladhani CEO of 
-                    CareerNinja.
-                  </p>
-                  <a
-                    href="gallery.html"
-                    class="hvr-icon-forward"
-                    target="_blank"
-                  >
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div
+                class="img-holder"
+                style="background-image: url(../images/DJTalks/event_img.jpg);"
+              ></div>
+              <div class="content">
+                <h3>DJ Talks</h3>
+                <p>
+                  Synergistic discussion held by Gaurav Jain,Founding member of
+                  XBillion Skillz Lab and Shronit Ladhani CEO of  CareerNinja.
+                </p>
+                <a href="gallery.html" class="hvr-icon-forward" target="_blank">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-holder" style="background-image: url(../images/bcw/event_img.png);">
-                  
-                </div>
-                <div class="content">
-                  <h3>Business Canvas Workshop</h3>
-                  <p>
-                    Guidance on businesss canvas model given by a PhD
-                    entrepreneur, Dr.Indira Singh.
-                  </p>
-                  <a href="#" class="hvr-icon-forward">
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div
+                class="img-holder"
+                style="background-image: url(../images/bcw/event_img.png);"
+              ></div>
+              <div class="content">
+                <h3>Business Canvas Workshop</h3>
+                <p>
+                  Guidance on businesss canvas model given by a PhD
+                  entrepreneur, Dr.Indira Singh.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-holder" style="background-image: url(../images/facultyMeetup/event_img.jpg);">
-                </div>
-                <div class="content">
-                  <h3>Faculty Meetup</h3>
-                  <p>
-                    Meeting organised to convert SIH ideas and project into a
-                    full fledged startup.
-                  </p>
-                  <a href="#" class="hvr-icon-forward">
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/facultyMeetup/event_img.jpg);
+                "
+              ></div>
+              <div class="content">
+                <h3>Faculty Meetup</h3>
+                <p>
+                  Meeting organised to convert SIH ideas and project into a full
+                  fledged startup.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-holder" style="background-image: url(../images/financialPlanning/event_img.jpg);">
-                </div>
-                <div class="content">
-                  <h3>Financial Advisory</h3>
-                  <p>
-                    Seminar regarding financial planning for students carried
-                    out by Alpa Shah,TEDxGateway speaker.
-                  </p>
-                  <a href="#" class="hvr-icon-forward">
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/financialPlanning/event_img.jpg);
+                "
+              ></div>
+              <div class="content">
+                <h3>Financial Advisory</h3>
+                <p>
+                  Seminar regarding financial planning for students carried out
+                  by Alpa Shah,TEDxGateway speaker.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-holder" style="background-image: url(../images/rushHour/event_img.jpg);">
-                </div>
-                <div class="content">
-                  <h3>Rush Hour 2020</h3>
-                  <p>
-                    Committee's flagship event and an awaited sales competiton
-                    of the year.
-                  </p>
-                  <a href="#" class="hvr-icon-forward">
-                    Read More
-                    <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                  </a>
-                </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div
+                class="img-holder"
+                style="background-image: url(../images/rushHour/event_img.jpg);"
+              ></div>
+              <div class="content">
+                <h3>Rush Hour 2020</h3>
+                <p>
+                  Committee's flagship event and an awaited sales competiton of
+                  the year.
+                </p>
+                <a href="#" class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -495,9 +644,9 @@
                 <h3>Find Us</h3>
                 <h4>Location</h4>
                 <p>
-                  Dwarkadas J Sanghvi<br />
-                  Gulmohar Road, J. V. P. D Scheme,<br />
-                  VileParle(W) Mumbai
+                  Dwarkadas J Sanghvi,<br />
+                  Gulmohar Road, J. V. P. D. Scheme,<br />
+                  Vile Parle(W), Mumbai
                 </p>
                 <h4>Email</h4>
                 <p>ecell.djsce@gmail.com</p>
@@ -508,9 +657,6 @@
       </div>
 
       <!--    Idea Submission    -->
-      <button class="button" onclick="showForm()" style="margin-top: 50px;">
-        Submit Idea
-      </button>
       <div class="container" id="idea_submission">
         <div class="row">
           <div class="col-md-2"></div>
@@ -614,13 +760,42 @@
           </div>
           <div class="col-md-2"></div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <h2>About Us</h2>
-              <div class="info horizontal">
-                
+      </div>
+      <!--Mission & Vision-->
+      <div class="container">
+        <div class="row section-holder">
+          <div class="col-md-5">
+            <h1 class="blue-text">About Us</h2>
+            <div class="info-horizontal">
+              <div class="icon">
+                <i class="fas fa-award"></i>
               </div>
+              <div class="description">
+                <h3 class="title">Vision</h3>
+                <p>
+                  To harbour ourselves as an incubation haven and translate to
+                  an ultimate innovation destination by developing a symbolic
+                  relationship between students and professionals entrepreneurs,
+                  mentors, corporates and venture capitalists.
+                </p>
+              </div>
+            </div>
+            <div class="info-horizontal">
+              <div class="icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="description">
+                <h3 class="title">Mission</h3>
+                <p>
+                  To create an umbrella under which our students nurture their
+                  ideas convert them to strong entrepreneurial ventures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="img-container">
+              <img src="./images/mission_vision.jpg" class="mission_vision" />
             </div>
           </div>
         </div>
