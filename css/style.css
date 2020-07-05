@@ -422,13 +422,23 @@ hr {
 @media only screen and (max-width: 768px) {
   .cards {
     display: block;
+    overflow-x: hidden;
   }
   .card {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
   .row .map {
     width: 100% !important;
     height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .card {
+    width: 220px !important;
+  }
+  .card:hover .content {
+    height: 280px;
   }
 }
 
@@ -721,7 +731,7 @@ select {
 .info-horizontal {
   max-width: none;
   margin: 0 auto;
-  padding: 35px 0 0;
+  padding: 30px 0 0;
   text-align: left !important;
 }
 
