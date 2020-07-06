@@ -828,3 +828,20 @@ select {
   background-position-x: center;
   background-position-y: center;
 }
+
+.container.counter {
+
+margin-top: 50px;
+
+}
+
+#allicon {
+  color: #2c2c2c;
+  font-size: 100px;
+  padding-bottom: 10px;
+  
+}
+
+.container.iconcont {
+  align-content: "center";
+}
