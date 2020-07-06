@@ -57,10 +57,10 @@
   </head>
   <body data-spy="scroll" data-target="#navbar">
     <nav id="navbar" class="navbar navbar-expand-xl navbar-dark sticky-top">
-      <a class="nav-link logo logo-nav navbar-brand" href="#"><img src="images/logo.png" alt="" /> DJSCE E-cell
+      <a class="nav-link logo logo-nav navbar-brand" href="#"><img src="images/logo.png" alt="" /> E-cell
       </a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler collapsed"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -111,19 +111,14 @@
       </a>
     </nav>
 
-    <!--    Video   -->
-    <div class="fullscreen-video-wrap">
-      <video
-        src="./video/startup.mp4"
-        autoplay="true"
-        loop="true"
-        muted
-      ></video>
-    </div>
-    <div class="header-overlay"></div>
 
     <!--    Hero Section    -->
     <div class="v-header container">
+      <!--    Video   -->
+      <div class="fullscreen-video-wrap">
+        <video src="./video/startup.mp4" autoplay="true" loop="true" muted></video>
+      </div>
+      <div class="header-overlay"></div>
       <div class="header-content text-md-center">
         <h1>
           The destination of innovation, the store house of ideas
@@ -478,7 +473,6 @@
       </div>
       <!--    Contact Form    -->
       <div class="container-contact">
-        <h3 class="blue-text">Contact Us</h3>
         <div class="row map">
           <div class="col-md-6 col-sm-12 map">
             <div id="map"></div>
