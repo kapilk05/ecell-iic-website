@@ -648,6 +648,10 @@ select {
   margin: 1.5em;
 }
 
+#features {
+  background: #fff;
+}
+
 #features i:not(.zmdi),
 #features ion-icon,
 #features .iconify {
@@ -869,6 +873,13 @@ select {
 
 .extend-vid {
   height: calc(100vh + 180px) !important;
+  z-index: -1;
+}
+
+.hide-arrow {
+  display: none;
+}
+
 /*Feature*/
 .feature_name p {
   padding: 5px 60px;

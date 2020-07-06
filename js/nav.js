@@ -19,9 +19,17 @@ $(window).scroll(function () {
 // });
 
 function extend() {
-  $("video").toggleClass("extend-vid");
-  $(".fullscreen-video-wrap").toggleClass("extend-vid");
-  $(".header-overlay").toggleClass("extend-vid");
+  if (window.innerWidth <= 992) {
+    if (!$(".navbar-collapse").hasClass("show")) {
+      $("video").addClass("extend-vid");
+      $(".fullscreen-video-wrap").addClass("extend-vid");
+      $(".header-overlay").addClass("extend-vid");
+    } else {
+      $("video").toggleClass("extend-vid");
+      $(".fullscreen-video-wrap").toggleClass("extend-vid");
+      $(".header-overlay").toggleClass("extend-vid");
+    }
+  }
 }
 
 function clickNavLink() {
