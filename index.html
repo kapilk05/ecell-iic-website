@@ -564,13 +564,13 @@
                 <div class="radioButton">
                   <input
                     type="radio"
-                    id="male"
+                    id="Yes"
                     name="student"
                     value="Yes"
                     onclick="showStudent();"
                   />
                   <label for="Yes">Yes</label><br />
-                  <input type="radio" id="No" name="student" value="No" />
+                  <input type="radio" id="No" name="student" value="No" onclick="notStudent();"/>
                   <label for="No">No</label><br />
                 </div>
               </div>
@@ -762,7 +762,11 @@
 
         function showStudent() {
           document.getElementById("studentInfo").style.display = "flex";
+          document.getElementById("No").onclick = function() {
+            document.getElementById("studentInfo").style.display = "none";
+          }
         }
+       
       </script>
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </main>
