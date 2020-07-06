@@ -728,6 +728,7 @@ select {
 }
 
 /*About Us*/
+.aboutus,
 .info-horizontal {
   max-width: none;
   margin: 0 auto;
@@ -735,6 +736,7 @@ select {
   text-align: left !important;
 }
 
+.about_icon,
 .icon {
   width: 45px !important;
   height: 45px !important;
@@ -757,6 +759,7 @@ select {
   padding: 0 15px;
 }
 
+.feature_name p,
 .description p {
   padding: 0 15px;
   margin-top: 0;
@@ -767,6 +770,7 @@ select {
   padding-top: 30px;
   margin-bottom: 30px;
 }
+.about_icon ion-icon,
 .icon ion-icon {
   margin-left: 12px;
   height: 100%;
@@ -780,4 +784,20 @@ select {
 .mission_vision {
   max-width: 100%;
   border-radius: 1px;
+}
+
+/*Feature*/
+.feature_name p {
+  padding: 5px 60px;
+}
+.about_icon {
+  margin-top: -7px;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position-x: center;
+  background-position-y: center;
 }
