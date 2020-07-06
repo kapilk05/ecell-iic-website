@@ -456,6 +456,15 @@ hr {
     width: 100% !important;
     height: 200px !important;
   }
+
+  .img-contain {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .heading_features {
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -813,6 +822,10 @@ select {
 }
 
 /*Feature*/
+.heading_features {
+  text-align: left !important;
+  padding-left: 10px;
+}
 .feature_name p {
   padding-top: 5px;
 }
@@ -829,19 +842,35 @@ select {
   background-position-y: center;
 }
 
+/*Counter*/
 .container.counter {
-
-margin-top: 50px;
-
+  margin-top: 50px;
 }
 
 #allicon {
   color: #2c2c2c;
   font-size: 100px;
   padding-bottom: 10px;
-  
 }
 
 .container.iconcont {
   align-content: "center";
+}
+
+/*Team*/
+.team_member {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-size: cover !important;
+}
+
+.newstyle {
+  font-weight: 700 !important;
 }
