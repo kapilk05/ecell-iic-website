@@ -23,10 +23,27 @@ nav {
   width: 100vw;
 }
 
+nav a {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 26px !important;
+  font-family: "Work Sans", sans-serif;
+}
+
 .nav-item {
   padding: 0 18px;
   font-size: 14px !important;
   font-weight: 600;
+}
+
+.nav-link:hover,
+.active {
+  opacity: 100% !important;
 }
 
 .nav-link {
@@ -44,10 +61,12 @@ nav {
 
 .scrolled {
   background: #fff;
+  border-bottom: 1px solid #ebedee;
 }
 
 .scrolled .nav-link {
-  color: #291b1b !important;
+  color: #291b1bd5 !important;
+  opacity: 50%;
 }
 
 .scrolled .line {
@@ -189,13 +208,19 @@ nav {
   font-size: 14px;
   font-weight: 600;
   border-radius: 4px;
-  height: 48px;
+  /* height: 48px; */
   margin: 20px;
   padding: 10px 25px !important;
 }
 
-nav .btn {
-  margin: 0;
+nav .nav-btn {
+  background-color: #f74539;
+  border: none;
+  color: #fff !important;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 12px 24px;
+  border-radius: 0;
 }
 
 .arrow-symbol {
@@ -723,7 +748,8 @@ select {
   margin: 70px 0 20px 0;
 }
 
-.btn:focus {
+.btn:focus,
+.nav-btn:focus {
   outline: none !important;
 }
 
