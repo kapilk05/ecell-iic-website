@@ -882,10 +882,11 @@ select {
 
 /*Feature*/
 .feature_name p {
-  padding: 5px 60px;
+  padding-top: 5px;
 }
 .about_icon {
   margin-top: -7px;
+  margin-right: 15px !important;
 }
 
 .img-contain {
@@ -894,4 +895,21 @@ select {
   background-size: cover !important;
   background-position-x: center;
   background-position-y: center;
+}
+
+.container.counter {
+
+margin-top: 50px;
+
+}
+
+#allicon {
+  color: #2c2c2c;
+  font-size: 100px;
+  padding-bottom: 10px;
+  
+}
+
+.container.iconcont {
+  align-content: "center";
 }
