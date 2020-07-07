@@ -21,6 +21,7 @@ nav {
   padding-top: 0 !important;
   transition: 500ms ease;
   width: 100vw;
+  min-height: 50px;
 }
 
 nav a {
@@ -593,7 +594,7 @@ select {
   height: 60px;
   box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04);
   width: 100%;
-  margin-top: 20px !important;
+  /* margin-top: 20px !important; */
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -633,10 +634,21 @@ select {
 
 .idea_form {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 105vh !important;
   padding-top: 100px;
 }
 
+.idea_form option {
+  color: #000000;
+}
+
+.radioButton {
+  display: flex;
+}
+
+.radio-wrapper:first-child {
+  padding-right: 10px;
+}
 /* Get Started */
 
 .circle {
@@ -769,6 +781,8 @@ select {
   background-repeat: no-repeat;
   background-size: 100vw;
   margin: 70px 0 20px 0;
+  width: 100vw;
+  padding-bottom: 60px;
 }
 
 .btn:focus,
@@ -898,16 +912,13 @@ select {
 }
 
 .container.counter {
-
-margin-top: 50px;
-
+  margin-top: 50px;
 }
 
 #allicon {
   color: #2c2c2c;
   font-size: 100px;
   padding-bottom: 10px;
-  
 }
 
 .container.iconcont {

@@ -1,7 +1,7 @@
 $(window).scroll(function () {
-  $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
-  $("nav").toggleClass("navbar-dark", $(this).scrollTop() <= 50);
-  $("nav").toggleClass("navbar-light", $(this).scrollTop() > 50);
+  $("nav").toggleClass("scrolled", $(this).scrollTop() > 20);
+  $("nav").toggleClass("navbar-dark", $(this).scrollTop() <= 20);
+  $("nav").toggleClass("navbar-light", $(this).scrollTop() > 20);
 });
 
 // window.change(function () {

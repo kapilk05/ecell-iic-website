@@ -251,16 +251,25 @@
                     <div class="col-md-6 radioStudent">
                       Are you a student?<br />
                       <div class="radioButton">
-                        <input
-                          type="radio"
-                          id="male"
-                          name="student"
-                          value="Yes"
-                          onclick="showStudent();"
-                        />
-                        <label for="Yes">Yes</label><br />
-                        <input type="radio" id="No" name="student" value="No" />
-                        <label for="No">No</label><br />
+                        <div class="radio-wrapper">
+                          <input
+                            type="radio"
+                            id="male"
+                            name="student"
+                            value="Yes"
+                            onclick="showStudent();"
+                          />
+                          <label for="Yes">Yes</label><br />
+                        </div>
+                        <div class="radio-wrapper">
+                          <input
+                            type="radio"
+                            id="No"
+                            name="student"
+                            value="No"
+                          />
+                          <label for="No">No</label><br />
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-6 radioBusiness">
@@ -568,7 +577,13 @@
                     onclick="showStudent();"
                   />
                   <label for="Yes">Yes</label><br />
-                  <input type="radio" id="No" name="student" value="No" onclick="notStudent();"/>
+                  <input
+                    type="radio"
+                    id="No"
+                    name="student"
+                    value="No"
+                    onclick="notStudent();"
+                  />
                   <label for="No">No</label><br />
                 </div>
               </div>
@@ -638,79 +653,88 @@
 
       <!--  Counter  -->
 
-      <div class="container counter">
-          
-      <div class="b-section black bp-0">
-        
-        <div class="b-container">
-          <div class="b-3-col">
-            <div class="b-meta-container">
-              <div class="b-meta grey"></div>
-              <div class="b-meta-line grey">At DJ-ECELL</div>
-            </div>
-          </div>
-          <div class="b-8-col">
-            <h2 class="b-h1 grey"> We Are Growing Quickly </h2>
-            <p class="b-large-type-block grey">DJ-ECELL is for creative and passionate students to make an impact and transform the world.
-              </p>
-              <div class= "container iconcont" >
-            <div class="b-8-col">
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-linkedin" id="allicon"></i>
-                  <h2 class="home---about-stat-text">42</h2>
-                  
-                  <a href="https://www.youtube.com/thefuturishere" target="_blank"
-                    class="home---about-stat-icon-box w-inline-block">
-                    
-                      
-                    <p class="home---about-stat-icon-text">LinkedIn Connection</p>
-                  </a>
-                </div>
+      <div id="counter" class="container counter">
+        <div class="b-section black bp-0">
+          <div class="b-container">
+            <div class="b-3-col">
+              <div class="b-meta-container">
+                <div class="b-meta grey"></div>
+                <div class="b-meta-line grey">At DJ-ECELL</div>
               </div>
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-instagram" id="allicon"></i>
-                  <h2 class="home---about-stat-text">399</h2>
-                  <div class="home---about-stat-icon-box">
-                    
-                    <p class="home---about-stat-icon-text">Instagram Followers</p>
+            </div>
+            <div class="b-8-col">
+              <h2 class="b-h1 grey">We Are Growing Quickly</h2>
+              <p class="b-large-type-block grey">
+                DJ-ECELL is for creative and passionate students to make an
+                impact and transform the world.
+              </p>
+              <div class="container iconcont">
+                <div class="b-8-col">
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-linkedin" id="allicon"></i>
+                      <h2 class="home---about-stat-text">42</h2>
+
+                      <a
+                        href="https://www.youtube.com/thefuturishere"
+                        target="_blank"
+                        class="home---about-stat-icon-box w-inline-block"
+                      >
+                        <p class="home---about-stat-icon-text">
+                          LinkedIn Connection
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-instagram" id="allicon"></i>
+                      <h2 class="home---about-stat-text">399</h2>
+                      <div class="home---about-stat-icon-box">
+                        <p class="home---about-stat-icon-text">
+                          Instagram Followers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-youtube" id="allicon"></i>
+                      <h2 class="home---about-stat-text">65</h2>
+                      <a
+                        href="http://academy.thefutur.com"
+                        target="_blank"
+                        class="home---about-stat-icon-box w-inline-block"
+                      >
+                        <p class="home---about-stat-icon-text">
+                          YouTube Subscribers
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
+                      <h2 class="home---about-stat-text">499</h2>
+                      <a
+                        href="/for-deletion/videos-old"
+                        class="home---about-stat-icon-box w-inline-block"
+                      >
+                        <p class="home---about-stat-icon-text">
+                          Facebook Followers
+                        </p>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-youtube" id="allicon"></i>
-                        <h2 class="home---about-stat-text">65</h2>
-                  <a href="http://academy.thefutur.com" target="_blank" class="home---about-stat-icon-box w-inline-block">
-                    
-                    <p class="home---about-stat-icon-text">YouTube Subscribers</p>
-                  </a>
-                </div>
-              </div>
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
-                  <h2 class="home---about-stat-text">499</h2>
-                  <a href="/for-deletion/videos-old" class="home---about-stat-icon-box w-inline-block">
-                    
-                    <p class="home---about-stat-icon-text">Facebook Followers</p>
-                  </a>
-                </div>
-              </div>
-              
-            </div>
             </div>
           </div>
         </div>
-   
-      </div>
-
-
       </div>
       <!--Mission & Vision-->
       <div class="container">
@@ -838,11 +862,10 @@
 
         function showStudent() {
           document.getElementById("studentInfo").style.display = "flex";
-          document.getElementById("No").onclick = function() {
+          document.getElementById("No").onclick = function () {
             document.getElementById("studentInfo").style.display = "none";
-          }
+          };
         }
-       
       </script>
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </main>
