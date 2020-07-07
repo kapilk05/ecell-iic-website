@@ -34,6 +34,15 @@
       rel="stylesheet"
     />
 
+    <!-- For counter animation  -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="/Users/apple/Desktop/dj-ecell/js/counter.js"></script> -->
+    
+    <!-- counter animation end -->
+
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -556,7 +565,21 @@
                 <div class="home---about-vertical-blue-line"></div>
                 <div class="home---about-stat-text-box">
                   <i class="fab fa-linkedin" id="allicon"></i>
-                  <h2 class="home---about-stat-text">42</h2>
+                  <div class="item-animate">
+                  
+                    <h2 class="counteranimation1">0</h2>
+                  </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation1').html() }).animate({ countNum: 42 }, {
+                      duration: 4000, easing: 'linear',
+                      step: function () {
+                        $('.counteranimation1').html(Math.floor(this.countNum) + "+");
+                      }, complete: function () {
+                        $('.counteranimation1').html(this.countNum + "+");
+                      }
+                    });
+                  </script>
                   
                   <a href="https://www.youtube.com/thefuturishere" target="_blank"
                     class="home---about-stat-icon-box w-inline-block">
@@ -570,7 +593,21 @@
                 <div class="home---about-vertical-blue-line"></div>
                 <div class="home---about-stat-text-box">
                   <i class="fab fa-instagram" id="allicon"></i>
-                  <h2 class="home---about-stat-text">399</h2>
+                  <div class="item-animate">
+                  
+                    <h2 class="counteranimation2">0</h2>
+                  </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation2').html() }).animate({ countNum: 399 }, {
+                      duration: 4000, easing: 'linear',
+                      step: function () {
+                        $('.counteranimation2').html(Math.floor(this.countNum) + "+");
+                      }, complete: function () {
+                        $('.counteranimation2').html(this.countNum + "+");
+                      }
+                    });
+                  </script>
                   <div class="home---about-stat-icon-box">
                     
                     <p class="home---about-stat-icon-text">Instagram Followers</p>
@@ -581,7 +618,19 @@
                 <div class="home---about-vertical-blue-line"></div>
                 <div class="home---about-stat-text-box">
                   <i class="fab fa-youtube" id="allicon"></i>
-                        <h2 class="home---about-stat-text">65</h2>
+                  <div class="item-animate">
+                    
+                    <h2 class="counteranimation3" >0</h2>
+                  </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation3').html() }).animate({ countNum: 100 }, {duration: 4000,easing: 'linear',
+                      step: function () {
+                        $('.counteranimation3').html(Math.floor(this.countNum) + "+");
+                      },complete: function () {
+                        $('.counteranimation3').html(this.countNum + "+");}
+                    });
+                  </script>
                   <a href="http://academy.thefutur.com" target="_blank" class="home---about-stat-icon-box w-inline-block">
                     
                     <p class="home---about-stat-icon-text">YouTube Subscribers</p>
@@ -592,7 +641,21 @@
                 <div class="home---about-vertical-blue-line"></div>
                 <div class="home---about-stat-text-box">
                   <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
-                  <h2 class="home---about-stat-text">499</h2>
+                  <div class="item-animate">
+                  
+                    <h2 class="counteranimation4">0</h2>
+                  </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation4').html() }).animate({ countNum: 423 }, {
+                      duration: 4000, easing: 'linear',
+                      step: function () {
+                        $('.counteranimation4').html(Math.floor(this.countNum) + "+");
+                      }, complete: function () {
+                        $('.counteranimation4').html(this.countNum + "+");
+                      }
+                    });
+                  </script>
                   <a href="/for-deletion/videos-old" class="home---about-stat-icon-box w-inline-block">
                     
                     <p class="home---about-stat-icon-text">Facebook Followers</p>
@@ -707,6 +770,13 @@
         </div> 
       </div>
       <script src="js/nav.js"></script>
+
+      <!-- script for counter  -->
+      
+     
+
+      <!-- end script for counter -->
+
       <script>
         mapboxgl.accessToken =
           "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
