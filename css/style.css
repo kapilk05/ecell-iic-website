@@ -582,10 +582,10 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  height: 60px;
+  height: 40px;
   box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04);
   width: 100%;
-  margin-top: 20px !important;
+  margin-bottom: 20px !important;
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -872,5 +872,10 @@ select {
 }
 
 .newstyle {
+  font-family: "Roboto Slab" !important;
   font-weight: 700 !important;
+}
+
+#team {
+  margin-top: 70px !important;
 }

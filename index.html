@@ -224,25 +224,28 @@
 
                 <div class="col-md-8 idea_form">
                   <h1>Submit your Idea</h1>
+                  <label for="name">Full Name</label>
                   <input
                     name="name"
                     type="text"
-                    placeholder="Full Name"
+                    id="name"
                   /><br />
                   <div class="row">
                     <div class="col-md-6">
+                      <label for="email">Email</label>
                       <input
                         name="email"
                         type="email"
-                        placeholder="Email"
+                        id="email"
                         required
                       /><br />
                     </div>
                     <div class="col-md-6">
+                      <label for="contact">Contact Number</label>
                       <input
                         name="contact"
                         type="tel"
-                        placeholder="Contact Number"
+                        id="contact"
                       /><br />
                     </div>
                   </div>
@@ -266,10 +269,8 @@
                     <div class="col-md-6 radioBusiness">
                       Type of business
                       <select id="business" name="business">
-                        <option value="None">Select</option
-                        ><br />
                         <option value="Sole Proprietorship"
-                          >Sole Proprietorship</option
+                          selected>Sole Proprietorship</option
                         ><br />
                         <option value="Partnership">Partnership</option
                         ><br /> </select
@@ -279,9 +280,7 @@
                   <div class="row" id="studentInfo">
                     <div class="col-md-6">
                       <select id="stream" name="stream">
-                        <option value="None">Stream</option
-                        ><br />
-                        <option value="CSE">CSE</option
+                        <option value="CSE" selected>CSE</option
                         ><br />
                         <option value="Computer">Computer</option
                         ><br />
@@ -299,9 +298,7 @@
                     </div>
                     <div class="col-md-6">
                       <select id="year" name="year">
-                        <option value="None">Year</option
-                        ><br />
-                        <option value="FE">FE</option
+                        <option value="FE" selected>FE</option
                         ><br />
                         <option value="SE">SE</option
                         ><br />
@@ -488,23 +485,26 @@
 
             <form name="e-cell" id="idea">
               <div class="col-md-12">
-                <input name="name" type="text" placeholder="Full Name" /><br />
+                <label for="name"> Full Name</label>
+                <input name="name" type="text" id="name"/><br />
               </div>
               <div class="col-md-12">
+                <label for="email">Email</label>
                 <input
                   name="email"
                   type="email"
-                  placeholder="Email"
+                  id="email"
                   required
                 /><br />
               </div>
               <div class="col-md-12">
+                <label for="message">Message</label>
                 <textarea
                   rows="4"
                   cols="100"
                   name="idea"
                   form="idea"
-                  placeholder="Message"
+                  id="message"
                 ></textarea>
               </div>
               <div class="submit_form" style="text-align: center;">
@@ -532,112 +532,7 @@
         </div>
       </div>
 
-      <!--    Idea Submission    -->
-      <div class="container" id="idea_submission">
-        <div class="row">
-          <div class="col-md-2"></div>
-
-          <div class="col-md-8 idea_form">
-            <h3>Submit your Idea</h3>
-            <input name="name" type="text" placeholder="Full Name" /><br />
-            <div class="row">
-              <div class="col-md-6">
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  required
-                /><br />
-              </div>
-              <div class="col-md-6">
-                <input
-                  name="contact"
-                  type="tel"
-                  placeholder="Contact Number"
-                /><br />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 radioStudent">
-                Are you a student?<br />
-                <div class="radioButton">
-                  <input
-                    type="radio"
-                    id="Yes"
-                    name="student"
-                    value="Yes"
-                    onclick="showStudent();"
-                  />
-                  <label for="Yes">Yes</label><br />
-                  <input type="radio" id="No" name="student" value="No" onclick="notStudent();"/>
-                  <label for="No">No</label><br />
-                </div>
-              </div>
-              <div class="col-md-6 radioBusiness">
-                Type of business
-                <select id="business" name="business">
-                  <option value="None">Select</option
-                  ><br />
-                  <option value="Sole Proprietorship"
-                    >Sole Proprietorship</option
-                  ><br />
-                  <option value="Partnership">Partnership</option
-                  ><br /> </select
-                ><br />
-              </div>
-            </div>
-            <div class="row" id="studentInfo">
-              <div class="col-md-6">
-                <select id="stream" name="stream">
-                  <option value="None">Stream</option
-                  ><br />
-                  <option value="CSE">CSE</option
-                  ><br />
-                  <option value="Computer">Computer</option
-                  ><br />
-                  <option value="IT">IT </option
-                  ><br />
-                  <option value="EXTC">EXTC</option
-                  ><br />
-                  <option value="Electronics">Electronics </option
-                  ><br />
-                  <option value="Chemical">Chemical</option
-                  ><br />
-                  <option value="Mechanical">Mechanical</option
-                  ><br /> </select
-                ><br />
-              </div>
-              <div class="col-md-6">
-                <select id="year" name="year">
-                  <option value="None">Year</option
-                  ><br />
-                  <option value="FE">FE</option
-                  ><br />
-                  <option value="SE">SE</option
-                  ><br />
-                  <option value="TE">TE</option
-                  ><br />
-                  <option value="BE">BE </option
-                  ><br /> </select
-                ><br />
-              </div>
-            </div>
-            <textarea
-              rows="4"
-              cols="72"
-              name="idea"
-              form="idea"
-              placeholder="Tell us about your idea!"
-            ></textarea>
-            <button class="primary" type="submit" style="margin-top: 10px;">
-              Submit
-            </button>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-      </div>
-
+      
       <!--  Counter  -->
 
       <div class="container counter">
