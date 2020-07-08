@@ -874,3 +874,36 @@ select {
 .newstyle {
   font-weight: 700 !important;
 }
+
+.row .newfooter {
+   
+   
+
+}
+
+.container .newfooter{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#footicon {
+ padding-left: 64px;
+ font-size:  70px;
+}
+#logofooter {
+  height: 80px;
+  width:80px;
+  
+}
+#logocomp{
+  padding-left: 40px;
+}
+#takeup{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align:end;
+  height:50px;
+}
