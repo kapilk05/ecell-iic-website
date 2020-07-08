@@ -34,6 +34,15 @@
       rel="stylesheet"
     />
 
+    <!-- For counter animation  -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="/Users/apple/Desktop/dj-ecell/js/counter.js"></script> -->
+    
+    <!-- counter animation end -->
+
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -224,25 +233,28 @@
 
                 <div class="col-md-8 idea_form">
                   <h1>Submit your Idea</h1>
+                  <label for="name">Full Name</label>
                   <input
                     name="name"
                     type="text"
-                    placeholder="Full Name"
+                    id="name"
                   /><br />
                   <div class="row">
                     <div class="col-md-6">
+                      <label for="email">Email</label>
                       <input
                         name="email"
                         type="email"
-                        placeholder="Email"
+                        id="email"
                         required
                       /><br />
                     </div>
                     <div class="col-md-6">
+                      <label for="contact">Contact Number</label>
                       <input
                         name="contact"
                         type="tel"
-                        placeholder="Contact Number"
+                        id="contact"
                       /><br />
                     </div>
                   </div>
@@ -275,10 +287,8 @@
                     <div class="col-md-6 radioBusiness">
                       Type of business
                       <select id="business" name="business">
-                        <option value="None">Select</option
-                        ><br />
                         <option value="Sole Proprietorship"
-                          >Sole Proprietorship</option
+                          selected>Sole Proprietorship</option
                         ><br />
                         <option value="Partnership">Partnership</option
                         ><br /> </select
@@ -288,9 +298,7 @@
                   <div class="row" id="studentInfo">
                     <div class="col-md-6">
                       <select id="stream" name="stream">
-                        <option value="None">Stream</option
-                        ><br />
-                        <option value="CSE">CSE</option
+                        <option value="CSE" selected>CSE</option
                         ><br />
                         <option value="Computer">Computer</option
                         ><br />
@@ -308,9 +316,7 @@
                     </div>
                     <div class="col-md-6">
                       <select id="year" name="year">
-                        <option value="None">Year</option
-                        ><br />
-                        <option value="FE">FE</option
+                        <option value="FE" selected>FE</option
                         ><br />
                         <option value="SE">SE</option
                         ><br />
@@ -495,23 +501,26 @@
 
             <form name="e-cell" id="idea">
               <div class="col-md-12">
-                <input name="name" type="text" placeholder="Full Name" /><br />
+                <label for="name"> Full Name</label>
+                <input name="name" type="text" id="name"/><br />
               </div>
               <div class="col-md-12">
+                <label for="email">Email</label>
                 <input
                   name="email"
                   type="email"
-                  placeholder="Email"
+                  id="email"
                   required
                 /><br />
               </div>
               <div class="col-md-12">
+                <label for="message">Message</label>
                 <textarea
                   rows="4"
                   cols="100"
                   name="idea"
                   form="idea"
-                  placeholder="Message"
+                  id="message"
                 ></textarea>
               </div>
               <div class="submit_form" style="text-align: center;">
@@ -539,118 +548,7 @@
         </div>
       </div>
 
-      <!--    Idea Submission    -->
-      <div class="container" id="idea_submission">
-        <div class="row">
-          <div class="col-md-2"></div>
-
-          <div class="col-md-8 idea_form">
-            <h3>Submit your Idea</h3>
-            <input name="name" type="text" placeholder="Full Name" /><br />
-            <div class="row">
-              <div class="col-md-6">
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  required
-                /><br />
-              </div>
-              <div class="col-md-6">
-                <input
-                  name="contact"
-                  type="tel"
-                  placeholder="Contact Number"
-                /><br />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 radioStudent">
-                Are you a student?<br />
-                <div class="radioButton">
-                  <input
-                    type="radio"
-                    id="Yes"
-                    name="student"
-                    value="Yes"
-                    onclick="showStudent();"
-                  />
-                  <label for="Yes">Yes</label><br />
-                  <input
-                    type="radio"
-                    id="No"
-                    name="student"
-                    value="No"
-                    onclick="notStudent();"
-                  />
-                  <label for="No">No</label><br />
-                </div>
-              </div>
-              <div class="col-md-6 radioBusiness">
-                Type of business
-                <select id="business" name="business">
-                  <option value="None">Select</option
-                  ><br />
-                  <option value="Sole Proprietorship"
-                    >Sole Proprietorship</option
-                  ><br />
-                  <option value="Partnership">Partnership</option
-                  ><br /> </select
-                ><br />
-              </div>
-            </div>
-            <div class="row" id="studentInfo">
-              <div class="col-md-6">
-                <select id="stream" name="stream">
-                  <option value="None">Stream</option
-                  ><br />
-                  <option value="CSE">CSE</option
-                  ><br />
-                  <option value="Computer">Computer</option
-                  ><br />
-                  <option value="IT">IT </option
-                  ><br />
-                  <option value="EXTC">EXTC</option
-                  ><br />
-                  <option value="Electronics">Electronics </option
-                  ><br />
-                  <option value="Chemical">Chemical</option
-                  ><br />
-                  <option value="Mechanical">Mechanical</option
-                  ><br /> </select
-                ><br />
-              </div>
-              <div class="col-md-6">
-                <select id="year" name="year">
-                  <option value="None">Year</option
-                  ><br />
-                  <option value="FE">FE</option
-                  ><br />
-                  <option value="SE">SE</option
-                  ><br />
-                  <option value="TE">TE</option
-                  ><br />
-                  <option value="BE">BE </option
-                  ><br /> </select
-                ><br />
-              </div>
-            </div>
-            <textarea
-              rows="4"
-              cols="72"
-              name="idea"
-              form="idea"
-              placeholder="Tell us about your idea!"
-            ></textarea>
-            <button class="primary" type="submit" style="margin-top: 10px;">
-              Submit
-            </button>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-      </div>
-
+      
       <!--  Counter  -->
 
       <div id="counter" class="container counter">
@@ -663,75 +561,109 @@
               </div>
             </div>
             <div class="b-8-col">
-              <h2 class="b-h1 grey">We Are Growing Quickly</h2>
-              <p class="b-large-type-block grey">
-                DJ-ECELL is for creative and passionate students to make an
-                impact and transform the world.
-              </p>
-              <div class="container iconcont">
-                <div class="b-8-col">
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-linkedin" id="allicon"></i>
-                      <h2 class="home---about-stat-text">42</h2>
+              <div class="home---about-stat-wrapper">
+                <div class="home---about-vertical-blue-line"></div>
+                <div class="home---about-stat-text-box">
+                  <i class="fab fa-linkedin" id="allicon"></i>
+                  <div class="item-animate">
+                  
+                    <h2 class="counteranimation1">0</h2>
+                  </div>
+                  <script>
 
-                      <a
-                        href="https://www.youtube.com/thefuturishere"
-                        target="_blank"
-                        class="home---about-stat-icon-box w-inline-block"
-                      >
-                        <p class="home---about-stat-icon-text">
-                          LinkedIn Connection
-                        </p>
-                      </a>
-                    </div>
+                    $({ countNum: $('.counteranimation1').html() }).animate({ countNum: 42 }, {
+                      duration: 4000, easing: 'linear',
+                      step: function () {
+                        $('.counteranimation1').html(Math.floor(this.countNum) + "+");
+                      }, complete: function () {
+                        $('.counteranimation1').html(this.countNum + "+");
+                      }
+                    });
+                  </script>
+                  
+                  <a href="https://www.youtube.com/thefuturishere" target="_blank"
+                    class="home---about-stat-icon-box w-inline-block">
+                    
+                      
+                    <p class="home---about-stat-icon-text">LinkedIn Connection</p>
+                  </a>
+                </div>
+              </div>
+              <div class="home---about-stat-wrapper">
+                <div class="home---about-vertical-blue-line"></div>
+                <div class="home---about-stat-text-box">
+                  <i class="fab fa-instagram" id="allicon"></i>
+                  <div class="item-animate">
+                  
+                    <h2 class="counteranimation2">0</h2>
                   </div>
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-instagram" id="allicon"></i>
-                      <h2 class="home---about-stat-text">399</h2>
-                      <div class="home---about-stat-icon-box">
-                        <p class="home---about-stat-icon-text">
-                          Instagram Followers
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-youtube" id="allicon"></i>
-                      <h2 class="home---about-stat-text">65</h2>
-                      <a
-                        href="http://academy.thefutur.com"
-                        target="_blank"
-                        class="home---about-stat-icon-box w-inline-block"
-                      >
-                        <p class="home---about-stat-icon-text">
-                          YouTube Subscribers
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
-                      <h2 class="home---about-stat-text">499</h2>
-                      <a
-                        href="/for-deletion/videos-old"
-                        class="home---about-stat-icon-box w-inline-block"
-                      >
-                        <p class="home---about-stat-icon-text">
-                          Facebook Followers
-                        </p>
-                      </a>
-                    </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation2').html() }).animate({ countNum: 399 }, {
+                      duration: 4000, easing: 'linear',
+                      step: function () {
+                        $('.counteranimation2').html(Math.floor(this.countNum) + "+");
+                      }, complete: function () {
+                        $('.counteranimation2').html(this.countNum + "+");
+                      }
+                    });
+                  </script>
+                  <div class="home---about-stat-icon-box">
+                    
+                    <p class="home---about-stat-icon-text">Instagram Followers</p>
                   </div>
                 </div>
               </div>
+              <div class="home---about-stat-wrapper">
+                <div class="home---about-vertical-blue-line"></div>
+                <div class="home---about-stat-text-box">
+                  <i class="fab fa-youtube" id="allicon"></i>
+                  <div class="item-animate">
+                    
+                    <h2 class="counteranimation3" >0</h2>
+                  </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation3').html() }).animate({ countNum: 100 }, {duration: 4000,easing: 'linear',
+                      step: function () {
+                        $('.counteranimation3').html(Math.floor(this.countNum) + "+");
+                      },complete: function () {
+                        $('.counteranimation3').html(this.countNum + "+");}
+                    });
+                  </script>
+                  <a href="http://academy.thefutur.com" target="_blank" class="home---about-stat-icon-box w-inline-block">
+                    
+                    <p class="home---about-stat-icon-text">YouTube Subscribers</p>
+                  </a>
+                </div>
+              </div>
+              <div class="home---about-stat-wrapper">
+                <div class="home---about-vertical-blue-line"></div>
+                <div class="home---about-stat-text-box">
+                  <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
+                  <div class="item-animate">
+                  
+                    <h2 class="counteranimation4">0</h2>
+                  </div>
+                  <script>
+
+                    $({ countNum: $('.counteranimation4').html() }).animate({ countNum: 423 }, {
+                      duration: 4000, easing: 'linear',
+                      step: function () {
+                        $('.counteranimation4').html(Math.floor(this.countNum) + "+");
+                      }, complete: function () {
+                        $('.counteranimation4').html(this.countNum + "+");
+                      }
+                    });
+                  </script>
+                  <a href="/for-deletion/videos-old" class="home---about-stat-icon-box w-inline-block">
+                    
+                    <p class="home---about-stat-icon-text">Facebook Followers</p>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
             </div>
           </div>
         </div>
@@ -782,7 +714,7 @@
             ></div>
           </div>
           <div class="col-md-7">
-            <h3 style="text-align: left; padding-left: 10px;">Features</h3>
+            <h3 class="heading_features">Features</h3>
             <div class="aboutus">
               <div class="about_icon">
                 <ion-icon name="ribbon-outline"></ion-icon>
@@ -835,6 +767,13 @@
         </div>
       </div>
       <script src="js/nav.js"></script>
+
+      <!-- script for counter  -->
+      
+     
+
+      <!-- end script for counter -->
+
       <script>
         mapboxgl.accessToken =
           "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";

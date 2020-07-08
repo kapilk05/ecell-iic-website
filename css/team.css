@@ -1,0 +1,11 @@
+.row {
+  justify-content: center;
+}
+
+.col-md-3 {
+  /* padding: 25px 15px; */
+}
+
+p {
+  font-weight: 400 !important;
+}
