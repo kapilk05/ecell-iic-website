@@ -326,12 +326,12 @@ hr {
   padding-top: 2px;
 }
 
-.hvr-underline-from-left,
+/* .hvr-underline-from-left,
 .hvr-underline-from-left:hover,
 .hvr-icon-forward,
 .hvr-icon-forward:hover {
   /* color: black; */
-}
+} */
 
 .readmore {
   padding-top: 15px;
@@ -455,6 +455,15 @@ hr {
   .row .map {
     width: 100% !important;
     height: 200px !important;
+  }
+
+  .img-contain {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .heading_features {
+    padding-top: 20px;
   }
 }
 
@@ -813,11 +822,16 @@ select {
 }
 
 /*Feature*/
+.heading_features {
+  text-align: left !important;
+  padding-left: 10px;
+}
 .feature_name p {
-  padding: 5px 60px;
+  padding-top: 5px;
 }
 .about_icon {
   margin-top: -7px;
+  margin-right: 15px !important;
 }
 
 .img-contain {
@@ -828,53 +842,35 @@ select {
   background-position-y: center;
 }
 
+/*Counter*/
 .container.counter {
-
-margin-top: 50px;
-
+  margin-top: 50px;
 }
 
 #allicon {
   color: #2c2c2c;
   font-size: 100px;
   padding-bottom: 10px;
-  
 }
 
 .container.iconcont {
   align-content: "center";
 }
-/* Counter */
 
-/* .counters {
-    background: #0f479a;
-    color: #fff;
-    padding: 40px 20px;
-    border-top: 3px lightskyblue solid;
-} */
-
-/* .counters .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    text-align: center;
+/*Team*/
+.team_member {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-size: cover !important;
 }
 
-
-
-.counters .counter {
-    font-size: 45px;
-    margin: 10px 0;
-} */
-
-@media (max-width: 700px) {
-    .counters .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .counters .container > div:nth-of-type(1),
-    .counters .container > div:nth-of-type(2) {
-        border-bottom: 1px lightskyblue solid;
-        padding-bottom: 20px;
-    }
+.newstyle {
+  font-weight: 700 !important;
 }
