@@ -6,6 +6,10 @@
   /* padding: 25px 15px; */
 }
 
+.faculty p {
+  color: #888;
+}
+
 p {
   font-weight: 400 !important;
 }
