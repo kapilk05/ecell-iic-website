@@ -229,19 +229,15 @@
               Get Started
               <i class="zmdi zmdi-arrow-right hvr-icon"></i>
             </button>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-header">
-                <img height="200px" width="200px"
-                  src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
-                  class="rounded mr-2" alt="...">
-                <strong class="mr-auto">Bootstrap</strong>
-                <small class="text-muted">11 mins ago</small>
-                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="toast-body">
-                Hello, world! This is a toast message.
+            <!-- Flexbox container for aligning the toasts -->
+            <div class="container">
+              <div class="toast mt-3">
+                <div class="toast-header">
+                  Toast Header
+                </div>
+                <div class="toast-body">
+                  Some text inside the toast body
+                </div>
               </div>
             </div>
 
@@ -788,7 +784,66 @@
           </div>
         </div> 
       </div>
+      <!--Startups-->
+      <div class="container" id="startup">
+        <h1 class="peach-text">Startups</h1>
+        <div class="row" id="row_startup">
+          <div class="col-md-6" id="column_startup">
+            <div class="startup_holder" style="background-image: url(../images/clofactory.jpeg);">
+            </div>
+          </div>
+          <div class="col-md-6" id="startup_content">
+            <h3 class="startup_heading">Clofactory</h3>
+            <p class="desc_startup">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis similique officia ipsum explicabo natus ducimus aperiam a cum inventore!
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
+          </div>
+        </div>
+        <div class="row" id="row_startup">
+          <div class="col-md-6" id="column_startup">
+            <div class="startup_holder" style="background-image: url(../images/wearthreads.jpeg);">
+            </div>
+          </div>
+          <div class="col-md-6" id="startup_content">
+            <h3 class="startup_heading">Wearthreads</h3>
+            <p class="desc_startup">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis similique officia ipsum explicabo
+              natus ducimus aperiam a cum inventore!
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="container newfooter">
       
+        <div id="logocomp">
+          <div>
+            <a href="#">
+              <img src="./images/logo.png" id="logofooter">
+            </a>
+          </div>
+      
+          <div class="nav-link logo logo-nav navbar-brand">
+            DJSCE E-CELL
+          </div>
+        </div>
+      
+        <div class="row newfooter">
+          <div><i class="fab fa-youtube" id="footicon"></i></div>
+          <div><i class="fab fa-facebook-f fab-lg" id="footicon"></i></div>
+          <div><i class="fab fa-instagram" id="footicon"></i></div>
+          <div><i class="fab fa-linkedin" id="footicon"></i></div>
+        </div>
+        <div id="takeup">
+          <a href="#">
+      
+            <i class="fas fa-arrow-circle-up fa-2x" style="color:	#D3D3D3"></i>
+          </a>
+        </div>
+      
+      </div>
       <script src="js/nav.js"></script>
 
       <!-- script for counter  -->
@@ -834,7 +889,6 @@
           event.preventDefault();
           console.log("hi")
           $(".toast").toast('show');
-          console.log("hello")
         });
         
       </script>
