@@ -2,7 +2,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/team.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/floating.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hover.css" />
     <link
@@ -55,17 +57,22 @@
     ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh5IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Events Gallery</title>
+    <title>Meet Our Team</title>
+    <style>
+      h5 {
+        font-weight: 500;
+      }
+    </style>
   </head>
 
-  <body data-spy="scroll" data-target="#navbar">
+  <body>
     <nav
       id="navbar"
-      class="scrolled navbar navbar-expand-xl navbar-dark sticky-top"
+      class="scrolled navbar navbar-expand-xl navbar-light sticky-top"
     >
       <a class="nav-link logo logo-nav navbar-brand" href="#"
         ><img src="images/logo.png" alt="" /> DJSCE E-cell
@@ -84,12 +91,6 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
-          <!-- <a class="nav-link logo logo-nav" href="#"
-                ><img src="images/logo.png" alt="" />
-              </a>
-              <li class="nav-item brand-name">
-                <a class="nav-link logo-nav" href="#">Ecell</a>
-              </li> -->
           <li class="nav-item">
             <a class="nav-link hvr-underline-from-left" href="#features"
               >Get Started <span class="sr-only">(current)</span></a
@@ -112,9 +113,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#team_container"
-              >Team</a
-            >
+            <a class="nav-link hvr-underline-from-left active" href="#">Team</a>
           </li>
         </ul>
       </div>
@@ -123,134 +122,190 @@
         Get in touch
       </a>
     </nav>
-    <div class="container" id="team_container">
-      <div class="row" id="team">
+    <div class="container section-holder col-xl-8" id="team_container">
+      <h1>Meet Our Team</h1>
+      <p class="intro">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+        maiores facere sint sed, earum ratione, excepturi neque, tempora commodi
+        deleniti eveniet quibusdam? Tenetur fuga eveniet omnis sunt, similique
+        enim est a quod pariatur, soluta alias aliquam necessitatibus autem vero
+        nihil quos dolore illum minus laudantium in, voluptatum illo aliquid
+      </p>
+      <div class="row faculty" id="team">
+        <div class="col-md-12">
+          <h2>Faculty Mentors</h2>
+        </div>
+        <div class="col-md-12 first-row">
+          <h4 class="peach-text">Chairman</h4>
+          <h5>Dr. Sunil Karamchandani</h5>
+          <p class="peach-text">Electronics & Telecommunication</p>
+        </div>
+      </div>
+      <h4 class="peach-text">Members</h4>
+      <div class="row faculty">
+        <div class="col-md-4">
+          <h5>Dr. Atul Dhale</h5>
+          <p class="peach-text" class="newstyle">Production</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dr. Ram Mangrulkar</h5>
+          <p class="peach-text" class="newstyle">Computer</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dr. Rashmi Kumar</h5>
+          <p class="peach-text" class="newstyle">Chemical</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dr. Vaibhavi Sonetha</h5>
+          <p class="peach-text" class="newstyle">Bio Medical</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Pratik Kanani</h5>
+          <p class="peach-text" class="newstyle">Computer</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Pavan Kumar Borra</h5>
+          <p class="peach-text" class="newstyle">Electronics</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Mayur Parulekar</h5>
+          <p class="peach-text" class="newstyle">Electronics</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Purva Raut</h5>
+          <p class="peach-text" class="newstyle">Information Technology</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dr. Vinayak H Khatawate</h5>
+          <p class="peach-text" class="newstyle">Mechanical</p>
+        </div>
+      </div>
+      <div class="row core" id="team">
         <div class="col-md-12">
           <h2>Core Committee</h2>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-3 first-row">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Vidhi.jpg);"
           ></div>
-          <h3>Vidhi Meghani</h3>
-          <h4 class="newstyle peach-text">Chairperson</h4>
+          <h5>Vidhi Meghani</h5>
+          <p class="peach-text">Chairperson</p>
         </div>
       </div>
-      <div class="row" id="team">
-        <div class="col-md-4">
+      <div class="row core">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Vatsal.jpg);"
           ></div>
-          <h3>Vatsal Gupta</h3>
-          <h4 class="newstyle peach-text">Co-Chairperson</h4>
+          <h5>Vatsal Gupta</h5>
+          <p class="peach-text" class="newstyle">Co-Chairperson</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Pranay.jpg);"
           ></div>
-          <h3>Pranay Shah</h3>
-          <h4 class="newstyle peach-text">Co-Chairperson</h4>
+          <h5>Pranay Shah</h5>
+          <p class="peach-text" class="newstyle">Co-Chairperson</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Parth.jpg);"
           ></div>
-          <h3>Parth Pawar</h3>
-          <h4 class="newstyle peach-text">General Secretary</h4>
+          <h5>Parth Pawar</h5>
+          <p class="peach-text" class="newstyle">General Secretary</p>
         </div>
-      </div>
-      <div class="row" id="team">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Shubhangi.jpg);"
           ></div>
-          <h3>Shubhangi Das</h3>
-          <h4 class="newstyle peach-text">Joint General Secretary</h4>
+          <h5>Shubhangi Das</h5>
+          <p class="peach-text" class="newstyle">Joint General Secretary</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Tanya.jpg);"
           ></div>
-          <h3>Tanya Sharma</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson Admin</h4>
+          <h5>Tanya Sharma</h5>
+          <p class="peach-text" class="newstyle">VCP of Admin</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Viraj.jpg);"
           ></div>
-          <h3>Viraj Shah</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson Admin</h4>
+          <h5>Viraj Shah</h5>
+          <p class="peach-text" class="newstyle">VCP of Admin</p>
         </div>
-      </div>
-      <div class="row" id="team">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Sanjit.jpg);"
           ></div>
-          <h3>Sanjit Verma</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson PR</h4>
+          <h5>Sanjit Verma</h5>
+          <p class="peach-text" class="newstyle">VCP of PR</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Yash.jpg);"
           ></div>
-          <h3>Yash Shah</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson PR</h4>
+          <h5>Yash Shah</h5>
+          <p class="peach-text" class="newstyle">VCP of PR</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/ParthD.jpg);"
           ></div>
-          <h3>Parth Dattani</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson Marketing</h4>
+          <h5>Parth Dattani</h5>
+          <p class="peach-text" class="newstyle">VCP of Marketing</p>
         </div>
-      </div>
-      <div class="row" id="team">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Sakshi.jpg);"
           ></div>
-          <h3>Sakshi Dholakiya</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson Marketing</h4>
+          <h5>Sakshi Dholakiya</h5>
+          <p class="peach-text" class="newstyle">VCP of Marketing</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Mehul.jpg);"
           ></div>
-          <h3>Mehul Patel</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson Finance</h4>
+          <h5>Mehul Patel</h5>
+          <p class="peach-text" class="newstyle">VCP of Finance</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Manav.jpg);"
           ></div>
-          <h3>Manav Popat</h3>
-          <h4 class="newstyle peach-text">Vice-Chairperson Finance</h4>
+          <h5>Manav Popat</h5>
+          <p class="peach-text" class="newstyle">VCP of Finance</p>
         </div>
-      </div>
-      <div class="row" id="team">
-        <div class="col-md-12">
+        <div class="col-md-3">
           <div
             class="team_member"
             style="background-image: url(../images/Team/Core/Sayanthan.jpg);"
           ></div>
-          <h3>Sayantan Roy</h3>
-          <h4 class="newstyle peach-text">HOD Marketing</h4>
+          <h5>Sayantan Roy</h5>
+          <p class="peach-text" class="newstyle">HOD Marketing</p>
         </div>
       </div>
     </div>
+    <!-- <div class="blob1 floating red small"></div>
+    <div class="blob2 floating red medium"></div>
+    <div class="blob3 floating yellow big"></div> -->
+    <!-- <img
+      src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_%28blue_dots%29.svg"
+      alt=""
+    /> -->
   </body>
 </html>

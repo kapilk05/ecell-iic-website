@@ -1,0 +1,56 @@
+.row {
+  justify-content: center;
+}
+
+.col-md-3 {
+  /* padding: 25px 15px; */
+}
+
+.faculty p {
+  color: #0000005e;
+}
+
+p {
+  font-weight: 400 !important;
+}
+
+.intro {
+  color: #00000054;
+}
+
+.faculty h2 {
+  /* margin-bottom: 1em; */
+}
+
+.first-row {
+  margin-top: 2em !important;
+}
+
+h4 {
+  margin-top: 1.2em !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+
+.core p {
+  text-transform: uppercase;
+}
+
+h5 {
+  margin-bottom: 0 !important;
+}
+
+h2:after {
+  content: "";
+  height: 5px;
+  width: 10%;
+  background: #ffe665;
+  position: absolute;
+  left: calc(50% - 5%);
+  bottom: -5px;
+}
+
+* {
+  color: #18181dc0;
+}
