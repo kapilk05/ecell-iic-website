@@ -10,9 +10,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hover.css" />
@@ -47,12 +47,6 @@
       rel="stylesheet"
       id="bootstrap-css"
     />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script src="/Users/apple/Desktop/dj-ecell/js/counter.js"></script> -->
-
-    <!-- counter animation end -->
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -68,8 +62,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://use.fontawesome.com/314c24a530.js"></script>
     <title>DJ-Ecell</title>
@@ -161,8 +153,12 @@
         </a>
       </div>
       <div class="arrow-symbol" style="z-index: 2;">
-        <a href="#events">
-          <i class="fa fa-angle-down fa-5x" style="color: #fff;"></i>
+        <a href="#features">
+          <ion-icon
+            name="chevron-down-outline"
+            style="color: rgba(255, 255, 255, 0.596); font-size: 23px;"
+            size="large"
+          ></ion-icon>
         </a>
       </div>
     </div>
@@ -808,7 +804,7 @@
       <!--    Toast     -->
 
       <div
-        class="toast show"
+        class="toast"
         role="alert"
         aria-live="polite"
         aria-atomic="true"
@@ -832,13 +828,51 @@
         </div>
       </div>
 
-      <script src="js/nav.js"></script>
+      <div class="container newfooter">
+        <div id="logocomp">
+          <div>
+            <a href="#">
+              <img src="./images/logo.png" id="logofooter" />
+            </a>
+          </div>
 
+          <div class="nav-link logo logo-nav navbar-brand">
+            DJSCE E-CELL
+          </div>
+        </div>
+
+        <div class="row newfooter">
+          <div><i class="fab fa-youtube" id="footicon"></i></div>
+          <div><i class="fab fa-facebook-f fab-lg" id="footicon"></i></div>
+          <div><i class="fab fa-instagram" id="footicon"></i></div>
+          <div><i class="fab fa-linkedin" id="footicon"></i></div>
+        </div>
+        <div id="takeup">
+          <a href="# ">
+            <i class="fas fa-arrow-circle-up fa-2x" style="color: #d3d3d3;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+      <!-- <script src="/Users/apple/Desktop/dj-ecell/js/counter.js"></script> -->
+
+      <!-- counter animation end -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
       <!-- script for counter  -->
 
       <!-- end script for counter -->
+      <script src="js/nav.js"></script>
 
       <script>
+        $(window).scroll(function () {
+          $("nav").toggleClass("scrolled", $(this).scrollTop() > 20);
+          $("nav").toggleClass("navbar-dark", $(this).scrollTop() <= 20);
+          $("nav").toggleClass("navbar-light", $(this).scrollTop() > 20);
+        });
         mapboxgl.accessToken =
           "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
         var map = new mapboxgl.Map({

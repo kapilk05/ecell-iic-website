@@ -1,9 +1,3 @@
-$(window).scroll(function () {
-  $("nav").toggleClass("scrolled", $(this).scrollTop() > 20);
-  $("nav").toggleClass("navbar-dark", $(this).scrollTop() <= 20);
-  $("nav").toggleClass("navbar-light", $(this).scrollTop() > 20);
-});
-
 // window.change(function () {
 //   if (!$(".navbar-toggle").hasClass("collapsed")) {
 //     console.log("expand");
@@ -53,3 +47,21 @@ $(".nav-link").click(clickNavLink);
 
 $("main").click(clickToggler);
 $(".v-header").click(clickToggler);
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+    // If page is scrolled more than 50px
+    $("#takeup").fadeIn(200); // Fade in the arrow
+  } else {
+    $("#takeup").fadeOut(200); // Else fade out the arrow
+  }
+});
+$("#takeup").click(function () {
+  // When arrow is clicked
+  $("body,html").animate(
+    {
+      scrollTop: 0, // Scroll to top of body
+    },
+    500
+  );
+});

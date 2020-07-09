@@ -1,0 +1,64 @@
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 100px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.red {
+  background: #f74539;
+}
+
+.yellow {
+  background: #ffe665;
+}
+
+.small {
+  width: 10px;
+  height: 10px;
+}
+
+.big {
+  width: 300px;
+  height: 300px;
+}
+
+.medium {
+  width: 50px;
+  height: 50px;
+}
+
+.blob1 {
+  top: 150px;
+  left: 25%;
+  filter: blur(5px);
+}
+
+.blob2 {
+  top: 120px;
+  left: 70%;
+  filter: blur(20px);
+}
+
+.blob3 {
+  top: 60px;
+  left: 50%;
+  filter: blur(90px);
+}

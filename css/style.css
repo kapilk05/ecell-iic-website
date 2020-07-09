@@ -851,7 +851,7 @@ select {
 }
 
 .img-container {
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 .mission_vision {
   max-width: 100%;
@@ -986,6 +986,27 @@ select {
   padding-bottom: 50px;
   text-align: end;
   height: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: block;
+  display: none;
+  /* transition: all 0.5 ease-in-out; */
+  /* background-color: #857371; */
+  /* color: #f74539; */
+}
+
+#takeup ion-icon {
+  background: #f74539;
+  border-radius: 50%;
+  padding: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 23px;
+}
+
+#takeup:hover {
+  bottom: 30px;
 }
 
 .toast {
