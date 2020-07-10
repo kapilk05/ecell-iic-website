@@ -1021,9 +1021,9 @@ select {
 /*Startups*/
 #startup {
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   padding-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
 }
 #row_startup {
   height: 50vh;
