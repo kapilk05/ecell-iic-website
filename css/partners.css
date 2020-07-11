@@ -1,21 +1,19 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-gap: 1rem; */
+}
 
 .grid-container {
-    display: grid;
-    width: 100px;
-    height: 100px;
-  }
- 
+  display: grid;
+  width: 100px;
+  height: 100px;
+}
+
 .grid > div > img {
-    width: 100px;
-    height: 100px;
-    opacity: .8;
-    object-fit: contain;
-    filter: grayscale(100%)
-    
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+  object-fit: contain;
+  /* filter: grayscale(100%) */
 }
