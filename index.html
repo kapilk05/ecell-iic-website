@@ -6,7 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no"
     />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -39,13 +42,16 @@
     />
 
     <!-- For counter animation  -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="/Users/apple/Desktop/dj-ecell/js/counter.js"></script> -->
-    
-    <!-- counter animation end -->
 
+    <!-- counter animation end -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -70,7 +76,8 @@
   </head>
   <body data-spy="scroll" data-target="#navbar">
     <nav id="navbar" class="navbar navbar-expand-xl navbar-dark sticky-top">
-      <a class="nav-link logo logo-nav navbar-brand" href="#"><img src="images/logo.png" alt="" /> DJSCE E-cell
+      <a class="nav-link logo logo-nav navbar-brand" href="#"
+        ><img src="images/logo.png" alt="" /> DJSCE E-cell
       </a>
       <button
         class="navbar-toggler"
@@ -98,10 +105,14 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#">Startups</a>
+            <a class="nav-link hvr-underline-from-left" href="#startup"
+              >Startups</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#">About Us</a>
+            <a class="nav-link hvr-underline-from-left" href="#about_us"
+              >About Us</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link hvr-underline-from-left" href="#"
@@ -114,7 +125,9 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="team.html#team_container">Team</a>
+            <a class="nav-link hvr-underline-from-left" href="team.html"
+              >Team</a
+            >
           </li>
         </ul>
       </div>
@@ -123,7 +136,7 @@
         Get in touch
       </a>
     </nav>
-    
+
     <!--    Video   -->
     <div class="fullscreen-video-wrap">
       <video
@@ -249,11 +262,7 @@
                 <div class="col-md-8 idea_form">
                   <h1>Submit your Idea</h1>
                   <label for="name">Full Name</label>
-                  <input
-                    name="name"
-                    type="text"
-                    id="name"
-                  /><br />
+                  <input name="name" type="text" id="name" /><br />
                   <div class="row">
                     <div class="col-md-6">
                       <label for="email">Email</label>
@@ -266,11 +275,7 @@
                     </div>
                     <div class="col-md-6">
                       <label for="contact">Contact Number</label>
-                      <input
-                        name="contact"
-                        type="tel"
-                        id="contact"
-                      /><br />
+                      <input name="contact" type="tel" id="contact" /><br />
                     </div>
                   </div>
 
@@ -293,8 +298,8 @@
                     <div class="col-md-6 radioBusiness">
                       Type of business
                       <select id="business" name="business">
-                        <option value="Sole Proprietorship"
-                          selected>Sole Proprietorship</option
+                        <option value="Sole Proprietorship" selected
+                          >Sole Proprietorship</option
                         ><br />
                         <option value="Partnership">Partnership</option
                         ><br /> </select
@@ -340,7 +345,12 @@
                     form="idea"
                     placeholder="Tell us about your idea!"
                   ></textarea>
-                  <button class="btn" type="submit" id="submit_idea" style="margin-top: 10px;">
+                  <button
+                    class="btn"
+                    type="submit"
+                    id="submit_idea"
+                    style="margin-top: 10px;"
+                  >
                     Submit
                   </button>
                 </div>
@@ -355,10 +365,15 @@
       <div id="events" class="section-holder">
         <h1 class="peach-text">Events</h1>
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('new')"> New Events</button>
-          <button class="btn" onclick="filterSelection('old')"> Old Events</button>
-          
+          <button class="btn live" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="btn" onclick="filterSelection('new')">
+            New Events
+          </button>
+          <button class="btn" onclick="filterSelection('old')">
+            Old Events
+          </button>
         </div>
         <div class="cards">
           <div class="card-container new">
@@ -366,8 +381,7 @@
               <div
                 class="img-holder"
                 style="background-image: url(../images/Genesis/event_img.jpg);"
-              >
-              </div>
+              ></div>
               <div class="content">
                 <h3>Genesis</h3>
                 <p>
@@ -503,11 +517,17 @@
           </div>
           <div class="card-container old">
             <div class="card">
-              <div class="img-holder" style="background-image: url(../images/IntroductionEvent/event_img.jpg);"></div>
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/IntroductionEvent/event_img.jpg);
+                "
+              ></div>
               <div class="content">
                 <h3>Introduction Event</h3>
                 <p>
-                  Gyan Dhan had organized sessions for higher education aspirants and was addressed by their own CEO,Ankit Mehra.
+                  Gyan Dhan had organized sessions for higher education
+                  aspirants and was addressed by their own CEO,Ankit Mehra.
                 </p>
                 <a href="#" class="hvr-icon-forward">
                   Read More
@@ -518,11 +538,17 @@
           </div>
           <div class="card-container old">
             <div class="card">
-              <div class="img-holder" style="background-image: url(../images/MentorshipEvent/event_img.png);"></div>
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/MentorshipEvent/event_img.png);
+                "
+              ></div>
               <div class="content">
                 <h3>Mentorship Event</h3>
                 <p>
-                The mentor for the event was our college Alumni Shantanu Baviskar who is the founder of venture Instafigures.
+                  The mentor for the event was our college Alumni Shantanu
+                  Baviskar who is the founder of venture Instafigures.
                 </p>
                 <a href="#" class="hvr-icon-forward">
                   Read More
@@ -533,12 +559,18 @@
           </div>
           <div class="card-container old">
             <div class="card">
-              <div class="img-holder" style="background-image: url(../images/PanelDiscussion/event_img.png);"></div>
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/PanelDiscussion/event_img.png);
+                "
+              ></div>
               <div class="content">
                 <h3>Discussion Panel</h3>
                 <p>
-                  The panel members for the event was Shantanu Baviskar and our college visiting faculty for Biomedical
-                  Department Sreejit Pillai Sir.
+                  The panel members for the event was Shantanu Baviskar and our
+                  college visiting faculty for Biomedical Department Sreejit
+                  Pillai Sir.
                 </p>
                 <a href="#" class="hvr-icon-forward">
                   Read More
@@ -549,11 +581,17 @@
           </div>
           <div class="card-container old">
             <div class="card">
-              <div class="img-holder" style="background-image: url(../images/RedbullEvent/event_img.png);"></div>
+              <div
+                class="img-holder"
+                style="
+                  background-image: url(../images/RedbullEvent/event_img.png);
+                "
+              ></div>
               <div class="content">
                 <h3>RedBull Event</h3>
                 <p>
-                  Hacking for a Brighter Campus,Red Bull Basement connects the next generation of innovators to turn forward thinking
+                  Hacking for a Brighter Campus,Red Bull Basement connects the
+                  next generation of innovators to turn forward thinking
                   solutions into reality.
                 </p>
                 <a href="#" class="hvr-icon-forward">
@@ -567,7 +605,7 @@
       </div>
       <!--    Contact Form    -->
       <div class="container-contact">
-        <h3 class="blue-text">Contact Us</h3>
+        <h1 class="peach-text" style="text-align: center;">Contact Us</h1>
         <div class="row map">
           <div class="col-md-6 col-sm-12 map">
             <div id="map"></div>
@@ -578,16 +616,11 @@
             <form name="e-cell" id="idea">
               <div class="col-md-12">
                 <label for="name"> Full Name</label>
-                <input name="name" type="text" id="name"/><br />
+                <input name="name" type="text" id="name" /><br />
               </div>
               <div class="col-md-12">
                 <label for="email">Email</label>
-                <input
-                  name="email"
-                  type="email"
-                  id="email"
-                  required
-                /><br />
+                <input name="email" type="email" id="email" required /><br />
               </div>
               <div class="col-md-12">
                 <label for="message">Message</label>
@@ -624,143 +657,174 @@
         </div>
       </div>
 
-      
       <!--  Counter  -->
 
       <div class="container counter">
-          
-      <div class="b-section black bp-0">
-        
-        <div class="b-container">
-          <div class="b-3-col">
-            <div class="b-meta-container">
-              <div class="b-meta grey"></div>
-              <div class="b-meta-line grey">At DJ-ECELL</div>
+        <div class="b-section black bp-0">
+          <div class="b-container">
+            <div class="b-3-col">
+              <div class="b-meta-container">
+                <div class="b-meta grey"></div>
+                <div class="b-meta-line grey">At DJ-ECELL</div>
+              </div>
             </div>
-          </div>
-          <div class="b-8-col">
-            <h2 class="b-h1 grey"> We Are Growing Quickly </h2>
-            <p class="b-large-type-block grey">DJ-ECELL is for creative and passionate students to make an impact and transform the world.
-              </p>
-              <div class= "container iconcont" >
             <div class="b-8-col">
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-linkedin" id="allicon"></i>
-                  <div class="item-animate">
-                  
-                    <h2 class="counteranimation1">0</h2>
-                  </div>
-                  <script>
+              <h2 class="b-h1 grey">We Are Growing Quickly</h2>
+              <p class="b-large-type-block grey">
+                DJ-ECELL is for creative and passionate students to make an
+                impact and transform the world.
+              </p>
+              <div class="container iconcont">
+                <div class="b-8-col">
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-linkedin" id="allicon"></i>
+                      <div class="item-animate">
+                        <h2 class="counteranimation1">0</h2>
+                      </div>
+                      <script>
+                        $({ countNum: $(".counteranimation1").html() }).animate(
+                          { countNum: 42 },
+                          {
+                            duration: 4000,
+                            easing: "linear",
+                            step: function () {
+                              $(".counteranimation1").html(
+                                Math.floor(this.countNum) + "+"
+                              );
+                            },
+                            complete: function () {
+                              $(".counteranimation1").html(this.countNum + "+");
+                            },
+                          }
+                        );
+                      </script>
 
-                    $({ countNum: $('.counteranimation1').html() }).animate({ countNum: 42 }, {
-                      duration: 4000, easing: 'linear',
-                      step: function () {
-                        $('.counteranimation1').html(Math.floor(this.countNum) + "+");
-                      }, complete: function () {
-                        $('.counteranimation1').html(this.countNum + "+");
-                      }
-                    });
-                  </script>
-                  
-                  <a href="https://www.youtube.com/thefuturishere" target="_blank"
-                    class="home---about-stat-icon-box w-inline-block">
-                    
-                      
-                    <p class="home---about-stat-icon-text">LinkedIn Connection</p>
-                  </a>
+                      <a
+                        href="https://www.youtube.com/thefuturishere"
+                        target="_blank"
+                        class="home---about-stat-icon-box w-inline-block"
+                      >
+                        <p class="home---about-stat-icon-text">
+                          LinkedIn Connection
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-instagram" id="allicon"></i>
+                      <div class="item-animate">
+                        <h2 class="counteranimation2">0</h2>
+                      </div>
+                      <script>
+                        $({ countNum: $(".counteranimation2").html() }).animate(
+                          { countNum: 399 },
+                          {
+                            duration: 4000,
+                            easing: "linear",
+                            step: function () {
+                              $(".counteranimation2").html(
+                                Math.floor(this.countNum) + "+"
+                              );
+                            },
+                            complete: function () {
+                              $(".counteranimation2").html(this.countNum + "+");
+                            },
+                          }
+                        );
+                      </script>
+                      <div class="home---about-stat-icon-box">
+                        <p class="home---about-stat-icon-text">
+                          Instagram Followers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-youtube" id="allicon"></i>
+                      <div class="item-animate">
+                        <h2 class="counteranimation3">0</h2>
+                      </div>
+                      <script>
+                        $({ countNum: $(".counteranimation3").html() }).animate(
+                          { countNum: 100 },
+                          {
+                            duration: 4000,
+                            easing: "linear",
+                            step: function () {
+                              $(".counteranimation3").html(
+                                Math.floor(this.countNum) + "+"
+                              );
+                            },
+                            complete: function () {
+                              $(".counteranimation3").html(this.countNum + "+");
+                            },
+                          }
+                        );
+                      </script>
+                      <a
+                        href="http://academy.thefutur.com"
+                        target="_blank"
+                        class="home---about-stat-icon-box w-inline-block"
+                      >
+                        <p class="home---about-stat-icon-text">
+                          YouTube Subscribers
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="home---about-stat-wrapper">
+                    <div class="home---about-vertical-blue-line"></div>
+                    <div class="home---about-stat-text-box">
+                      <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
+                      <div class="item-animate">
+                        <h2 class="counteranimation4">0</h2>
+                      </div>
+                      <script>
+                        $({ countNum: $(".counteranimation4").html() }).animate(
+                          { countNum: 423 },
+                          {
+                            duration: 4000,
+                            easing: "linear",
+                            step: function () {
+                              $(".counteranimation4").html(
+                                Math.floor(this.countNum) + "+"
+                              );
+                            },
+                            complete: function () {
+                              $(".counteranimation4").html(this.countNum + "+");
+                            },
+                          }
+                        );
+                      </script>
+                      <a
+                        href="/for-deletion/videos-old"
+                        class="home---about-stat-icon-box w-inline-block"
+                      >
+                        <p class="home---about-stat-icon-text">
+                          Facebook Followers
+                        </p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-instagram" id="allicon"></i>
-                  <div class="item-animate">
-                  
-                    <h2 class="counteranimation2">0</h2>
-                  </div>
-                  <script>
-
-                    $({ countNum: $('.counteranimation2').html() }).animate({ countNum: 399 }, {
-                      duration: 4000, easing: 'linear',
-                      step: function () {
-                        $('.counteranimation2').html(Math.floor(this.countNum) + "+");
-                      }, complete: function () {
-                        $('.counteranimation2').html(this.countNum + "+");
-                      }
-                    });
-                  </script>
-                  <div class="home---about-stat-icon-box">
-                    
-                    <p class="home---about-stat-icon-text">Instagram Followers</p>
-                  </div>
-                </div>
-              </div>
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-youtube" id="allicon"></i>
-                  <div class="item-animate">
-                    
-                    <h2 class="counteranimation3" >0</h2>
-                  </div>
-                  <script>
-
-                    $({ countNum: $('.counteranimation3').html() }).animate({ countNum: 100 }, {duration: 4000,easing: 'linear',
-                      step: function () {
-                        $('.counteranimation3').html(Math.floor(this.countNum) + "+");
-                      },complete: function () {
-                        $('.counteranimation3').html(this.countNum + "+");}
-                    });
-                  </script>
-                  <a href="http://academy.thefutur.com" target="_blank" class="home---about-stat-icon-box w-inline-block">
-                    
-                    <p class="home---about-stat-icon-text">YouTube Subscribers</p>
-                  </a>
-                </div>
-              </div>
-              <div class="home---about-stat-wrapper">
-                <div class="home---about-vertical-blue-line"></div>
-                <div class="home---about-stat-text-box">
-                  <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
-                  <div class="item-animate">
-                  
-                    <h2 class="counteranimation4">0</h2>
-                  </div>
-                  <script>
-
-                    $({ countNum: $('.counteranimation4').html() }).animate({ countNum: 423 }, {
-                      duration: 4000, easing: 'linear',
-                      step: function () {
-                        $('.counteranimation4').html(Math.floor(this.countNum) + "+");
-                      }, complete: function () {
-                        $('.counteranimation4').html(this.countNum + "+");
-                      }
-                    });
-                  </script>
-                  <a href="/for-deletion/videos-old" class="home---about-stat-icon-box w-inline-block">
-                    
-                    <p class="home---about-stat-icon-text">Facebook Followers</p>
-                  </a>
-                </div>
-              </div>
-              
-            </div>
             </div>
           </div>
         </div>
-   
-      </div>
-
-
       </div>
       <!--Mission & Vision-->
-      <div class="container">
+      <div class="container section-holder" id="about_us">
+        <h1 class="blue-text">About Us</h1>
+
         <div class="row section-holder">
           <div class="col-md-5">
-            <h1 class="blue-text">About Us</h2>
-            <div class="info-horizontal">
+            <div class="info-horizontal" style="padding-top: 0;">
               <div class="icon">
                 <ion-icon name="bar-chart-outline"></ion-icon>
               </div>
@@ -795,8 +859,10 @@
         </div>
         <div class="row section-holder">
           <div class="col-md-5">
-            <div class="img-contain" style="background-image: url(../images/idea.jpg);">
-            </div>
+            <div
+              class="img-contain"
+              style="background-image: url(../images/idea.jpg);"
+            ></div>
           </div>
           <div class="col-md-7">
             <h3 class="heading_features">Features</h3>
@@ -848,22 +914,27 @@
                 <p>Access to startup resources</p>
               </div>
             </div>
-
           </div>
-        </div> 
+        </div>
       </div>
 
+      <!--Startup-->
       <div class="container" id="startup">
         <h1 class="peach-text">Startups</h1>
         <div class="row" id="card_display">
           <div class="col-md-3" id="column_startup">
             <div class="card" id="startup_card">
-              <div class="startup_holder" style="background-image: url(../images/clofactory.png);">
-              </div>
+              <div
+                class="startup_holder"
+                style="background-image: url(../images/clofactory.png);"
+              ></div>
               <div class="card-body">
-                <p class="card-text">The vision of Clofactory is to revolutionize the clothing industry, from the traditional retail model. Clofactory stands
-                to deliver a seamless shirting experience with shirts that are tailored to fit and premium fabrics to go with them.The
-                company is involved in the manufacture of other textiles.
+                <p class="card-text">
+                  The vision of Clofactory is to revolutionize the clothing
+                  industry, from the traditional retail model. Clofactory stands
+                  to deliver a seamless shirting experience with shirts that are
+                  tailored to fit and premium fabrics to go with them.The
+                  company is involved in the manufacture of other textiles.
                 </p>
                 <a href="#" class="peach-text startup_more">Read More</a>
               </div>
@@ -871,12 +942,17 @@
           </div>
           <div class="col-md-3" id="column_startup">
             <div class="card" id="startup_card">
-              <div class="startup_holder" style="background-image: url(../images/wearthreads.png);" >
-              </div>
+              <div
+                class="startup_holder"
+                style="background-image: url(../images/wearthreads.png);"
+              ></div>
               <div class="card-body">
-                <p class="card-text">We are into sustainable clothing, we make t-shirts from recycled plastic bottles.
-                Our main aim is to reduce the amount of plastic in the environment. So, we put it to a great use, we make garments out
-                of it which are 100% safe and hygienic to wear. One t-shirt recycles 15 plastic bottles.
+                <p class="card-text">
+                  We are into sustainable clothing, we make t-shirts from
+                  recycled plastic bottles. Our main aim is to reduce the amount
+                  of plastic in the environment. So, we put it to a great use,
+                  we make garments out of it which are 100% safe and hygienic to
+                  wear. One t-shirt recycles 15 plastic bottles.
                 </p>
                 <a href="#" class="peach-text startup_more">Read More</a>
               </div>
@@ -884,12 +960,17 @@
           </div>
           <div class="col-md-3" id="column_startup">
             <div class="card" id="startup_card">
-              <div class="startup_holder" style="background-image: url(../images/D-webbox.png);">
-              </div>
+              <div
+                class="startup_holder"
+                style="background-image: url(../images/D-webbox.png);"
+              ></div>
               <div class="card-body">
-                <p class="card-text">We inspire Dreams, build Designs, create Digitization and celebrate success. We are an agency where success isn’t
-                defined by how much we bill or how fast we grow, but by our ability to produce exceptional work and build genuine
-                partnerships with our clients. We keep things lean and simple.
+                <p class="card-text">
+                  We inspire Dreams, build Designs, create Digitization and
+                  celebrate success. We are an agency where success isn’t
+                  defined by how much we bill or how fast we grow, but by our
+                  ability to produce exceptional work and build genuine
+                  partnerships with our clients. We keep things lean and simple.
                 </p>
                 <a href="#" class="peach-text startup_more">Read More</a>
               </div>
@@ -897,22 +978,21 @@
           </div>
         </div>
       </div>
-      
+
       <!--Footer-->
       <div class="container newfooter">
-      
         <div id="logocomp">
           <div>
             <a href="#">
-              <img src="./images/logo.png" id="logofooter">
+              <img src="./images/logo.png" id="logofooter" />
             </a>
           </div>
-      
+
           <div class="nav-link logo logo-nav navbar-brand">
             DJSCE E-CELL
           </div>
         </div>
-      
+
         <div class="row newfooter">
           <div><i class="fab fa-youtube" id="footicon"></i></div>
           <div><i class="fab fa-facebook-f fab-lg" id="footicon"></i></div>
@@ -921,17 +1001,13 @@
         </div>
         <div id="takeup">
           <a href="#">
-      
-            <i class="fas fa-arrow-circle-up fa-2x" style="color:	#D3D3D3"></i>
+            <i class="fas fa-arrow-circle-up fa-2x" style="color: #d3d3d3;"></i>
           </a>
         </div>
-      
       </div>
       <script src="js/nav.js"></script>
 
       <!-- script for counter  -->
-      
-     
 
       <!-- end script for counter -->
 
@@ -962,66 +1038,64 @@
 
         function showStudent() {
           document.getElementById("studentInfo").style.display = "flex";
-          document.getElementById("No").onclick = function() {
+          document.getElementById("No").onclick = function () {
             document.getElementById("studentInfo").style.display = "none";
-          }
+          };
         }
-        
-        
+
         $("#submit_idea").click(function (event) {
           event.preventDefault();
-          console.log("hi")
-          $(".toast").toast('show');
+          console.log("hi");
+          $(".toast").toast("show");
         });
 
-        filterSelection("all") // Execute the function and show all columns
-          function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("card-container");
-            if (c == "all") c = "";
-            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-            for (i = 0; i < x.length; i++) {
-              w3RemoveClass(x[i], "show");
-              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        filterSelection("all"); // Execute the function and show all columns
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("card-container");
+          if (c == "all") c = "";
+          // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+              element.className += " " + arr2[i];
             }
           }
+        }
 
-          // Show filtered elements
-          function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              if (arr1.indexOf(arr2[i]) == -1) {
-                element.className += " " + arr2[i];
-              }
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
             }
           }
+          element.className = arr1.join(" ");
+        }
 
-          // Hide elements that are not selected
-          function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-              }
-            }
-            element.className = arr1.join(" ");
-          }
-
-          // Add active class to the current button (highlight it)
-          var btnContainer = document.getElementById("myBtnContainer");
-          var btns = btnContainer.getElementsByClassName("btn");
-          for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-              var current = document.getElementsByClassName("active");
-              current[0].className = current[0].className.replace(" active", "");
-              this.className += " active";
-            });
-          }
-        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("live");
+            current[0].className = current[0].className.replace(" live", "");
+            this.className += " live";
+          });
+        }
       </script>
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </main>

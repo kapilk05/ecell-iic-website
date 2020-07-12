@@ -1024,6 +1024,7 @@ select {
   width: 100vw;
   height: 100vh;
   padding-top: 50px;
+  margin-bottom: 150px;
 }
 
 #column_startup {
@@ -1045,7 +1046,7 @@ select {
   display: block;
 }
 
-.btn .active {
+.live {
   background-color: #fff !important;
   color: #f74539 !important;
 }
