@@ -110,7 +110,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#about_us"
+            <a class="nav-link hvr-underline-from-left" href="#aboutus"
               >About Us</a
             >
           </li>
@@ -172,6 +172,210 @@
 
     <!--    Main content    -->
     <main>
+      <!--    About   -->
+      <div id="aboutus" class="section-holder container">
+        <!--  Intro -->
+        <h1 class="blue-text">About us</h1>
+
+        <div class="row intro-sec" style="justify-content: space-around;">
+          <div class="col-md-5 intro" style="text-align: left;">
+            <h2>We help convert ideas to startups.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              omnis ipsa numquam inventore aperiam facere odit molestias nulla
+              non ipsam?
+            </p>
+            <a href="about.html" class="hvr-icon-forward">
+              Read More
+              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <div class="img-container">
+              <!-- <img src="./images/mission_vision.jpg" class="mission_vision" /> -->&nbsp;
+            </div>
+          </div>
+        </div>
+
+        <!--  Counter  -->
+        <div class="container counter">
+          <div class="b-section black bp-0">
+            <div class="b-container">
+              <div class="b-3-col">
+                <div class="b-meta-container">
+                  <div class="b-meta grey"></div>
+                  <div class="b-meta-line grey">At DJ-ECELL</div>
+                </div>
+              </div>
+              <div class="b-8-col">
+                <h2 class="b-h1 grey counter-heading" style="font-weight: 300;">
+                  We Are Growing Quickly
+                </h2>
+                <!-- <p class="b-large-type-block grey">
+                  DJ-ECELL is for creative and passionate students to make an
+                  impact and transform the world.
+                </p> -->
+                <div class="container iconcont">
+                  <div class="b-8-col numbers-container row">
+                    <div class="col-md-3 home---about-stat-wrapper">
+                      <div class="home---about-vertical-blue-line"></div>
+                      <div class="home---about-stat-text-box">
+                        <i class="fab fa-instagram" id="allicon"></i>
+                        <div class="item-animate">
+                          <h2 class="counteranimation2">0</h2>
+                        </div>
+                        <script>
+                          $({
+                            countNum: $(".counteranimation2").html(),
+                          }).animate(
+                            { countNum: 400 },
+                            {
+                              duration: 4000,
+                              easing: "linear",
+                              step: function () {
+                                $(".counteranimation2").html(
+                                  Math.floor(this.countNum) + "+"
+                                );
+                              },
+                              complete: function () {
+                                $(".counteranimation2").html(
+                                  this.countNum + "+"
+                                );
+                              },
+                            }
+                          );
+                        </script>
+                        <div class="home---about-stat-icon-box">
+                          <p class="home---about-stat-icon-text">
+                            Instagram Followers
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 home---about-stat-wrapper">
+                      <div class="home---about-vertical-blue-line"></div>
+                      <div class="home---about-stat-text-box">
+                        <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
+                        <div class="item-animate">
+                          <h2 class="counteranimation4">0</h2>
+                        </div>
+                        <script>
+                          $({
+                            countNum: $(".counteranimation4").html(),
+                          }).animate(
+                            { countNum: 400 },
+                            {
+                              duration: 4000,
+                              easing: "linear",
+                              step: function () {
+                                $(".counteranimation4").html(
+                                  Math.floor(this.countNum) + "+"
+                                );
+                              },
+                              complete: function () {
+                                $(".counteranimation4").html(
+                                  this.countNum + "+"
+                                );
+                              },
+                            }
+                          );
+                        </script>
+                        <a
+                          href="/for-deletion/videos-old"
+                          class="home---about-stat-icon-box w-inline-block"
+                        >
+                          <p class="home---about-stat-icon-text">
+                            Facebook Followers
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 home---about-stat-wrapper">
+                      <div class="home---about-vertical-blue-line"></div>
+                      <div class="home---about-stat-text-box">
+                        <i class="fab fa-youtube" id="allicon"></i>
+                        <div class="item-animate">
+                          <h2 class="counteranimation3">0</h2>
+                        </div>
+                        <script>
+                          $({
+                            countNum: $(".counteranimation3").html(),
+                          }).animate(
+                            { countNum: 100 },
+                            {
+                              duration: 4000,
+                              easing: "linear",
+                              step: function () {
+                                $(".counteranimation3").html(
+                                  Math.floor(this.countNum) + "+"
+                                );
+                              },
+                              complete: function () {
+                                $(".counteranimation3").html(
+                                  this.countNum + "+"
+                                );
+                              },
+                            }
+                          );
+                        </script>
+                        <a
+                          href="http://academy.thefutur.com"
+                          target="_blank"
+                          class="home---about-stat-icon-box w-inline-block"
+                        >
+                          <p class="home---about-stat-icon-text">
+                            YouTube Subscribers
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 home---about-stat-wrapper">
+                      <div class="home---about-stat-text-box">
+                        <i class="fab fa-linkedin" id="allicon"></i>
+                        <div class="item-animate">
+                          <h2 class="counteranimation1">0</h2>
+                        </div>
+                        <script>
+                          $({
+                            countNum: $(".counteranimation1").html(),
+                          }).animate(
+                            { countNum: 40 },
+                            {
+                              duration: 4000,
+                              easing: "linear",
+                              step: function () {
+                                $(".counteranimation1").html(
+                                  Math.floor(this.countNum) + "+"
+                                );
+                              },
+                              complete: function () {
+                                $(".counteranimation1").html(
+                                  this.countNum + "+"
+                                );
+                              },
+                            }
+                          );
+                        </script>
+
+                        <a
+                          href="https://www.youtube.com/thefuturishere"
+                          target="_blank"
+                          class="home---about-stat-icon-box w-inline-block"
+                        >
+                          <p class="home---about-stat-icon-text">
+                            LinkedIn Connection
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--    Get Started    -->
       <div id="features">
         <div class="container text-md-center section-holder">
@@ -361,22 +565,76 @@
         </div>
       </div>
 
+      <!--Startups-->
+      <div class="container section-holder">
+        <h1 class="">Startups</h1>
+        <div class="row" id="card_display">
+          <div class="col-md-3" id="column_startup">
+            <div
+              class="startup_holder"
+              style="background-image: url(../images/clofactory.png);"
+            ></div>
+
+            <p>
+              The vision of Clofactory is to revolutionize the clothing
+              industry, from the traditional retail model. Clofactory stands to
+              deliver a seamless shirting experience with shirts that are
+              tailored to fit and premium fabrics to go with them.The company is
+              involved in the manufacture of other textiles.
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
+          </div>
+          <div class="col-md-3" id="column_startup">
+            <div
+              class="startup_holder"
+              style="background-image: url(../images/wearthreads.png);"
+            ></div>
+
+            <p>
+              We are into sustainable clothing, we make t-shirts from recycled
+              plastic bottles. Our main aim is to reduce the amount of plastic
+              in the environment. So, we put it to a great use, we make garments
+              out of it which are 100% safe and hygienic to wear. One t-shirt
+              recycles 15 plastic bottles.
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
+          </div>
+          <div class="col-md-3" id="column_startup">
+            <div
+              class="startup_holder"
+              style="background-image: url(../images/D-webbox.png);"
+            ></div>
+
+            <p>
+              We inspire Dreams, build Designs, create Digitization and
+              celebrate success. We are an agency where success isn’t defined by
+              how much we bill or how fast we grow, but by our ability to
+              produce exceptional work and build genuine partnerships with our
+              clients. We keep things lean and simple.
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
+          </div>
+        </div>
+      </div>
+
       <!--    Events    -->
       <div id="events" class="section-holder">
-        <h1 class="peach-text">Events</h1>
-        <div id="myBtnContainer">
-          <button class="btn live" onclick="filterSelection('all')">
-            Show all
-          </button>
-          <button class="btn" onclick="filterSelection('new')">
-            New Events
-          </button>
-          <button class="btn" onclick="filterSelection('old')">
-            Old Events
-          </button>
+        <h1 class="">Events</h1>
+        <div class="btn-wrapper">
+          <div id="myBtnContainer">
+            <p class="my-btn btn-active" onclick="filterSelection('all')">
+              Show all
+            </p>
+            <p class="my-btn" onclick="filterSelection('2019-20')">
+              2019-20
+            </p>
+            <p class="my-btn" onclick="filterSelection('2018-19')">
+              2018-19
+            </p>
+          </div>
         </div>
         <div class="cards">
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -395,7 +653,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -416,7 +674,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -435,7 +693,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -454,7 +712,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -475,7 +733,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -496,7 +754,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container new">
+          <div class="card-container 2019-20">
             <div class="card">
               <div
                 class="img-holder"
@@ -515,7 +773,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container old">
+          <div class="card-container 2018-19">
             <div class="card">
               <div
                 class="img-holder"
@@ -536,7 +794,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container old">
+          <div class="card-container 2018-19">
             <div class="card">
               <div
                 class="img-holder"
@@ -557,7 +815,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container old">
+          <div class="card-container 2018-19">
             <div class="card">
               <div
                 class="img-holder"
@@ -579,7 +837,7 @@
               </div>
             </div>
           </div>
-          <div class="card-container old">
+          <div class="card-container 2018-19">
             <div class="card">
               <div
                 class="img-holder"
@@ -603,6 +861,7 @@
           </div>
         </div>
       </div>
+
       <!--    Contact Form    -->
       <div class="container-contact">
         <h1 class="peach-text" style="text-align: center;">Contact Us</h1>
@@ -657,328 +916,6 @@
         </div>
       </div>
 
-      <!--  Counter  -->
-
-      <div class="container counter">
-        <div class="b-section black bp-0">
-          <div class="b-container">
-            <div class="b-3-col">
-              <div class="b-meta-container">
-                <div class="b-meta grey"></div>
-                <div class="b-meta-line grey">At DJ-ECELL</div>
-              </div>
-            </div>
-            <div class="b-8-col">
-              <h2 class="b-h1 grey">We Are Growing Quickly</h2>
-              <p class="b-large-type-block grey">
-                DJ-ECELL is for creative and passionate students to make an
-                impact and transform the world.
-              </p>
-              <div class="container iconcont">
-                <div class="b-8-col">
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-linkedin" id="allicon"></i>
-                      <div class="item-animate">
-                        <h2 class="counteranimation1">0</h2>
-                      </div>
-                      <script>
-                        $({ countNum: $(".counteranimation1").html() }).animate(
-                          { countNum: 42 },
-                          {
-                            duration: 4000,
-                            easing: "linear",
-                            step: function () {
-                              $(".counteranimation1").html(
-                                Math.floor(this.countNum) + "+"
-                              );
-                            },
-                            complete: function () {
-                              $(".counteranimation1").html(this.countNum + "+");
-                            },
-                          }
-                        );
-                      </script>
-
-                      <a
-                        href="https://www.youtube.com/thefuturishere"
-                        target="_blank"
-                        class="home---about-stat-icon-box w-inline-block"
-                      >
-                        <p class="home---about-stat-icon-text">
-                          LinkedIn Connection
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-instagram" id="allicon"></i>
-                      <div class="item-animate">
-                        <h2 class="counteranimation2">0</h2>
-                      </div>
-                      <script>
-                        $({ countNum: $(".counteranimation2").html() }).animate(
-                          { countNum: 399 },
-                          {
-                            duration: 4000,
-                            easing: "linear",
-                            step: function () {
-                              $(".counteranimation2").html(
-                                Math.floor(this.countNum) + "+"
-                              );
-                            },
-                            complete: function () {
-                              $(".counteranimation2").html(this.countNum + "+");
-                            },
-                          }
-                        );
-                      </script>
-                      <div class="home---about-stat-icon-box">
-                        <p class="home---about-stat-icon-text">
-                          Instagram Followers
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-youtube" id="allicon"></i>
-                      <div class="item-animate">
-                        <h2 class="counteranimation3">0</h2>
-                      </div>
-                      <script>
-                        $({ countNum: $(".counteranimation3").html() }).animate(
-                          { countNum: 100 },
-                          {
-                            duration: 4000,
-                            easing: "linear",
-                            step: function () {
-                              $(".counteranimation3").html(
-                                Math.floor(this.countNum) + "+"
-                              );
-                            },
-                            complete: function () {
-                              $(".counteranimation3").html(this.countNum + "+");
-                            },
-                          }
-                        );
-                      </script>
-                      <a
-                        href="http://academy.thefutur.com"
-                        target="_blank"
-                        class="home---about-stat-icon-box w-inline-block"
-                      >
-                        <p class="home---about-stat-icon-text">
-                          YouTube Subscribers
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="home---about-stat-wrapper">
-                    <div class="home---about-vertical-blue-line"></div>
-                    <div class="home---about-stat-text-box">
-                      <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
-                      <div class="item-animate">
-                        <h2 class="counteranimation4">0</h2>
-                      </div>
-                      <script>
-                        $({ countNum: $(".counteranimation4").html() }).animate(
-                          { countNum: 423 },
-                          {
-                            duration: 4000,
-                            easing: "linear",
-                            step: function () {
-                              $(".counteranimation4").html(
-                                Math.floor(this.countNum) + "+"
-                              );
-                            },
-                            complete: function () {
-                              $(".counteranimation4").html(this.countNum + "+");
-                            },
-                          }
-                        );
-                      </script>
-                      <a
-                        href="/for-deletion/videos-old"
-                        class="home---about-stat-icon-box w-inline-block"
-                      >
-                        <p class="home---about-stat-icon-text">
-                          Facebook Followers
-                        </p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Mission & Vision-->
-      <div class="container section-holder" id="about_us">
-        <h1 class="blue-text">About Us</h1>
-
-        <div class="row section-holder">
-          <div class="col-md-5">
-            <div class="info-horizontal" style="padding-top: 0;">
-              <div class="icon">
-                <ion-icon name="bar-chart-outline"></ion-icon>
-              </div>
-              <div class="description">
-                <h3 class="title">Vision</h3>
-                <p>
-                  To harbour ourselves as an incubation haven and translate to
-                  an ultimate innovation destination by developing a symbolic
-                  relationship between students and professionals entrepreneurs,
-                  mentors, corporates and venture capitalists.
-                </p>
-              </div>
-            </div>
-            <div class="info-horizontal">
-              <div class="icon">
-                <ion-icon name="trophy-outline"></ion-icon>
-              </div>
-              <div class="description">
-                <h3 class="title">Mission</h3>
-                <p>
-                  To create an umbrella under which our students nurture their
-                  ideas convert them to strong entrepreneurial ventures.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="img-container">
-              <img src="./images/mission_vision.jpg" class="mission_vision" />
-            </div>
-          </div>
-        </div>
-        <div class="row section-holder">
-          <div class="col-md-5">
-            <div
-              class="img-contain"
-              style="background-image: url(../images/idea.jpg);"
-            ></div>
-          </div>
-          <div class="col-md-7">
-            <h3 class="heading_features">Features</h3>
-            <div class="aboutus">
-              <div class="about_icon">
-                <ion-icon name="ribbon-outline"></ion-icon>
-              </div>
-              <div class="feature_name">
-                <p>Foster Entrepreneurship in DJSCE</p>
-              </div>
-            </div>
-            <div class="aboutus">
-              <div class="about_icon">
-                <ion-icon name="rocket-outline"></ion-icon>
-              </div>
-              <div class="feature_name">
-                <p>Accelerate Innovation</p>
-              </div>
-            </div>
-            <div class="aboutus">
-              <div class="about_icon">
-                <ion-icon name="bulb-outline"></ion-icon>
-              </div>
-              <div class="feature_name">
-                <p>Provide tinkering lab 24x7</p>
-              </div>
-            </div>
-            <div class="aboutus">
-              <div class="about_icon">
-                <ion-icon name="color-wand-outline"></ion-icon>
-              </div>
-              <div class="feature_name">
-                <p>Driving high quality mentorship</p>
-              </div>
-            </div>
-            <div class="aboutus">
-              <div class="about_icon">
-                <ion-icon name="analytics-outline"></ion-icon>
-              </div>
-              <div class="feature_name">
-                <p>Grow and Scale up through expert guidance</p>
-              </div>
-            </div>
-            <div class="aboutus">
-              <div class="about_icon">
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-              <div class="feature_name">
-                <p>Access to startup resources</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Startup-->
-      <div class="container" id="startup">
-        <h1 class="peach-text">Startups</h1>
-        <div class="row" id="card_display">
-          <div class="col-md-3" id="column_startup">
-            <div class="card" id="startup_card">
-              <div
-                class="startup_holder"
-                style="background-image: url(../images/clofactory.png);"
-              ></div>
-              <div class="card-body">
-                <p class="card-text">
-                  The vision of Clofactory is to revolutionize the clothing
-                  industry, from the traditional retail model. Clofactory stands
-                  to deliver a seamless shirting experience with shirts that are
-                  tailored to fit and premium fabrics to go with them.The
-                  company is involved in the manufacture of other textiles.
-                </p>
-                <a href="#" class="peach-text startup_more">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3" id="column_startup">
-            <div class="card" id="startup_card">
-              <div
-                class="startup_holder"
-                style="background-image: url(../images/wearthreads.png);"
-              ></div>
-              <div class="card-body">
-                <p class="card-text">
-                  We are into sustainable clothing, we make t-shirts from
-                  recycled plastic bottles. Our main aim is to reduce the amount
-                  of plastic in the environment. So, we put it to a great use,
-                  we make garments out of it which are 100% safe and hygienic to
-                  wear. One t-shirt recycles 15 plastic bottles.
-                </p>
-                <a href="#" class="peach-text startup_more">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3" id="column_startup">
-            <div class="card" id="startup_card">
-              <div
-                class="startup_holder"
-                style="background-image: url(../images/D-webbox.png);"
-              ></div>
-              <div class="card-body">
-                <p class="card-text">
-                  We inspire Dreams, build Designs, create Digitization and
-                  celebrate success. We are an agency where success isn’t
-                  defined by how much we bill or how fast we grow, but by our
-                  ability to produce exceptional work and build genuine
-                  partnerships with our clients. We keep things lean and simple.
-                </p>
-                <a href="#" class="peach-text startup_more">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!--Footer-->
       <div class="container newfooter">
         <div id="logocomp">
@@ -1000,9 +937,7 @@
           <div><i class="fab fa-linkedin" id="footicon"></i></div>
         </div>
         <div id="takeup">
-          <a href="#">
-            <i class="fas fa-arrow-circle-up fa-2x" style="color: #d3d3d3;"></i>
-          </a>
+          <a href="#"><ion-icon name="arrow-up-outline"></ion-icon> </a>
         </div>
       </div>
       <script src="js/nav.js"></script>
@@ -1012,6 +947,12 @@
       <!-- end script for counter -->
 
       <script>
+        $(window).scroll(function () {
+          $("nav").toggleClass("scrolled", $(this).scrollTop() > 20);
+          $("nav").toggleClass("navbar-dark", $(this).scrollTop() <= 20);
+          $("nav").toggleClass("navbar-light", $(this).scrollTop() > 20);
+        });
+
         mapboxgl.accessToken =
           "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
         var map = new mapboxgl.Map({
@@ -1046,7 +987,11 @@
         $("#submit_idea").click(function (event) {
           event.preventDefault();
           console.log("hi");
-          $(".toast").toast("show");
+          $(".toast").addClass("show");
+          setTimeout(() => {
+            $(".toast").removeClass("show");
+          }, 5000);
+          console.log("bye");
         });
 
         filterSelection("all"); // Execute the function and show all columns
@@ -1056,8 +1001,8 @@
           if (c == "all") c = "";
           // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
           for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            w3RemoveClass(x[i], "show_events");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show_events");
           }
         }
 
