@@ -513,71 +513,6 @@ hr {
   color: #f74539;
 }
 
-/*Events Gallery*/
-
-.synch-carousels {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.synch-carousels > * {
-  width: 100%;
-}
-
-.synch-carousels .right {
-  order: -1;
-}
-
-.synch-carousels .left {
-  overflow: hidden;
-}
-
-.synch-carousels .gallery {
-  display: none;
-}
-
-.synch-carousels .gallery .slick-list {
-  height: auto !important;
-  margin: 0 -20px;
-}
-
-.synch-carousels .gallery .slick-slide {
-  margin: 0 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .synch-carousels .right {
-    margin-bottom: 20px;
-  }
-
-  .synch-carousels .gallery {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .synch-carousels .right {
-    position: relative;
-    width: calc(100% - 230px);
-    margin-bottom: 0;
-    order: 2;
-  }
-
-  .synch-carousels .left {
-    width: 210px;
-  }
-
-  .synch-carousels .gallery .slick-slide {
-    margin: 0 0 20px 0;
-  }
-
-  .synch-carousels .gallery .slick-list {
-    margin: 0;
-  }
-}
-
 .contact {
   width: 100vw;
   min-height: 100vh;
@@ -1063,8 +998,10 @@ select {
 }
 
 /*Startups*/
+#card_display {
+  justify-content: space-around;
+}
 #column_startup {
-  margin-left: 70px;
   border-radius: 10px !important;
   border: none !important;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.137);
