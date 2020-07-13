@@ -125,9 +125,7 @@
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link hvr-underline-from-left"
-              href="team.html#team_container"
+            <a class="nav-link hvr-underline-from-left" href="team.html"
               >Team</a
             >
           </li>
@@ -568,62 +566,53 @@
       </div>
 
       <!--Startups-->
-      <div class="container" id="startup">
+      <div class="container section-holder">
         <h1 class="">Startups</h1>
         <div class="row" id="card_display">
           <div class="col-md-3" id="column_startup">
-            <div class="card" id="startup_card">
-              <div
-                class="startup_holder"
-                style="background-image: url(../images/clofactory.png);"
-              ></div>
-              <div class="card-body">
-                <p class="card-text">
-                  The vision of Clofactory is to revolutionize the clothing
-                  industry, from the traditional retail model. Clofactory stands
-                  to deliver a seamless shirting experience with shirts that are
-                  tailored to fit and premium fabrics to go with them.The
-                  company is involved in the manufacture of other textiles.
-                </p>
-                <a href="#" class="peach-text startup_more">Read More</a>
-              </div>
-            </div>
+            <div
+              class="startup_holder"
+              style="background-image: url(../images/clofactory.png);"
+            ></div>
+
+            <p>
+              The vision of Clofactory is to revolutionize the clothing
+              industry, from the traditional retail model. Clofactory stands to
+              deliver a seamless shirting experience with shirts that are
+              tailored to fit and premium fabrics to go with them.The company is
+              involved in the manufacture of other textiles.
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
           </div>
           <div class="col-md-3" id="column_startup">
-            <div class="card" id="startup_card">
-              <div
-                class="startup_holder"
-                style="background-image: url(../images/wearthreads.png);"
-              ></div>
-              <div class="card-body">
-                <p class="card-text">
-                  We are into sustainable clothing, we make t-shirts from
-                  recycled plastic bottles. Our main aim is to reduce the amount
-                  of plastic in the environment. So, we put it to a great use,
-                  we make garments out of it which are 100% safe and hygienic to
-                  wear. One t-shirt recycles 15 plastic bottles.
-                </p>
-                <a href="#" class="peach-text startup_more">Read More</a>
-              </div>
-            </div>
+            <div
+              class="startup_holder"
+              style="background-image: url(../images/wearthreads.png);"
+            ></div>
+
+            <p>
+              We are into sustainable clothing, we make t-shirts from recycled
+              plastic bottles. Our main aim is to reduce the amount of plastic
+              in the environment. So, we put it to a great use, we make garments
+              out of it which are 100% safe and hygienic to wear. One t-shirt
+              recycles 15 plastic bottles.
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
           </div>
           <div class="col-md-3" id="column_startup">
-            <div class="card" id="startup_card">
-              <div
-                class="startup_holder"
-                style="background-image: url(../images/D-webbox.png);"
-              ></div>
-              <div class="card-body">
-                <p class="card-text">
-                  We inspire Dreams, build Designs, create Digitization and
-                  celebrate success. We are an agency where success isn’t
-                  defined by how much we bill or how fast we grow, but by our
-                  ability to produce exceptional work and build genuine
-                  partnerships with our clients. We keep things lean and simple.
-                </p>
-                <a href="#" class="peach-text startup_more">Read More</a>
-              </div>
-            </div>
+            <div
+              class="startup_holder"
+              style="background-image: url(../images/D-webbox.png);"
+            ></div>
+
+            <p>
+              We inspire Dreams, build Designs, create Digitization and
+              celebrate success. We are an agency where success isn’t defined by
+              how much we bill or how fast we grow, but by our ability to
+              produce exceptional work and build genuine partnerships with our
+              clients. We keep things lean and simple.
+            </p>
+            <a href="#" class="peach-text startup_more">Read More</a>
           </div>
         </div>
       </div>
@@ -875,6 +864,7 @@
 
       <!--    Contact Form    -->
       <div class="container-contact">
+        <h1 class="peach-text" style="text-align: center;">Contact Us</h1>
         <div class="row map">
           <div class="col-md-6 col-sm-12 map">
             <div id="map"></div>
@@ -1043,15 +1033,12 @@
 
         // Add active class to the current button (highlight it)
         var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("my-btn");
+        var btns = btnContainer.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
           btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("btn-active");
-            current[0].className = current[0].className.replace(
-              "btn-active",
-              ""
-            );
-            this.className += " btn-active";
+            var current = document.getElementsByClassName("live");
+            current[0].className = current[0].className.replace(" live", "");
+            this.className += " live";
           });
         }
       </script>

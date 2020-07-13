@@ -486,6 +486,10 @@ hr {
   .heading_features {
     padding-top: 20px;
   }
+
+  #column_startup {
+    margin: 40px 20px 0 !important;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -1054,20 +1058,17 @@ select {
 .toast {
   position: fixed;
   bottom: 20px;
-
   left: 50%;
   transform: translateX(-50%);
 }
 
 /*Startups*/
-#startup {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 50px;
-}
-
 #column_startup {
-  margin: 0 0px 0 60px;
+  margin-left: 70px;
+  border-radius: 10px !important;
+  border: none !important;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.137);
+  text-align: left;
 }
 .startup_holder {
   height: 100px;
@@ -1085,7 +1086,7 @@ select {
   display: block;
 }
 
-.btn .active {
+.live {
   background-color: #fff !important;
   color: #f74539 !important;
 }
