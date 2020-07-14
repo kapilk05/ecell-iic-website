@@ -1006,15 +1006,19 @@ select {
   border: none !important;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.137);
   text-align: left;
+  padding-bottom: 20px;
 }
 .startup_holder {
   height: 100px;
-  background-size: contain !important;
-  background-repeat: no-repeat;
-  background-position-x: center !important;
-  background-position-y: center !important;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#column_startup p {
+  padding-top: 10px;
+}
 .desc_startup {
   padding: 30px 20px 0px 0px;
 }
