@@ -16,9 +16,6 @@ export class Startup extends Component {
       .then((res) => {
         const data = res.data;
         console.log(data);
-        <div class="container section-holder" id="startup">
-          <h1 class="">Startups</h1>
-        </div>;
 
         const startup = data.map((u) => (
           <div class="row" id="card_display">
@@ -42,7 +39,12 @@ export class Startup extends Component {
     this.getStartupsData();
   }
   render() {
-    return <div>{this.state.startup}</div>;
+    return (
+      <div class="container section-holder" id="startup">
+        <h1 class="">Startups</h1>
+        {this.state.startup}
+      </div>
+    );
   }
 }
 
