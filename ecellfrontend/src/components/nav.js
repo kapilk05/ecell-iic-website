@@ -59,12 +59,12 @@ export class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link hvr-underline-from-left"
-                  href="partners.html"
+                  to="/partners"
                 >
                   Partners
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a

@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
+import { Icon } from "react-icons-kit";
+import { mortarBoard } from "react-icons-kit/typicons/mortarBoard";
+import { scissorsOutline } from "react-icons-kit/typicons/scissorsOutline";
+import { chartLineOutline } from "react-icons-kit/typicons/chartLineOutline";
+import { planeOutline } from "react-icons-kit/typicons/planeOutline";
 
 export class GetStarted extends Component {
   render() {
@@ -11,7 +16,7 @@ export class GetStarted extends Component {
           <div className="row">
             <div className="feature col-lg-4 purple">
               <span className="circle">
-                <ion-icon name="school-outline"></ion-icon>
+                <Icon icon={mortarBoard} size={40}></Icon>
               </span>
               <h4>Mentorship</h4>
               <p>
@@ -21,7 +26,7 @@ export class GetStarted extends Component {
             </div>
             <div className="feature col-lg-4 blue">
               <span className="circle">
-                <ion-icon name="construct-outline"></ion-icon>
+                <Icon icon={scissorsOutline} size={40}></Icon>
               </span>
               <h4>Technical Assistance</h4>
               <p>
@@ -45,7 +50,7 @@ export class GetStarted extends Component {
             </div>
             <div className="feature col-lg-4 yellow">
               <span className="circle">
-                <ion-icon name="rocket-outline"></ion-icon>
+                <Icon icon={planeOutline} size={32}></Icon>
               </span>
               <h4>Accelerators & Incubator</h4>
               <p>
@@ -55,7 +60,7 @@ export class GetStarted extends Component {
             </div>
             <div className="feature col-lg-4 red">
               <span className="circle">
-                <ion-icon name="trending-up-outline"></ion-icon>
+                <Icon icon={chartLineOutline} size={35}></Icon>
               </span>
               <h4>Market Advisory</h4>
               <p>

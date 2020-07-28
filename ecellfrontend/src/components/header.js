@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
 import Video from "../video/startup.mp4";
+import { Icon } from "react-icons-kit";
+import { arrowRight2 } from "react-icons-kit/icomoon/arrowRight2";
 
 export class Header extends Component {
   render() {
@@ -21,7 +23,11 @@ export class Header extends Component {
             </p>
             <a className="btn hvr-icon-forward">
               Launch your Startup
-              <i className="zmdi zmdi-arrow-right hvr-icon"></i>
+              <Icon
+                icon={arrowRight2}
+                style={{ "padding-left": "5px" }}
+                className="hvr-icon"
+              ></Icon>
             </a>
           </div>
           <div className="arrow-symbol" style={{ "z-index": "2" }}>

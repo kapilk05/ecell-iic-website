@@ -762,7 +762,7 @@ select {
   margin-top: 20px;
   border-radius: 50%;
   background-color: #fff;
-  color: #f96332;
+  color: #f96332 !important;
   position: relative;
   box-shadow: 0 9px 30px -6px rgba(249, 99, 50, 0.3);
   float: left;
