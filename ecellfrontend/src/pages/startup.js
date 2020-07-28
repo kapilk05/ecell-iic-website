@@ -15,12 +15,9 @@ export class Startup extends Component {
       startups: [],
     };
   }
-  showStudent() {
-    document.getElementById("studentInfo").style.display = "flex";
-    document.getElementById("No").onclick = function () {
-      document.getElementById("studentInfo").style.display = "none";
-    };
-  }
+  showStudent = function () {
+    document.getElementById("studentInfo").style.display = "block";
+  };
 
   componentDidMount() {
     fetch("http://127.0.0.1:8000/api/startup/", {
@@ -394,7 +391,7 @@ export class Startup extends Component {
               <div className="col-md-3" id="column_startup">
                 <img className="startup_holder" src={u.logo} />
                 <p>{u.intro}</p>
-                <Link to={u.link} class="peach-text startup_more" />
+                <Link to={u.link} className="peach-text startup_more"></Link>
                 Read More
               </div>
             ))}

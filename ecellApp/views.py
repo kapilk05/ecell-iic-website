@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from .models import *
 from .serializers import *
-from rest_framework import viewsets, permissions,mixins
+from rest_framework import viewsets, permissions,mixins,generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.decorators import api_view
+
 
 
 # Create your views here.
@@ -18,7 +20,7 @@ class CoreViewSet(viewsets.ModelViewSet):
 class StartupViewSet(viewsets.ModelViewSet):
     queryset = Startup.objects.all()
     serializer_class = StartupSerializer
-
+          
 class AchievementViewSet(viewsets.ModelViewSet):
     queryset = Achievement.objects.all()
     serializer_class = AchievementSerializer
