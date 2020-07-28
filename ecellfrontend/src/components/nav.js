@@ -39,8 +39,11 @@ export class Navbar extends Component {
                   About Us
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link hvr-underline-from-left" href="#features">
+              <li className="nav-item">
+                <a
+                  className="nav-link hvr-underline-from-left"
+                  href="#features"
+                >
                   Get Started <span className="sr-only">(current)</span>
                 </a>
               </li>
