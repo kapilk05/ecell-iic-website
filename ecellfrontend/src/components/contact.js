@@ -1,8 +1,30 @@
 import React, { Component, Fragment } from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
-
+import mapboxgl from "mapbox-gl";
+mapboxgl.accessToken =
+  "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
 export class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lng: 72.837424,
+      lat: 19.108731,
+      zoom: 12.5,
+    };
+  }
+  componentDidMount() {
+    const map = new mapboxgl.Map({
+      container: this.mapContainer,
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [this.state.lng, this.state.lat],
+      zoom: this.state.zoom,
+    });
+    map.scrollZoom.disable();
+    var marker = new mapboxgl.Marker()
+      .setLngLat([72.837424, 19.108731])
+      .addTo(map);
+  }
   render() {
     return (
       <div className="container-contact">
@@ -11,7 +33,9 @@ export class Contact extends Component {
         </h1>
         <div className="row map">
           <div className="col-md-6 col-sm-12 map">
-            <div id="map"></div>
+            <div>
+              <div ref={(el) => (this.mapContainer = el)} id="map" />
+            </div>
           </div>
           <div
             className="col-md-6 col-sm-12"
@@ -44,7 +68,10 @@ export class Contact extends Component {
                 <button
                   className="primary"
                   type="submit"
-                  style={{ "margin-top": "30px", "margin-bottom": "30px" }}
+                  style={{
+                    "margin-top": "30px",
+                    "margin-bottom": "30px",
+                  }}
                 >
                   Send
                 </button>

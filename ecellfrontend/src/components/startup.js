@@ -3,7 +3,8 @@ import "../style.css";
 import "../global.css";
 import "../hover.css";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import { Icon } from "react-icons-kit";
+import { arrowRight2 } from "react-icons-kit/icomoon/arrowRight2";
 
 export class Startup extends Component {
   constructor(props) {
@@ -39,8 +40,18 @@ export class Startup extends Component {
             <div className="col-md-3" id="column_startup">
               <img className="startup_holder" src={u.logo} />
               <p>{u.intro}</p>
-              <Link to={u.link} className="peach-text startup_more"></Link>
-              Read More
+              <Link
+                to={u.link}
+                className="hvr-icon-forward startup_more"
+                style={{ color: "#000" }}
+              >
+                Read More
+                <Icon
+                  icon={arrowRight2}
+                  style={{ "padding-left": "5px" }}
+                  className="hvr-icon peach-text"
+                ></Icon>
+              </Link>
             </div>
           ))}
         </div>

@@ -8,6 +8,18 @@ import { chartLineOutline } from "react-icons-kit/typicons/chartLineOutline";
 import { planeOutline } from "react-icons-kit/typicons/planeOutline";
 
 export class GetStarted extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      on: false,
+    };
+  }
+
+  showForm() {
+    this.setState({
+      on: !this.state.on,
+    });
+  }
   render() {
     return (
       <div id="features">
@@ -75,7 +87,10 @@ export class GetStarted extends Component {
           <div className="main container section-holder">
             <h4>Have a business idea?</h4>
             <h1 className="cta">Launch your startup!</h1>
-            <button className="btn hvr-icon-forward" onclick="showForm()">
+            <button
+              onclick={() => this.showForm()}
+              className="btn hvr-icon-forward"
+            >
               Get Started
               <i className="zmdi zmdi-arrow-right hvr-icon"></i>
             </button>
@@ -94,108 +109,122 @@ export class GetStarted extends Component {
                 <div className="col-md-2"></div>
 
                 <div className="col-md-8 idea_form">
-                  <h1>Submit your Idea</h1>
-                  <label for="name">Full Name</label>
-                  <input name="name" type="text" id="name" />
-                  <br />
-                  <div className="row">
-                    <div className="col-md-6">
-                      <label for="email">Email</label>
-                      <input name="email" type="email" id="email" required />
+                  {this.state.on ? (
+                    <div className="col-md-8 idea_form">
+                      <h1>Submit your Idea</h1>
+                      <label for="name">Full Name</label>
+                      <input name="name" type="text" id="name" />
                       <br />
-                    </div>
-                    <div className="col-md-6">
-                      <label for="contact">Contact Number</label>
-                      <input name="contact" type="tel" id="contact" />
-                      <br />
-                    </div>
-                  </div>
-
-                  <div className="row">
-                    <div className="col-md-6 radioStudent">
-                      Are you a student?
-                      <br />
-                      <div className="radioButton">
-                        <input
-                          type="radio"
-                          id="male"
-                          name="student"
-                          value="Yes"
-                          onclick="showStudent();"
-                        />
-                        <label for="Yes">Yes</label>
-                        <br />
-                        <input type="radio" id="No" name="student" value="No" />
-                        <label for="No">No</label>
-                        <br />
+                      <div className="row">
+                        <div className="col-md-6">
+                          <label for="email">Email</label>
+                          <input
+                            name="email"
+                            type="email"
+                            id="email"
+                            required
+                          />
+                          <br />
+                        </div>
+                        <div className="col-md-6">
+                          <label for="contact">Contact Number</label>
+                          <input name="contact" type="tel" id="contact" />
+                          <br />
+                        </div>
                       </div>
+
+                      <div className="row">
+                        <div className="col-md-6 radioStudent">
+                          Are you a student?
+                          <br />
+                          <div className="radioButton">
+                            <input
+                              type="radio"
+                              id="male"
+                              name="student"
+                              value="Yes"
+                              onclick="showStudent();"
+                            />
+                            <label for="Yes">Yes</label>
+                            <br />
+                            <input
+                              type="radio"
+                              id="No"
+                              name="student"
+                              value="No"
+                            />
+                            <label for="No">No</label>
+                            <br />
+                          </div>
+                        </div>
+                        <div className="col-md-6 radioBusiness">
+                          Type of business
+                          <select id="business" name="business">
+                            <option value="Sole Proprietorship" selected>
+                              Sole Proprietorship
+                            </option>
+                            <br />
+                            <option value="Partnership">Partnership</option>
+                            <br />
+                          </select>
+                          <br />
+                        </div>
+                      </div>
+                      <div className="row" id="studentInfo">
+                        <div className="col-md-6">
+                          <select id="stream" name="stream">
+                            <option value="CSE" selected>
+                              CSE
+                            </option>
+                            <br />
+                            <option value="Computer">Computer</option>
+                            <br />
+                            <option value="IT">IT </option>
+                            <br />
+                            <option value="EXTC">EXTC</option>
+                            <br />
+                            <option value="Electronics">Electronics </option>
+                            <br />
+                            <option value="Chemical">Chemical</option>
+                            <br />
+                            <option value="Mechanical">Mechanical</option>
+                            <br />{" "}
+                          </select>
+                          <br />
+                        </div>
+                        <div className="col-md-6">
+                          <select id="year" name="year">
+                            <option value="FE" selected>
+                              FE
+                            </option>
+                            <br />
+                            <option value="SE">SE</option>
+                            <br />
+                            <option value="TE">TE</option>
+                            <br />
+                            <option value="BE">BE </option>
+                            <br />{" "}
+                          </select>
+                          <br />
+                        </div>
+                      </div>
+                      <textarea
+                        rows="4"
+                        cols="72"
+                        name="idea"
+                        form="idea"
+                        placeholder="Tell us about your idea!"
+                      ></textarea>
+                      <button
+                        className="btn"
+                        type="submit"
+                        id="submit_idea"
+                        style={{ "margin-top": "10px" }}
+                      >
+                        Submit
+                      </button>
                     </div>
-                    <div className="col-md-6 radioBusiness">
-                      Type of business
-                      <select id="business" name="business">
-                        <option value="Sole Proprietorship" selected>
-                          Sole Proprietorship
-                        </option>
-                        <br />
-                        <option value="Partnership">Partnership</option>
-                        <br />
-                      </select>
-                      <br />
-                    </div>
-                  </div>
-                  <div className="row" id="studentInfo">
-                    <div className="col-md-6">
-                      <select id="stream" name="stream">
-                        <option value="CSE" selected>
-                          CSE
-                        </option>
-                        <br />
-                        <option value="Computer">Computer</option>
-                        <br />
-                        <option value="IT">IT </option>
-                        <br />
-                        <option value="EXTC">EXTC</option>
-                        <br />
-                        <option value="Electronics">Electronics </option>
-                        <br />
-                        <option value="Chemical">Chemical</option>
-                        <br />
-                        <option value="Mechanical">Mechanical</option>
-                        <br />{" "}
-                      </select>
-                      <br />
-                    </div>
-                    <div className="col-md-6">
-                      <select id="year" name="year">
-                        <option value="FE" selected>
-                          FE
-                        </option>
-                        <br />
-                        <option value="SE">SE</option>
-                        <br />
-                        <option value="TE">TE</option>
-                        <br />
-                        <option value="BE">BE </option>
-                        <br />{" "}
-                      </select>
-                      <br />
-                    </div>
-                  </div>
-                  <textarea
-                    rows="4"
-                    cols="72"
-                    name="idea"
-                    form="idea"
-                    placeholder="Tell us about your idea!"
-                  ></textarea>
-                  <button
-                    className="btn"
-                    type="submit"
-                    id="submit_idea"
-                    style={{ "margin-top": "10px" }}
-                  >
-                    Submit
-                  </button>
+                  ) : null}
                 </div>
                 <div className="col-md-2"></div>
               </div>

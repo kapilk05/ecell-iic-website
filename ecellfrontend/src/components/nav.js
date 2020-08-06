@@ -2,8 +2,17 @@ import React, { Component } from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.png";
+import { Helmet } from "react-helmet";
 
 export class Navbar extends Component {
+  componentDidMount() {
+    const script = document.createElement("script");
+
+    script.src = "../js/nav.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }
   render() {
     return (
       <body data-spy="scroll" data-target="#navbar">

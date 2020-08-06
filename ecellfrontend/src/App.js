@@ -9,6 +9,7 @@ import Contact from "./components/contact.js";
 import Partner from "./pages/associate.js";
 import AboutUs from "./pages/aboutus.js";
 import "./style.css";
+import "./js/main.js";
 import { FontAwesome } from "react-icons/fa";
 
 function App() {
