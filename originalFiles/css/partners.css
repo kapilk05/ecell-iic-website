@@ -19,11 +19,28 @@
 }
 
 main {
-  background: #f3f7fa;
+  /* background: #f3f7fa; */
   margin-top: -100px;
   margin: auto;
 }
 
 .partner-img {
-  height: 100px;
+  height: 200px;
+  /* max-width: 200px; */
+}
+
+.partners-logos-container {
+  margin: auto !important;
+}
+.partners-logos-container div {
+  padding: 24px;
+}
+.partners-logos-container div div {
+  height: 200px;
+  width: 200px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
 }

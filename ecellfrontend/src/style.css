@@ -963,6 +963,7 @@ select {
   padding-left: 40px;
 }
 #takeup {
+  z-index: 23;
   padding-top: 20px;
   padding-bottom: 50px;
   text-align: end;

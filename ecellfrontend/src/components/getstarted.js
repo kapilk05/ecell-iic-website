@@ -7,7 +7,9 @@ import { mortarBoard } from "react-icons-kit/typicons/mortarBoard";
 import { scissorsOutline } from "react-icons-kit/typicons/scissorsOutline";
 import { chartLineOutline } from "react-icons-kit/typicons/chartLineOutline";
 import { planeOutline } from "react-icons-kit/typicons/planeOutline";
-import $ from "jquery";
+import { trendingUp } from "react-icons-kit/feather/trendingUp";
+import { rocket } from "react-icons-kit/entypo/rocket";
+import { ic_laptop_mac } from "react-icons-kit/md/ic_laptop_mac";
 
 export class GetStarted extends Component {
   constructor(props) {
@@ -35,7 +37,11 @@ export class GetStarted extends Component {
           <div className="row">
             <div className="feature col-lg-4 purple">
               <span className="circle">
-                <Icon icon={mortarBoard} size={40}></Icon>
+                <span
+                  class="iconify"
+                  data-icon="ion:school-outline"
+                  data-inline="false"
+                ></span>
               </span>
               <h4>Mentorship</h4>
               <p>
@@ -45,7 +51,11 @@ export class GetStarted extends Component {
             </div>
             <div className="feature col-lg-4 blue">
               <span className="circle">
-                <Icon icon={scissorsOutline} size={40}></Icon>
+                <span
+                  class="iconify"
+                  data-icon="ion:construct-outline"
+                  data-inline="false"
+                ></span>
               </span>
               <h4>Technical Assistance</h4>
               <p>
@@ -69,7 +79,11 @@ export class GetStarted extends Component {
             </div>
             <div className="feature col-lg-4 yellow">
               <span className="circle">
-                <Icon icon={planeOutline} size={32}></Icon>
+                <span
+                  class="iconify"
+                  data-icon="ion:rocket-outline"
+                  data-inline="false"
+                ></span>
               </span>
               <h4>Accelerators & Incubator</h4>
               <p>
@@ -79,7 +93,7 @@ export class GetStarted extends Component {
             </div>
             <div className="feature col-lg-4 red">
               <span className="circle">
-                <Icon icon={chartLineOutline} size={35}></Icon>
+                <Icon icon={trendingUp} size={35}></Icon>
               </span>
               <h4>Market Advisory</h4>
               <p>
@@ -94,7 +108,10 @@ export class GetStarted extends Component {
           <div className="main container section-holder">
             <h4>Have a business idea?</h4>
             <h1 className="cta">Launch your startup!</h1>
-            <button onclick={this.showForm} className="btn hvr-icon-forward">
+            <button
+              onclick={() => this.showForm()}
+              className="btn hvr-icon-forward"
+            >
               Get Started
               <i className="zmdi zmdi-arrow-right hvr-icon"></i>
             </button>
@@ -108,13 +125,7 @@ export class GetStarted extends Component {
               </div>
             </div>
 
-            <div
-              className="container"
-              ref="toggle"
-              style={{
-                display: "none",
-              }}
-            >
+            <div className="container" id="idea_submission">
               <div className="row">
                 <div className="col-md-2"></div>
 
