@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@700&family=Work+Sans:wght@500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color: #2c2c2c;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 700;
+  font-size: 66px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 46px;
+}
+
+h3 {
+  font-weight: 400 !important;
+  font-size: 20px !important;
+}
+
+h4 {
+  /* font-weight: 300 !important;
+  font-size: 20px !important; */
+}
+
+ul li,
+a {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none !important;
+  /* color: #001e4d !important; */
+}
+
+p {
+  font-weight: 300;
+  font-size: 1em;
+  color: #888;
+}
+
+h6 {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+}
+
+.blue-text {
+  color: #1f1414;
+}
+
+.peach-text {
+  color: #fe836c;
+}
+
+.yellow-text {
+  color: #ffa777;
+}
+
+.white-text {
+  color: rgba(255, 255, 255, 0.596);
+}
+
+button {
+  border: none;
+  padding: 10px 35px;
+  margin: 0 10px;
+  border-radius: 0.4em;
+}
+.primary {
+  color: #fff;
+  background: #fe836c;
+}
+.secondary {
+  color: #fe836c;
+  background: rgba(255, 255, 255, 0);
+  border: #fe836c 1.8px solid;
+}
+/* 
+h1:after {
+  content: "";
+  height: 5px;
+  width: 10%;
+  background: #f74539;
+  position: absolute;
+  left: calc(50% - 5%);
+  bottom: -5px;
+} */
