@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
-import { Icon } from "react-icons-kit";
-import { arrowRight2 } from "react-icons-kit/icomoon/arrowRight2";
 
 export class About extends Component {
   render() {
@@ -23,11 +21,7 @@ export class About extends Component {
             </p>
             <Link to="/about" className="hvr-icon-forward">
               Read More
-              <Icon
-                icon={arrowRight2}
-                style={{ "padding-left": "5px" }}
-                className="hvr-icon"
-              ></Icon>
+              <i className="zmdi zmdi-arrow-right hvr-icon"></i>
             </Link>
           </div>
           <div className="col-md-4">

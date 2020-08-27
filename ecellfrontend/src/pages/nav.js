@@ -2,17 +2,8 @@ import React, { Component } from "react";
 import "../style.css";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.png";
-import { Helmet } from "react-helmet";
 
 export class Navbar extends Component {
-  componentDidMount() {
-    const script = document.createElement("script");
-
-    script.src = "../js/nav.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-  }
   render() {
     return (
       <body data-spy="scroll" data-target="#navbar">
@@ -48,11 +39,8 @@ export class Navbar extends Component {
                   About Us
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link hvr-underline-from-left"
-                  href="#features"
-                >
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="#features">
                   Get Started <span className="sr-only">(current)</span>
                 </a>
               </li>
@@ -68,12 +56,12 @@ export class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   className="nav-link hvr-underline-from-left"
-                  to="/partners"
+                  href="partners.html"
                 >
                   Partners
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <a

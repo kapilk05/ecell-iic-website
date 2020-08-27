@@ -1,15 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Navbar from "./components/nav.js";
-import Header from "./components/header.js";
-import About from "./components/about.js";
-import GetStarted from "./components/getstarted.js";
-import Startup from "./components/startup.js";
-import Contact from "./components/contact.js";
-import Partner from "./pages/associate.js";
+import Navbar from "./pages/nav.js";
+import Header from "./pages/header.js";
+import About from "./pages/about.js";
 import AboutUs from "./pages/aboutus.js";
+import GetStarted from "./pages/getstarted.js";
+import Startup from "./pages/startup.js";
 import "./style.css";
-import "./js/main.js";
 import { FontAwesome } from "react-icons/fa";
 
 function App() {
@@ -26,28 +23,10 @@ function App() {
               <About />
               <GetStarted />
               <Startup />
-              <Contact />
             </div>
           )}
         />
-        <Route
-          path="/about"
-          render={(props) => (
-            <div>
-              <Navbar />
-              <AboutUs />
-            </div>
-          )}
-        />
-        <Route
-          path="/partners"
-          render={(props) => (
-            <div>
-              <Navbar />
-              <Partner />
-            </div>
-          )}
-        />
+        <Route path="/about" component={AboutUs} />
       </div>
     </BrowserRouter>
   );

@@ -1,0 +1,90 @@
+@import url("//fonts.googleapis.com/css?family=Montserrat:300, 400, 700");
+.testimonial9 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.testimonial9 h1,
+.testimonial9 h2,
+.testimonial9 h3,
+.testimonial9 h4,
+.testimonial9 h5,
+.testimonial9 h6 {
+  color: #3e4555;
+}
+
+.testimonial9 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.testimonial9 h5 {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.testimonial9 .font-13 {
+  font-size: 13px;
+}
+
+.testimonial9 .card.card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.testimonial9 .card::after {
+  position: absolute;
+  bottom: -15px;
+  left: 35px;
+  content: "";
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+}
+
+.testimonial9 .owl-theme .owl-dots .owl-dot.active span,
+.testimonial9 .owl-theme .owl-dots .owl-dot:hover span {
+  background: #f74539;
+}
+
+.testimonial9 .owl-dots {
+  position: absolute;
+  left: -108%;
+  top: 70%;
+}
+
+.testimonial9 .devider {
+  height: 2px;
+  width: 40px;
+}
+
+.testimonial9 .bg-info {
+  background-color: #f74539 !important;
+}
+
+.testimonial9 .customer-thumb img {
+  width: 60px !important;
+}
+
+@media (max-width: 767px) {
+  .testimonial9 .owl-dots {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.testimonial-card {
+  margin: 0 !important;
+  width: 100%;
+  height: auto;
+}
+
+.owl-dots {
+  right: 50%;
+  width: 100%;
+}
+
+.testimonial-by {
+  text-align: left;
+}

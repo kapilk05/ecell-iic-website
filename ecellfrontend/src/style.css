@@ -220,7 +220,7 @@ nav a {
 }
 
 .btn {
-  background-color: #f74539 !important;
+  background-color: #f74539;
   border: none;
   color: #fff !important;
   font-size: 14px;
@@ -662,7 +662,7 @@ select {
 .blue ion-icon,
 .blue .iconify,
 .blue:hover h4 {
-  color: #2ca8ff !important;
+  color: #2ca8ff;
 }
 
 .blue .circle {
@@ -762,7 +762,7 @@ select {
   margin-top: 20px;
   border-radius: 50%;
   background-color: #fff;
-  color: #f96332 !important;
+  color: #f96332;
   position: relative;
   box-shadow: 0 9px 30px -6px rgba(249, 99, 50, 0.3);
   float: left;

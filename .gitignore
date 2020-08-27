@@ -1,2 +1,5 @@
 # Environments
 .mynewenv
+env/
+**/migrations/
+**/__pycache__/
