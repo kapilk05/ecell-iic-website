@@ -17,3 +17,13 @@
   object-fit: contain;
   /* filter: grayscale(100%) */
 }
+
+main {
+  background: #f3f7fa;
+  margin-top: -100px;
+  margin: auto;
+}
+
+.partner-img {
+  height: 100px;
+}

@@ -1069,6 +1069,10 @@ select {
     padding-top: 100px;
   }
 
+  main {
+    margin-top: 0;
+  }
+
   .partners p {
     color: #291b1b;
   }
