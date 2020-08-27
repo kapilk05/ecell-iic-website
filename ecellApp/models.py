@@ -25,7 +25,7 @@ class Core(models.Model):
 
 class Startup(models.Model):
     logo = models.ImageField(upload_to='startup_logos')
-    intro = models.CharField(max_length=200)
+    intro = models.CharField(max_length=500)
     link = models.FileField(upload_to='startup_docs')
     
 class Achievement(models.Model):
