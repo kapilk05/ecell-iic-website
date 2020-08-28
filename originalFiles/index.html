@@ -376,11 +376,11 @@
                 <div class="col-md-2"></div>
 
                 <div class="col-md-8 idea_form">
-                  <form id="startup_idea" autocomplete="off">
+                  <form id="startup_idea" name="idea" autocomplete="off">
                     <h1>Submit your Idea</h1>
                     <label for="name">Full Name</label>
                     <input
-                      name="ideaname"
+                      name="Name"
                       type="text"
                       id="idea_name"
                       required
@@ -391,9 +391,10 @@
                           >Email</label
                         >
                         <input
-                          name="ideaemail"
+                          name="Email"
                           type="email"
                           id="idea_email"
+                          autocomplete="off"
                           required
                         /><br />
                       </div>
@@ -402,9 +403,10 @@
                           >Contact Number</label
                         >
                         <input
-                          name="contact"
+                          name="Contact"
                           type="tel"
                           id="idea_contact"
+                          autocomplete="off"
                           required
                         /><br />
                       </div>
@@ -416,21 +418,21 @@
                         <div class="radioButton">
                           <input
                             type="radio"
-                            name="student"
+                            name="Student"
                             id="Yes"
                             onclick="showStudent();"
                             required
                           />
                           <label for="Yes" style="margin: 0px 5px 0">Yes</label
                           ><br />
-                          <input type="radio" id="No" name="student" />
+                          <input type="radio" id="No" name="Student" />
                           <label for="No" style="margin: 0px 5px 0">No</label
                           ><br />
                         </div>
                       </div>
                       <div class="col-md-6 radioBusiness">
                         Type of business
-                        <select id="business" name="business">
+                        <select id="business" name="Business">
                           <option value="Sole Proprietorship" selected>
                             Sole Proprietorship
                           </option>
@@ -442,7 +444,7 @@
                     </div>
                     <div class="row" id="studentInfo">
                       <div class="col-md-6" style="margin-top: 20px">
-                        <select id="stream" name="stream">
+                        <select id="stream" name="Stream">
                           <option value="CSE" selected>CSE</option>
                           <br />
                           <option value="Computer">Computer</option>
@@ -460,7 +462,7 @@
                         ><br />
                       </div>
                       <div class="col-md-6" style="margin-top: 20px">
-                        <select id="year" name="year">
+                        <select id="year" name="Year">
                           <option value="FE" selected>FE</option>
                           <br />
                           <option value="SE">SE</option>
@@ -475,8 +477,8 @@
                     <textarea
                       rows="4"
                       cols="72"
-                      name="startupidea"
-                      form="startup_idea"
+                      name="Description"
+                      form="idea"
                       placeholder="Tell us about your idea!"
                       style="margin-top: 20px"
                       required
@@ -503,41 +505,56 @@
         <div class="container section-holder">
           <h1 class="">Startups</h1>
           <div class="row" id="card_display">
-            <div class="col-lg-3" id="column_startup">
-              <img class="startup_holder" src="./images/clofactory.png" />
+            <div class="col-lg-4" id="column_startup">
+              <div class="container">
+                <img class="startup_holder" src="./images/clofactory.png" />
 
-              <p>
-                The vision of Clofactory is to revolutionize the clothing
-                industry, from the traditional retail model. Clofactory stands
-                to deliver a seamless shirting experience with shirts that are
-                tailored to fit and premium fabrics to go with them.The company
-                is involved in the manufacture of other textiles.
-              </p>
-              <a href="#" class="peach-text startup_more">Read More</a>
+                <p>
+                  The vision of Clofactory is to revolutionize the clothing
+                  industry, from the traditional retail model. Clofactory stands
+                  to deliver a seamless shirting experience with shirts that are
+                  tailored to fit and premium fabrics to go with them.The
+                  company is involved in the manufacture of other textiles.
+                </p>
+                <a class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
             </div>
-            <div class="col-lg-3" id="column_startup">
-              <img class="startup_holder" src="./images/wearthreads.jpg" />
+            <div class="col-lg-4" id="column_startup">
+              <div class="container">
+                <img class="startup_holder" src="./images/wearthreads.jpg" />
 
-              <p>
-                We are into sustainable clothing, we make t-shirts from recycled
-                plastic bottles. Our main aim is to reduce the amount of plastic
-                in the environment. So, we put it to a great use, we make
-                garments out of it which are 100% safe and hygienic to wear. One
-                t-shirt recycles 15 plastic bottles.
-              </p>
-              <a href="#" class="peach-text startup_more">Read More</a>
+                <p>
+                  We are into sustainable clothing, we make t-shirts from
+                  recycled plastic bottles. Our main aim is to reduce the amount
+                  of plastic in the environment. So, we put it to a great use,
+                  we make garments out of it which are 100% safe and hygienic to
+                  wear. One t-shirt recycles 15 plastic bottles.
+                </p>
+                <a class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
             </div>
-            <div class="col-lg-3" id="column_startup">
-              <img class="startup_holder" src="./images/D-webbox.jpeg" />
+            <div class="col-lg-4" id="column_startup">
+              <div class="container">
+                <img class="startup_holder" src="./images/D-webbox.jpeg" />
 
-              <p>
-                We inspire Dreams, build Designs, create Digitization and
-                celebrate success. We are an agency where success isn’t defined
-                by how much we bill or how fast we grow, but by our ability to
-                produce exceptional work and build genuine partnerships with our
-                clients. We keep things lean and simple.
-              </p>
-              <a href="#" class="peach-text startup_more">Read More</a>
+                <p>
+                  We inspire Dreams, build Designs, create Digitization and
+                  celebrate success. We are an agency where success isn’t
+                  defined by how much we bill or how fast we grow, but by our
+                  ability to produce exceptional work and build genuine
+                  partnerships with our clients. We keep things lean and simple.
+                </p>
+                <a class="hvr-icon-forward">
+                  Read More
+                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -795,7 +812,7 @@
       >
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-md-6" style="margin-top: 2em">
+            <div class="col-lg-5" style="margin-top: 2em">
               <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
                 What People Are Saying
               </h2>
@@ -804,7 +821,7 @@
                 partners in your business and your success.
               </p>
             </div>
-            <div class="col-lg-6 col-md-6 ml-auto">
+            <div class="col-lg-6 ml-auto">
               <div class="owl-carousel owl-theme testi9">
                 <!-- item -->
                 <div class="item">
@@ -897,12 +914,12 @@
           <div class="col-md-6 col-sm-12 contact-details">
             <h1 class="blue-text">Contact Us</h1>
 
-            <form name="e-cell" id="contactform">
+            <form name="contact" id="contactform">
               <div class="col-md-12">
                 <label for="name"> Full Name</label>
                 <input
                   class="idea-input"
-                  name="name"
+                  name="Name"
                   type="text"
                   id="name"
                 /><br />
@@ -911,10 +928,11 @@
                 <label for="email" style="margin-top: 20px">Email</label>
                 <input
                   class="idea-input"
-                  name="email"
+                  name="Email"
                   type="email"
                   id="email"
                   required
+                  autocomplete="off"
                 /><br />
               </div>
               <div class="col-md-12">
@@ -923,7 +941,7 @@
                   class="idea-input"
                   rows="4"
                   cols="100"
-                  name="idea"
+                  name="Message"
                   form="contactform"
                   id="message"
                 ></textarea>
@@ -1042,6 +1060,7 @@
         </a>
       </div>
       <script src="js/nav.js"></script>
+      <script src="js/forms.js"></script>
 
       <script>
         $(window).scroll(function () {
@@ -1081,15 +1100,15 @@
           };
         }
 
-        $("#submit_idea").click(function (event) {
-          event.preventDefault();
-          console.log("hi");
-          $(".toast").addClass("show");
-          setTimeout(() => {
-            $(".toast").removeClass("show");
-          }, 5000);
-          console.log("bye");
-        });
+        // $("#submit_idea").click(function (event) {
+        //   event.preventDefault();
+        //   console.log("hi");
+        //   $(".toast").addClass("show");
+        //   setTimeout(() => {
+        //     $(".toast").removeClass("show");
+        //   }, 5000);
+        //   console.log("bye");
+        // });
 
         $(window).scroll(startCounter);
         function startCounter() {
@@ -1111,22 +1130,22 @@
           }
         }
 
-        var $form = $("form#startup_idea"),
-          url =
-            "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
+        // var $form = $("form#startup_idea"),
+        //   url =
+        //     "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
 
-        $("#submit_idea").on("click", function (e) {
-          e.preventDefault();
-          var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject(),
-          })
-            .success
-            // Do what you want with this Uper all yours!
-            ();
-        });
+        // $("#submit_idea").on("click", function (e) {
+        //   e.preventDefault();
+        //   var jqxhr = $.ajax({
+        //     url: url,
+        //     method: "GET",
+        //     dataType: "json",
+        //     data: $form.serializeObject(),
+        //   })
+        //     .success
+        //     // Do what you want with this Uper all yours!
+        //     ();
+        // });
         filterSelection("all"); // Execute the function and show all columns
         function filterSelection(c) {
           var x, i;

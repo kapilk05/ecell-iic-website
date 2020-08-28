@@ -523,14 +523,16 @@ hr {
 
 #events a,
 #menu-bar a,
-.intro a {
+.intro a,
+#column_startup a {
   color: #291b1b;
 }
 
 #events i,
 #menu-bar i,
-.intro i {
-  color: #f74539;
+.intro i,
+#column_startup i {
+  color: #f74539 !important;
 }
 
 .contact {
@@ -651,9 +653,9 @@ select {
 }
 
 .idea_form input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+.idea_form input[type="email"],
+.idea_form input[type="tel"],
+.idea_form textarea {
   color: #fff !important;
 }
 
@@ -1089,16 +1091,20 @@ textarea {
   justify-content: space-around;
 }
 #column_startup {
-  border-radius: 10px !important;
   border: none !important;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.137);
+  /* box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.137); */
   text-align: left;
   padding-bottom: 20px;
 }
+#column_startup .container {
+  border-radius: 10px !important;
+  border: 2px solid rgba(143, 143, 143, 0.178);
+  padding: 30px;
+}
 .startup_holder {
-  height: 100px;
+  max-height: 100px;
   display: block;
-  width: 50%;
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
 }

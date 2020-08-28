@@ -7,7 +7,7 @@ ideaForm.addEventListener("submit", (e) => {
   fetch(ideaScriptURL, { method: "POST", body: new FormData(ideaForm) })
     .then(() => {
       ideaForm.reset();
-      $("#description").val("");
+        $("#description").val("");
       swal({
         title: "Idea Submitted!",
         text: "We'll review your idea and get in contact with you soon",
