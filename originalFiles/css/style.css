@@ -604,6 +604,13 @@ select {
   padding-top: 100px;
 }
 
+.idea_form input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  color: #fff;
+}
+
 .idea_form option {
   color: #000000;
 }
@@ -928,6 +935,10 @@ select {
   padding: 20px 0;
 }
 
+#allicon:hover {
+  color: #f74639;
+}
+
 .container.iconcont {
   align-content: "center";
 }
@@ -1190,7 +1201,8 @@ main .hvr-icon-forward:hover {
 }
 
 .footer-logo {
-  height: 100px;
+  max-width: 50vw;
+  width: 300px;
   text-align: center;
 }
 
