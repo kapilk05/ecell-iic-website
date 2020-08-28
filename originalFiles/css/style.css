@@ -618,7 +618,9 @@ textarea {
 .radioButton {
   display: flex;
 }
-
+.radioButton input[type="radio"] {
+  margin-top: 5px;
+}
 .radio-wrapper:first-child {
   padding-right: 10px;
 }
