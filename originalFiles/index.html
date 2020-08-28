@@ -373,7 +373,7 @@
                 <div class="col-md-2"></div>
 
                 <div class="col-md-8 idea_form">
-                  <form id="startup_idea" autocomplete="off">
+                  <form id="startup_idea" name="idea" autocomplete="off">
                     <h1>Submit your Idea</h1>
                     <label for="name">Full Name</label>
                     <input
@@ -472,10 +472,11 @@
                     <textarea
                       rows="4"
                       cols="72"
-                      name="idea"
+                      name="description"
                       form="idea"
                       placeholder="Tell us about your idea!"
                       style="margin-top: 20px"
+                      id="description"
                       required
                     ></textarea>
                     <button
@@ -894,7 +895,7 @@
           <div class="col-md-6 col-sm-12 contact-details">
             <h1 class="blue-text">Contact Us</h1>
 
-            <form name="e-cell" id="contactform">
+            <form name="contact" id="contactform">
               <div class="col-md-12">
                 <label for="name"> Full Name</label>
                 <input
@@ -1039,6 +1040,7 @@
         </a>
       </div>
       <script src="js/nav.js"></script>
+      <script src="js/forms.js"></script>
 
       <script>
         $(window).scroll(function () {
@@ -1078,15 +1080,15 @@
           };
         }
 
-        $("#submit_idea").click(function (event) {
-          event.preventDefault();
-          console.log("hi");
-          $(".toast").addClass("show");
-          setTimeout(() => {
-            $(".toast").removeClass("show");
-          }, 5000);
-          console.log("bye");
-        });
+        // $("#submit_idea").click(function (event) {
+        //   event.preventDefault();
+        //   console.log("hi");
+        //   $(".toast").addClass("show");
+        //   setTimeout(() => {
+        //     $(".toast").removeClass("show");
+        //   }, 5000);
+        //   console.log("bye");
+        // });
 
         $(window).scroll(startCounter);
         function startCounter() {
@@ -1108,22 +1110,22 @@
           }
         }
 
-        var $form = $("form#startup_idea"),
-          url =
-            "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
+        // var $form = $("form#startup_idea"),
+        //   url =
+        //     "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
 
-        $("#submit_idea").on("click", function (e) {
-          e.preventDefault();
-          var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject(),
-          })
-            .success
-            // Do what you want with this Uper all yours!
-            ();
-        });
+        // $("#submit_idea").on("click", function (e) {
+        //   e.preventDefault();
+        //   var jqxhr = $.ajax({
+        //     url: url,
+        //     method: "GET",
+        //     dataType: "json",
+        //     data: $form.serializeObject(),
+        //   })
+        //     .success
+        //     // Do what you want with this Uper all yours!
+        //     ();
+        // });
         filterSelection("all"); // Execute the function and show all columns
         function filterSelection(c) {
           var x, i;
