@@ -367,37 +367,44 @@
                 <div class="col-md-8 idea_form">
                   <h1>Submit your Idea</h1>
                   <label for="name">Full Name</label>
-                  <input name="name" type="text" id="name" /><br />
+                  <input name="name" type="text" id="idea_name" /><br />
                   <div class="row">
                     <div class="col-md-6">
-                      <label for="email">Email</label>
+                      <label for="email" style="margin-top: 20px">Email</label>
                       <input
                         name="email"
                         type="email"
-                        id="email"
+                        id="idea_email"
                         required
                       /><br />
                     </div>
                     <div class="col-md-6">
-                      <label for="contact">Contact Number</label>
-                      <input name="contact" type="tel" id="contact" /><br />
+                      <label for="contact" style="margin-top: 20px"
+                        >Contact Number</label
+                      >
+                      <input
+                        name="contact"
+                        type="tel"
+                        id="idea_contact"
+                      /><br />
                     </div>
                   </div>
 
                   <div class="row">
-                    <div class s="col-md-6 radioStudent">
+                    <div class="col-md-6 radioStudent">
                       Are you a student?<br />
                       <div class="radioButton">
                         <input
                           type="radio"
-                          id="male"
                           name="student"
-                          value="Yes"
+                          id="Yes"
                           onclick="showStudent();"
                         />
-                        <label for="Yes">Yes</label><br />
-                        <input type="radio" id="No" name="student" value="No" />
-                        <label for="No">No</label><br />
+                        <label for="Yes" style="margin: -5px 5px 0">Yes</label
+                        ><br />
+                        <input type="radio" id="No" name="student" />
+                        <label for="No" style="margin: -5px 5px 0">No</label
+                        ><br />
                       </div>
                     </div>
                     <div class="col-md-6 radioBusiness">
@@ -898,7 +905,7 @@
                 /><br />
               </div>
               <div class="col-md-12">
-                <label for="email">Email</label>
+                <label for="email" style="margin-top: 20px">Email</label>
                 <input
                   class="idea-input"
                   name="email"
@@ -908,7 +915,7 @@
                 /><br />
               </div>
               <div class="col-md-12">
-                <label for="message">Message</label>
+                <label for="message" style="margin-top: 20px">Message</label>
                 <textarea
                   class="idea-input"
                   rows="4"

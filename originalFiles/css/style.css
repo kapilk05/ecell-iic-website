@@ -604,6 +604,13 @@ select {
   padding-top: 100px;
 }
 
+.idea_form input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  color: #fff;
+}
+
 .idea_form option {
   color: #000000;
 }
