@@ -373,10 +373,15 @@
                 <div class="col-md-2"></div>
 
                 <div class="col-md-8 idea_form">
-                  <form id="startup_idea" name="idea">
+                  <form id="startup_idea" name="idea" autocomplete="off">
                     <h1>Submit your Idea</h1>
                     <label for="name">Full Name</label>
-                    <input name="name" type="text" id="idea_name" /><br />
+                    <input
+                      name="name"
+                      type="text"
+                      id="idea_name"
+                      required
+                    /><br />
                     <div class="row">
                       <div class="col-md-6">
                         <label for="email" style="margin-top: 20px"
@@ -397,6 +402,7 @@
                           name="contact"
                           type="tel"
                           id="idea_contact"
+                          required
                         /><br />
                       </div>
                     </div>
@@ -410,6 +416,7 @@
                             name="student"
                             id="Yes"
                             onclick="showStudent();"
+                            required
                           />
                           <label for="Yes" style="margin: 0px 5px 0">Yes</label
                           ><br />
@@ -431,7 +438,7 @@
                       </div>
                     </div>
                     <div class="row" id="studentInfo">
-                      <div class="col-md-6">
+                      <div class="col-md-6" style="margin-top: 20px">
                         <select id="stream" name="stream">
                           <option value="CSE" selected>CSE</option>
                           <br />
@@ -449,7 +456,7 @@
                           <br /></select
                         ><br />
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6" style="margin-top: 20px">
                         <select id="year" name="year">
                           <option value="FE" selected>FE</option>
                           <br />
@@ -470,6 +477,7 @@
                       placeholder="Tell us about your idea!"
                       style="margin-top: 20px"
                       id="description"
+                      required
                     ></textarea>
                     <button
                       class="btn"
@@ -494,10 +502,7 @@
           <h1 class="">Startups</h1>
           <div class="row" id="card_display">
             <div class="col-lg-3" id="column_startup">
-              <div
-                class="startup_holder"
-                style="background-image: url(./images/clofactory.png)"
-              ></div>
+              <img class="startup_holder" src="./images/clofactory.png" />
 
               <p>
                 The vision of Clofactory is to revolutionize the clothing
