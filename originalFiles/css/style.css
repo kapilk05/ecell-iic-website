@@ -649,7 +649,7 @@ select {
 input[type="email"],
 input[type="tel"],
 textarea {
-  color: #fff;
+  color: #fff !important;
 }
 
 .idea_form option {
