@@ -523,8 +523,12 @@
             <p class="my-btn btn-active" onclick="filterSelection('all')">
               All
             </p>
-            <p class="my-btn" onclick="filterSelection('2019-20')">2019&nbsp;-&nbsp;20</p>
-            <p class="my-btn" onclick="filterSelection('2018-19')">2018&nbsp;-&nbsp;19</p>
+            <p class="my-btn" onclick="filterSelection('2019-20')">
+              2019&nbsp;-&nbsp;20
+            </p>
+            <p class="my-btn" onclick="filterSelection('2018-19')">
+              2018&nbsp;-&nbsp;19
+            </p>
           </div>
         </div>
         <div class="cards">
@@ -875,7 +879,7 @@
       </div>
 
       <!--    Contact Form    -->
-      <div class="container-contact">
+      <div id="contactus" class="container-contact">
         <div class="row map">
           <div class="col-md-6 col-sm-12 map">
             <div id="map"></div>
@@ -937,79 +941,64 @@
       </div>
 
       <!--Footer-->
-      <div class="container" id="footer">
-        <div class="" style="margin: auto; text-align: center">
-          <img class="footer-logo" src="images/logo.png" alt="" />
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="col-heading">About</div>
-            <ul>
-              <li>About</li>
-              <li>Our Team</li>
-              <li>Contact Us</li>
-              <li>Submit your idea</li>
-            </ul>
+      <div id="footer">
+        <div class="container">
+          <div class="" style="margin: auto; text-align: center">
+            <img class="footer-logo" src="./images/ecell.png" alt="" />
+            <!-- <img class="footer-logo" src="images/logo.png" alt="" /> -->
           </div>
-          <div class="col-md-4">
-            <div class="col-heading">Learn More</div>
-            <ul>
-              <li>Startups</li>
-              <li>Achievements</li>
-              <li>Events</li>
-              <li>Testimonials</li>
-            </ul>
+          <div class="row footer-links">
+            <div class="col-md-4">
+              <div class="col-heading">About</div>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="index.html#contactus">Contact Us</a></li>
+                <li>
+                  <button class="footer-idea-link" onclick="showForm()">
+                    Submit your idea
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="col-heading">Learn More</div>
+              <ul>
+                <li><a href="index.html#acheivements">Startups</a></li>
+                <li><a href="index.html#acheivements">Achievements</a></li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <!-- <div class="col-heading">Get In Touch</div>
+              <ul>
+                <li>ecell.djsce@gmail.com</li>
+                <li>
+                  Dwarkadas J Sanghvi,<br />
+                  Gulmohar Road, J. V. P. D. Scheme,<br />
+                  Vile Parle(W), Mumbai
+                </li>
+              </ul> -->
+              <div class="col-heading">Social Media</div>
+              <p>Follow us on social media to get the latest updates from us</p>
+              <div class="footer-icons-social">
+                <a href="#"><i class="footer-social fab fa-linkedin" id="allicon"></i></a>
+                <a href="#"><i
+                  class="footer-social</a> fab fab fa-facebook-f fab-lg"
+                  id="allicon"
+                ></i>
+                <a href="#"><i class="footer-social fab fa-twitter" id="allicon"></i></a>
+                <a href="#"><i class="footer-social fab fa-instagram" id="allicon"></i></a>
+                <a href="#"><i class="footer-social fab fa-youtube" id="allicon"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <!-- <div class="col-heading">Get In Touch</div>
-            <ul>
-              <li>ecell.djsce@gmail.com</li>
-              <li>
-                Dwarkadas J Sanghvi,<br />
-                Gulmohar Road, J. V. P. D. Scheme,<br />
-                Vile Parle(W), Mumbai
-              </li>
-            </ul> -->
-            <div class="col-heading">Social Media</div>
-            <p>Follow us on social media to get the latest updates from us</p>
-            <i class="footer-social fab fa-linkedin" id="allicon"></i>
-            <i
-              class="footer-social fab fab fa-facebook-f fab-lg"
-              id="allicon"
-            ></i>
-            <i class="footer-social fab fa-twitter" id="allicon"></i>
-            <i class="footer-social fab fa-instagram" id="allicon"></i>
-            <i class="footer-social fab fa-youtube" id="allicon"></i>
+          <div class="all-rights container">
+            © 2020 DJSCE E-Cell - All Rights Reserved
           </div>
-        </div>
-        <hr />
-        <div class="all-rights container center">
-          © 2020 DJSCE E-Cell - All Rights Reserved
         </div>
       </div>
-      <!-- <div id="footer"class="container newfooter">
-        <div id="logocomp">
-          <div>
-            <a href="#">
-              <img src="./images/logo.png" id="logofooter" />
-            </a>
-          </div>
-
-          <div class="nav-link logo logo-nav navbar-brand">
-            DJSCE E-CELL
-          </div>
-        </div>
-
-        <div class="row newfooter">
-          <div><i class="fab fa-youtube" id="footicon"></i></div>
-          <div><i class="fab fa-facebook-f fab-lg" id="footicon"></i></div>
-          <div><i class="fab fa-instagram" id="footicon"></i></div>
-          <div><i class="fab fa-linkedin" id="footicon"></i></div>
-        </div>
-        <div id="takeup">
-          <a href="#"><ion-icon name="arrow-up-outline"></ion-icon> </a>
-        </div>
-      </div> -->
 
       <div id="takeup">
         <a href="# ">
@@ -1017,10 +1006,6 @@
         </a>
       </div>
       <script src="js/nav.js"></script>
-
-      <!-- script for counter  -->
-
-      <!-- end script for counter -->
 
       <script>
         $(window).scroll(function () {
