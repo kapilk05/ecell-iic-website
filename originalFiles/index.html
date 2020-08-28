@@ -136,7 +136,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#partner"
+            <a class="nav-link hvr-underline-from-left" href="#partners-section"
               >Partners</a
             >
           </li>
@@ -147,7 +147,9 @@
           </li>
         </ul>
         <span class="navbar-text">
-          <a class="nav-btn hvr-icon-forward"> Get in touch </a>
+          <a class="nav-btn hvr-icon-forward" href="#contactus">
+            Get in touch
+          </a>
         </span>
       </div>
     </nav>
@@ -778,7 +780,11 @@
         </div>
       </div>
       <!--    Testimonials    -->
-      <div id="testimonials" class="testimonial9 py-5 bg-light">
+      <div
+        id="testimonials"
+        class="testimonial9 py-5 bg-light"
+        style="padding-top: 6rem !important"
+      >
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-md-6" style="margin-top: 2em">
@@ -850,33 +856,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- item -->
-                <!-- item -->
-                <!-- <div class="item">
-                  <div
-                    class="card testimonial-card card-shadow border-0 mb-4 position-relative"
-                  >
-                    <div class="p-4">
-                      <h5 class="font-weight-light">
-                        🍜
-                      </h5>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center ml-3">
-                    <div class="customer-thumb">
-                      <img
-                        src="images/Sanket.jpeg"
-                        alt="wrapkit"
-                        class="rounded-circle mr-3"
-                      />
-                    </div>
-                    <div class="testimonial-by">
-                      <h6 class="font-weight-bold mb-0">Sanket Shah</h6>
-                      <span class="font-13">Project Manager</span>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- item -->
               </div>
             </div>
           </div>
@@ -884,15 +863,20 @@
       </div>
 
       <!--Partner-->
-      <div id="partner">
-        <div class="container section-holder" style="margin-bottom: 0">
-          <h1 class="cta">Become A Partner</h1>
-          <a href="partners.html">
-            <button class="btn hvr-icon-forward">
-              Learn More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </button>
-          </a>
+      <div id="partners-section" style="padding-top: 60px">
+        <div id="partner">
+          <div
+            class="container section-holder"
+            style="margin-bottom: 0; padding: 50px"
+          >
+            <h1 class="cta">Become A Partner</h1>
+            <a href="partners.html">
+              <button class="btn hvr-icon-forward">
+                Learn More
+                <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -902,7 +886,7 @@
           <div class="col-md-6 col-sm-12 map">
             <div id="map"></div>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 contact-details">
             <h1 class="blue-text">Contact Us</h1>
 
             <form name="e-cell" id="idea">
@@ -943,15 +927,21 @@
                 </button>
               </div>
               <div class="location">
-                <h3>Find Us</h3>
-                <h4>Location</h4>
-                <p>
-                  Dwarkadas J Sanghvi,<br />
-                  Gulmohar Road, J. V. P. D. Scheme,<br />
-                  Vile Parle(W), Mumbai
-                </p>
-                <h4>Email</h4>
-                <p>ecell.djsce@gmail.com</p>
+                <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
+                  Reach Us
+                </h2>
+                <div class="row">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <p>
+                    Dwarkadas J Sanghvi,<br />
+                    Gulmohar Road, J. V. P. D. Scheme,<br />
+                    Vile Parle(W), Mumbai
+                  </p>
+                </div>
+                <div class="row">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <p class="college-mail">ecell.djsce@gmail.com</p>
+                </div>
               </div>
             </form>
           </div>
