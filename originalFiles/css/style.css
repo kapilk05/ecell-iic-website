@@ -816,17 +816,7 @@ select {
   border-radius: 1px;
 }
 
-@media screen and (max-width: 992px) {
-  h1 {
-    font-size: 2em !important;
-  }
-  .header-content p {
-    font-size: 14px;
-  }
-  nav .nav-btn {
-    display: none;
-  }
-
+@media screen and (max-width: 1200px) {
   .nav-link {
     display: inline-flex !important;
   }
@@ -837,17 +827,27 @@ select {
     width: 100vw;
   }
 
+  nav {
+    width: 100vw;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2em !important;
+  }
+  .header-content p {
+    font-size: 14px;
+  }
+
   .logo {
     /* margin: auto !important; */
   }
 
   canvas {
-    width: 100vw;
-  }
-  nav ul {
-    text-align: center;
-  }
-  nav {
     width: 100vw;
   }
 }
