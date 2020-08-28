@@ -30,6 +30,7 @@ $(window).on("resize", function () {
     } else {
       if ($(".navbar-collapse").hasClass("show")) {
         extendVid();
+        closeNavOnClickingOutside();
       }
     }
   }
@@ -39,7 +40,11 @@ $(".nav-link").click(() => {
   $(".navbar-toggler").click();
 });
 
-if (width < 1200)
+if (width < 1200) {
+  closeNavOnClickingOutside();
+}
+
+function closeNavOnClickingOutside() {
   $("body > *")
     .not("body > nav")
     .click(() => {
@@ -47,3 +52,4 @@ if (width < 1200)
         $(".navbar-toggler").click();
       }
     });
+}
