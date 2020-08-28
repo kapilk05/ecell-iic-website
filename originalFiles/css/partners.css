@@ -29,6 +29,10 @@ main {
   /* max-width: 200px; */
 }
 
+.partners-logos-container div a div:hover {
+  transform: translateY(-15px);
+}
+
 .partners-logos-container {
   margin: auto !important;
 }

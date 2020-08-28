@@ -42,7 +42,7 @@ function clickToggler() {
   console.log($(".navbar-collapse").hasClass("show"));
 }
 
-// $(".navbar-toggler").click(extend);
+$(".navbar-toggler").click(extend);
 // $(".navbar-toggler").click(clickToggler);
 
 $(".nav-link").click(clickNavLink);
