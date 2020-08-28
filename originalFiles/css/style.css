@@ -873,6 +873,13 @@ select {
   border-radius: 1px;
 }
 
+@media screen and (width: 768px) {
+  #map {
+    width: 100% !important;
+    height: 800px !important;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #contactus h1 {
     padding-top: 70px;

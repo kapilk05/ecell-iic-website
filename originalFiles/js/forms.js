@@ -7,7 +7,6 @@ ideaForm.addEventListener("submit", (e) => {
   fetch(ideaScriptURL, { method: "POST", body: new FormData(ideaForm) })
     .then(() => {
       ideaForm.reset();
-        $("#description").val("");
       swal({
         title: "Idea Submitted!",
         text: "We'll review your idea and get in contact with you soon",
@@ -30,10 +29,8 @@ const contactForm = document.forms["contact"];
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(contactScriptURL, { method: "POST", body: new FormData(contactForm) })
-    .then(alert("Details updated"))
     .then(() => {
       contactForm.reset();
-      $("#message").val("");
       swal({
         title: "Thank you",
         text: "We'll get in contact with you soon",
