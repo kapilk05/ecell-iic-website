@@ -27,7 +27,6 @@ function extend() {
 }
 
 function clickNavLink() {
-  console.log(!$(".navbar-toggle").hasClass("collapsed"));
   if (!$(".navbar-toggle").hasClass("collapsed")) {
     $(".navbar-toggler").toggleClass("collapsed");
     $(".navbar-collapse").toggleClass("show");
@@ -37,16 +36,19 @@ function clickNavLink() {
 
 function clickToggler() {
   if ($(".navbar-collapse").hasClass("show")) {
-    $(".navbar-toggler").click();
+    $(".navbar-toggler").toggleClass("collapsed");
   }
+  $(".navbar-collapse").toggleClass("show");
+  console.log($(".navbar-collapse").hasClass("show"));
 }
 
-$(".navbar-toggler").click(extend);
+// $(".navbar-toggler").click(extend);
+// $(".navbar-toggler").click(clickToggler);
 
 $(".nav-link").click(clickNavLink);
 
-$("main").click(clickToggler);
-$(".v-header").click(clickToggler);
+// $("main").click(clickToggler);
+// $(".v-header").click(clickToggler);
 
 $(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {

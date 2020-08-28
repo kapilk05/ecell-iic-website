@@ -364,6 +364,8 @@ hr {
 }
 
 .card {
+  background: #fff;
+  margin: auto !important;
   position: relative;
   width: 320px;
   height: 400px;
@@ -524,6 +526,16 @@ hr {
   top: 0;
   bottom: 0;
   width: 100%;
+  /* top: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  right: 10px;
+  left: 10px;
+  border-radius: 10px; */
+}
+
+canvas:focus {
+  outline: none;
 }
 
 .map a {
@@ -545,13 +557,13 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  height: 40px;
-  box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04);
+  /* height: 40px; */
+  /* box-shadow: 0 2px 4px 0 rgba(12, 0, 46, 0.04); */
   width: 100%;
   /* margin-top: 20px !important; */
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #d2d2d2;
 }
 
 input[type="text"]:focus,
@@ -559,9 +571,9 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus,
 select:focus {
-  border: none;
+  /* border: none; */
   outline: none;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
 }
 
 .radioStudent,
@@ -1079,6 +1091,10 @@ select {
   }
 }
 
+#aboutus {
+  background: #fff;
+}
+
 #aboutus .img-container {
   height: 30vh;
   background: url("https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1061&q=80");
@@ -1120,6 +1136,10 @@ main .hvr-icon-forward:hover {
   margin: 0 50px;
   margin-bottom: 10px;
 }
+#myBtnContainer .my-btn:hover {
+  /* color: #f74539 !important; */
+  border-bottom: #f74539 3px solid;
+}
 
 #myBtnContainer {
   display: flex;
@@ -1142,4 +1162,48 @@ main .hvr-icon-forward:hover {
   #aboutus .img-container::before {
     display: none;
   }
+  #partner {
+    /* background-size: auto; */
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../images/partners-header-mobile.png") !important;
+    background-size: cover !important;
+  }
+}
+
+#partner {
+  /* background: #f74539; */
+  /* color: #fff; */
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/partners-header.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-social {
+  font-size: 30px !important;
+}
+
+.footer-logo {
+  height: 100px;
+  text-align: center;
+}
+
+#footer {
+  background: #181818;
+  color: #fff;
+}
+
+.all-rights {
+  border-top: rgba(255, 255, 255, 0.329) 1px solid;
+  padding: 20px 0;
+}
+
+.idea-input:focus {
+  border-bottom: 2px solid #f74539;
 }
