@@ -362,8 +362,8 @@
             <!-- Flexbox container for aligning the toasts -->
             <div class="container">
               <div class="toast mt-3">
-                <div class="toast-header">Toast Header</div>
-                <div class="toast-body">Some text inside the toast body</div>
+                <div class="toast-header">Form Submission Successful</div>
+                <div class="toast-body">Your data has been recorded!</div>
               </div>
             </div>
 
@@ -373,112 +373,112 @@
                 <div class="col-md-2"></div>
 
                 <div class="col-md-8 idea_form">
-                  <h1>Submit your Idea</h1>
-                  <label for="name">Full Name</label>
-                  <input
-                    autocomplete="off"
-                    name="name"
-                    type="text"
-                    id="idea_name"
-                  /><br />
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label for="email" style="margin-top: 20px">Email</label>
-                      <input
-                        name="email"
-                        type="email"
-                        id="idea_email"
-                        required
-                      /><br />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="contact" style="margin-top: 20px"
-                        >Contact Number</label
-                      >
-                      <input
-                        name="contact"
-                        type="tel"
-                        id="idea_contact"
-                      /><br />
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 radioStudent">
-                      Are you a student?<br />
-                      <div class="radioButton">
+                  <form id="startup_idea">
+                    <h1>Submit your Idea</h1>
+                    <label for="name">Full Name</label>
+                    <input name="name" type="text" id="idea_name" /><br />
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="email" style="margin-top: 20px"
+                          >Email</label
+                        >
                         <input
-                          type="radio"
-                          name="student"
-                          id="Yes"
-                          onclick="showStudent();"
-                        />
-                        <label for="Yes" style="margin: -5px 5px 0">Yes</label
-                        ><br />
-                        <input type="radio" id="No" name="student" />
-                        <label for="No" style="margin: -5px 5px 0">No</label
+                          name="email"
+                          type="email"
+                          id="idea_email"
+                          required
+                        /><br />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="contact" style="margin-top: 20px"
+                          >Contact Number</label
+                        >
+                        <input
+                          name="contact"
+                          type="tel"
+                          id="idea_contact"
+                        /><br />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 radioStudent">
+                        Are you a student?<br />
+                        <div class="radioButton">
+                          <input
+                            type="radio"
+                            name="student"
+                            id="Yes"
+                            onclick="showStudent();"
+                          />
+                          <label for="Yes" style="margin: 0px 5px 0">Yes</label
+                          ><br />
+                          <input type="radio" id="No" name="student" />
+                          <label for="No" style="margin: 0px 5px 0">No</label
+                          ><br />
+                        </div>
+                      </div>
+                      <div class="col-md-6 radioBusiness">
+                        Type of business
+                        <select id="business" name="business">
+                          <option value="Sole Proprietorship" selected>
+                            Sole Proprietorship
+                          </option>
+                          <br />
+                          <option value="Partnership">Partnership</option>
+                          <br /></select
                         ><br />
                       </div>
                     </div>
-                    <div class="col-md-6 radioBusiness">
-                      Type of business
-                      <select id="business" name="business">
-                        <option value="Sole Proprietorship" selected>
-                          Sole Proprietorship
-                        </option>
-                        <br />
-                        <option value="Partnership">Partnership</option>
-                        <br /></select
-                      ><br />
+                    <div class="row" id="studentInfo">
+                      <div class="col-md-6">
+                        <select id="stream" name="stream">
+                          <option value="CSE" selected>CSE</option>
+                          <br />
+                          <option value="Computer">Computer</option>
+                          <br />
+                          <option value="IT">IT</option>
+                          <br />
+                          <option value="EXTC">EXTC</option>
+                          <br />
+                          <option value="Electronics">Electronics</option>
+                          <br />
+                          <option value="Chemical">Chemical</option>
+                          <br />
+                          <option value="Mechanical">Mechanical</option>
+                          <br /></select
+                        ><br />
+                      </div>
+                      <div class="col-md-6">
+                        <select id="year" name="year">
+                          <option value="FE" selected>FE</option>
+                          <br />
+                          <option value="SE">SE</option>
+                          <br />
+                          <option value="TE">TE</option>
+                          <br />
+                          <option value="BE">BE</option>
+                          <br /></select
+                        ><br />
+                      </div>
                     </div>
-                  </div>
-                  <div class="row" id="studentInfo">
-                    <div class="col-md-6">
-                      <select id="stream" name="stream">
-                        <option value="CSE" selected>CSE</option>
-                        <br />
-                        <option value="Computer">Computer</option>
-                        <br />
-                        <option value="IT">IT</option>
-                        <br />
-                        <option value="EXTC">EXTC</option>
-                        <br />
-                        <option value="Electronics">Electronics</option>
-                        <br />
-                        <option value="Chemical">Chemical</option>
-                        <br />
-                        <option value="Mechanical">Mechanical</option>
-                        <br /></select
-                      ><br />
-                    </div>
-                    <div class="col-md-6">
-                      <select id="year" name="year">
-                        <option value="FE" selected>FE</option>
-                        <br />
-                        <option value="SE">SE</option>
-                        <br />
-                        <option value="TE">TE</option>
-                        <br />
-                        <option value="BE">BE</option>
-                        <br /></select
-                      ><br />
-                    </div>
-                  </div>
-                  <textarea
-                    rows="4"
-                    cols="72"
-                    name="idea"
-                    form="idea"
-                    placeholder="Tell us about your idea!"
-                  ></textarea>
-                  <button
-                    class="btn"
-                    type="submit"
-                    id="submit_idea"
-                    style="margin-top: 10px"
-                  >
-                    Submit
-                  </button>
+                    <textarea
+                      rows="4"
+                      cols="72"
+                      name="idea"
+                      form="idea"
+                      placeholder="Tell us about your idea!"
+                      style="margin-top: 20px"
+                    ></textarea>
+                    <button
+                      class="btn"
+                      type="submit"
+                      id="submit_idea"
+                      style="margin-top: 10px"
+                    >
+                      Submit
+                    </button>
+                  </form>
                 </div>
                 <div class="col-md-2"></div>
               </div>
@@ -564,7 +564,7 @@
                   An interactive session conducted by a well known digital
                   content creator Viraj Ghelani.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -585,7 +585,7 @@
                   Informative session addressed by Jinesh Doshi and Nimesh Bumb
                   from 'Masterbridge'.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -604,7 +604,7 @@
                   Synergistic discussion held by Gaurav Jain,Founding member of
                   XBillion Skillz Lab and Shronit Ladhani CEO of  CareerNinja.
                 </p>
-                <a href="gallery.html" class="hvr-icon-forward" target="_blank">
+                <a href="detail.html" class="hvr-icon-forward" target="_blank">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -623,7 +623,7 @@
                   Guidance on businesss canvas model given by a PhD
                   entrepreneur, Dr.Indira Singh.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -644,7 +644,7 @@
                   Meeting organised to convert SIH ideas and project into a full
                   fledged startup.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -665,7 +665,7 @@
                   Seminar regarding financial planning for students carried out
                   by Alpa Shah,TEDxGateway speaker.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -684,7 +684,7 @@
                   Committee's flagship event and an awaited sales competiton of
                   the year.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -705,7 +705,7 @@
                   Gyan Dhan had organized sessions for higher education
                   aspirants and was addressed by their own CEO,Ankit Mehra.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -726,7 +726,7 @@
                   The mentor for the event was our college Alumni Shantanu
                   Baviskar who is the founder of venture Instafigures.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -748,7 +748,7 @@
                   college visiting faculty for Biomedical Department Sreejit
                   Pillai Sir.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -770,7 +770,7 @@
                   next generation of innovators to turn forward thinking
                   solutions into reality.
                 </p>
-                <a href="#" class="hvr-icon-forward">
+                <a href="detail.html" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -889,7 +889,7 @@
           <div class="col-md-6 col-sm-12 contact-details">
             <h1 class="blue-text">Contact Us</h1>
 
-            <form name="e-cell" id="idea">
+            <form name="e-cell" id="contactform">
               <div class="col-md-12">
                 <label for="name"> Full Name</label>
                 <input
@@ -1103,6 +1103,22 @@
           }
         }
 
+        var $form = $("form#startup_idea"),
+          url =
+            "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
+
+        $("#submit_idea").on("click", function (e) {
+          e.preventDefault();
+          var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject(),
+          })
+            .success
+            // Do what you want with this Uper all yours!
+            ();
+        });
         filterSelection("all"); // Execute the function and show all columns
         function filterSelection(c) {
           var x, i;
