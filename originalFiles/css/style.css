@@ -594,7 +594,7 @@ select:focus {
   /* border-bottom: 1px solid #fff; */
 }
 
-#email,
+.contactform #email,
 #message,
 #name {
   color: #000000;
