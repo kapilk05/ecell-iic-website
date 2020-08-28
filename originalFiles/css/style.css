@@ -1341,3 +1341,7 @@ main .hvr-icon-forward:hover {
 .footer-idea-link:focus {
   outline: none;
 }
+/* 
+.swal-overlay {
+  background-color: #f7463979;
+} */

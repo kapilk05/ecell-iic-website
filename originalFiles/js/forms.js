@@ -5,10 +5,22 @@ const ideaForm = document.forms["idea"];
 ideaForm.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(ideaScriptURL, { method: "POST", body: new FormData(ideaForm) })
-    .then(alert("Details updated"))
-    .then(ideaForm.reset())
-    .then($("#description").val(""))
-    .catch((error) => console.error("Error!", error.message));
+    .then(() => {
+      ideaForm.reset();
+      $("#description").val("");
+      swal({
+        title: "Idea Submitted!",
+        text: "We'll review your idea and get in contact with you soon",
+        icon: "success",
+      });
+    })
+    .catch((error) =>
+      swal({
+        title: "Error",
+        text: error.message,
+        icon: "error",
+      })
+    );
 });
 
 const contactScriptURL =
@@ -19,7 +31,20 @@ contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(contactScriptURL, { method: "POST", body: new FormData(contactForm) })
     .then(alert("Details updated"))
-    .then(contactForm.reset())
-    .then($("#message").val(""))
-    .catch((error) => console.error("Error!", error.message));
+    .then(() => {
+      contactForm.reset();
+      $("#message").val("");
+      swal({
+        title: "Thank you",
+        text: "We'll get in contact with you soon",
+        icon: "success",
+      });
+    })
+    .catch((error) =>
+      swal({
+        title: "Error",
+        text: error.message,
+        icon: "error",
+      })
+    );
 });
