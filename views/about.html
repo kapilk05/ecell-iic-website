@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/hover.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!-- For counter animation  -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://use.fontawesome.com/314c24a530.js"></script>
+    <title>DJ-Ecell</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@700&family=Work+Sans:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-xl navbar-light fixed-top scrolled"
+    >
+      <a class="nav-link logo logo-nav navbar-brand" href="/"
+        ><img src="/images/logo.png" alt="" /> DJSCE E-cell
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left active">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#features"
+              >Get Started <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#acheivements"
+              >Acheivements</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#events"
+              >Events</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/partners"
+              >Partners</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/team">Team</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a class="nav-btn hvr-icon-forward" href="/#contactus">
+            Get in touch
+          </a>
+        </span>
+      </div>
+    </nav>
+
+    <!--    Main content    -->
+    <main>
+      <!--Mission & Vision-->
+      <div class="container section-holder">
+        <h1 class="blue-text">About Us</h1>
+
+        <div class="row section-holder">
+          <div class="col-md-5">
+            <div class="info-horizontal" style="padding-top: 0">
+              <div class="icon">
+                <ion-icon name="bar-chart-outline"></ion-icon>
+              </div>
+              <div class="description">
+                <h3 class="title">Vision</h3>
+                <p>
+                  To harbour ourselves as an incubation haven and translate to
+                  an ultimate innovation destination by developing a symbolic
+                  relationship between students and professionals entrepreneurs,
+                  mentors, corporates and venture capitalists.
+                </p>
+              </div>
+            </div>
+            <div class="info-horizontal">
+              <div class="icon">
+                <ion-icon name="trophy-outline"></ion-icon>
+              </div>
+              <div class="description">
+                <h3 class="title">Mission</h3>
+                <p>
+                  To create an umbrella under which our students nurture their
+                  ideas convert them to strong entrepreneurial ventures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="img-container">
+              <img src="/images/mission_vision.jpg" class="mission_vision" />
+            </div>
+          </div>
+        </div>
+        <div class="row section-holder">
+          <div class="col-md-5">
+            <div
+              class="img-contain"
+              style="background-image: url(/images/idea.jpg)"
+            ></div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="heading_features">Features</h3>
+            <div class="aboutus">
+              <div class="about_icon">
+                <ion-icon name="ribbon-outline"></ion-icon>
+              </div>
+              <div class="feature_name">
+                <p>Foster Entrepreneurship in DJSCE</p>
+              </div>
+            </div>
+            <div class="aboutus">
+              <div class="about_icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+              <div class="feature_name">
+                <p>Accelerate Innovation</p>
+              </div>
+            </div>
+            <div class="aboutus">
+              <div class="about_icon">
+                <ion-icon name="bulb-outline"></ion-icon>
+              </div>
+              <div class="feature_name">
+                <p>Provide tinkering lab 24x7</p>
+              </div>
+            </div>
+            <div class="aboutus">
+              <div class="about_icon">
+                <ion-icon name="color-wand-outline"></ion-icon>
+              </div>
+              <div class="feature_name">
+                <p>Driving high quality mentorship</p>
+              </div>
+            </div>
+            <div class="aboutus">
+              <div class="about_icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+              <div class="feature_name">
+                <p>Grow and Scale up through expert guidance</p>
+              </div>
+            </div>
+            <div class="aboutus">
+              <div class="about_icon">
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+              <div class="feature_name">
+                <p>Access to startup resources</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-holder" style="text-align: left">
+            <div class="row">
+              <div class="col-md-3" style="text-align: center">
+                <img
+                  src="images/Testimonials/img4.jpeg"
+                  style="height: 170px; border-radius: 50%"
+                />
+              </div>
+              <div class="col-md-9">
+                <h2 style="font-family: 'Roboto Slab', serif !important">
+                  From the Principal's Desk
+                </h2>
+                <p>
+                  The contemporary business era demands a larger focus and
+                  commitment on entrepreneurial initiatives, especially in a
+                  country like India and it is vital for job creation, economic
+                  growth and solving societal problems. It also reflects upon a
+                  society’s capacity for boldness and risk-taking & creativity,
+                  as there is a strong positive association among
+                  entrepreneurship, economic growth and innovation.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <p>
+                  DJS E-cell has been influential in triggering awareness,
+                  interest, desire and sustained action towards building the
+                  entrepreneurial spirit required among the students in a
+                  significant way. It has been highly successful in providing an
+                  ecosystem to the young entrepreneurs in terms of mentorship,
+                  technical assistance and networking. It is a catalyst that
+                  constantly promotes the entrepreneurial spirit, largely
+                  prevalent in our country “. I take this opportunity to
+                  congratulate all our E-Cell committee members for their
+                  efforts and also thank them for their sustained commitment and
+                  hard work. I believe that their efforts will certainly help
+                  shape the future of many of our young countrymen, who will be
+                  future job providers, rather than being just job seekers.
+                </p>
+                <p>
+                  I wish everyone all well and pray for their continued success.
+                </p>
+                <p align="right">
+                  Regards and good wishes.
+                  <br/ >
+                  <b>Dr. Hari Vasudevan</b>
+                  <br/ >
+                  Principal, Dwarkadas J.Sanghvi College of Engineering
+                  <br/ >
+                  Vile Parle (West), Mumbai - 400056 Ph.D. (IIT Bombay), M.E.(VJTI),
+                  <br/ >
+                  PGDIE (VJTI) Certified ERP Consultant- BaaN (SPJIMR; Mumbai)
+                  <br/ >
+                  Ph.(Dir) 91-22-26123892, (B) 91-22-26107010, 26107461 (M)
+                  <br/ >
+                  91-09821464696, Fax 91-22-26194988
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+      <!-- <script src="/Users/apple/Desktop/dj-ecell/js/counter.js"></script> -->
+
+      <!-- counter animation end -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+      <!-- script for counter  -->
+
+      <!-- end script for counter -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+      <script src="/js/nav.js"></script>
+    </main>
+    <div id="footer">
+      <div class="container">
+        <div class="" style="margin: auto; text-align: center">
+          <img class="footer-logo" src="/images/ecell.png" alt="" />
+          <!-- <img class="footer-logo" src="images/logo.png" alt="" /> -->
+        </div>
+        <div class="row footer-links">
+          <div class="col-md-4">
+            <div class="col-heading">About</div>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/team">Our Team</a></li>
+              <li><a href="/#contactus">Contact Us</a></li>
+              <li>
+                <button class="footer-idea-link" onclick="showForm()">
+                  Submit your idea
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="col-heading">Learn More</div>
+            <ul>
+              <li><a href="/#acheivements">Startups</a></li>
+              <li><a href="/#acheivements">Achievements</a></li>
+              <li><a href="/#events">Events</a></li>
+              <li><a href="/#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <!-- <div class="col-heading">Get In Touch</div>
+                  <ul>
+                    <li>ecell.djsce@gmail.com</li>
+                    <li>
+                      Dwarkadas J Sanghvi,<br />
+                      Gulmohar Road, J. V. P. D. Scheme,<br />
+                      Vile Parle(W), Mumbai
+                    </li>
+                  </ul> -->
+            <div class="col-heading">Social Media</div>
+            <p>Follow us on social media to get the latest updates from us</p>
+            <div class="footer-icons-social">
+              <a
+                href="https://www.linkedin.com/company/dj-e-cell"
+                target="_blank"
+                ><i class="footer-social fab fa-linkedin" id="allicon"></i
+              ></a>
+              <a href="https://www.facebook.com/djsce.ecell.7" target="_blank"
+                ><i
+                  class="footer-social fab fab fa-facebook-f fab-lg"
+                  id="allicon"
+                ></i>
+              </a>
+              <a href="https://twitter.com/EcellD?s=12" target="_blank"
+                ><i class="footer-social fab fa-twitter" id="allicon"></i
+              ></a>
+              <a
+                href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr"
+                target="_blank"
+                ><i class="footer-social fab fa-instagram" id="allicon"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw"
+                target="_blank"
+                ><i class="footer-social fab fa-youtube" id="allicon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="all-rights container">
+          © 2020 DJSCE E-Cell - All Rights Reserved
+        </div>
+      </div>
+    </div>
+
+    <div id="takeup">
+      <a href="# ">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+    </div>
+  </body>
+</html>
