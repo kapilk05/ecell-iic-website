@@ -1,0 +1,25 @@
+{
+  "name": "dj-ecell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SakshiUppoor/dj-ecell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SakshiUppoor/dj-ecell/issues"
+  },
+  "homepage": "https://github.com/SakshiUppoor/dj-ecell#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
