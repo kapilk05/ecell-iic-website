@@ -7,7 +7,7 @@ const list = require('./events');
 const app = express();
 
 // listen for requests
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 // register view engine
 app.set('view engine', 'ejs');
