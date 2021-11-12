@@ -502,7 +502,7 @@ hr {
     width: 100% !important;
     height: 200px !important;
   }
-
+  
   .img-contain, .mission_vision {
     display: none;
   }
@@ -510,7 +510,7 @@ hr {
   .heading_features {
     padding-top: 20px;
   }
-
+  
   #column_startup {
     margin: 40px 20px 0 !important;
   }
@@ -520,16 +520,16 @@ hr {
   .card {
     width: 80vw !important;
   }
-
+  
   .card .content {
     height: 45%;
   }
-
+  
   .card .content p {
     transform: translateY(0);
     opacity: 1;
   }
-
+  
   #events .cards {
     padding: 0;
   }
@@ -822,7 +822,7 @@ select {
 .wrapper {
   color: #fff;
   background: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
-    #000000;
+  #000000;
   background-repeat: no-repeat;
   background-size: 100vw;
   margin: 70px 0 20px 0;
@@ -911,17 +911,17 @@ select {
   .nav-link {
     display: inline-flex !important;
   }
-
+  
   .show {
     /* position: absolute; */
     top: 60px;
     width: 100vw;
   }
-
+  
   nav {
     width: 100vw;
   }
-
+  
   .navbar-collapse {
     text-align: center;
   }
@@ -933,11 +933,11 @@ select {
   .header-content p {
     font-size: 14px;
   }
-
+  
   .logo {
     /* margin: auto !important; */
   }
-
+  
   canvas {
     width: 100vw;
   }
@@ -1172,14 +1172,14 @@ select {
   }
   .partner-bg-mobile {
     background-image: linear-gradient(
-        to bottom,
-        rgba(245, 246, 252, 0.685),
-        rgba(255, 255, 255, 0.822)
+      to bottom,
+      rgba(245, 246, 252, 0.685),
+      rgba(255, 255, 255, 0.822)
       ),
       url("../images/partners-header-mobile.png");
-    background-size: cover;
-    opacity: 0.5;
-    position: absolute;
+      background-size: cover;
+      opacity: 0.5;
+      position: absolute;
     height: calc(100vh - 60px);
     width: 100vw;
     z-index: -1;
@@ -1189,11 +1189,11 @@ select {
     height: 100vh;
     padding-top: 100px;
   }
-
+  
   main {
     margin-top: 0;
   }
-
+  
   .partners p {
     color: #291b1b;
   }
@@ -1243,6 +1243,7 @@ main .hvr-icon-forward:hover {
   font-weight: 600;
   margin: 0 50px;
   margin-bottom: 10px;
+  
 }
 #myBtnContainer .my-btn:hover {
   /* color: #f74539 !important; */
@@ -1273,15 +1274,15 @@ main .hvr-icon-forward:hover {
   #partner {
     /* background-size: auto; */
     background: linear-gradient(
-        rgba(255, 255, 255, 0.788),
-        rgba(255, 255, 255, 0.788)
+      rgba(255, 255, 255, 0.788),
+      rgba(255, 255, 255, 0.788)
       ),
       url("../images/partners-header-mobile.png") !important;
-    background-size: cover !important;
+      background-size: cover !important;
+    }
   }
-}
-
-#partners-section {
+  
+  #partners-section {
   background: #f8f9fa;
 }
 
@@ -1289,8 +1290,8 @@ main .hvr-icon-forward:hover {
   /* background: #f74539; */
   /* color: #fff; */
   background: linear-gradient(
-      rgba(255, 255, 255, 0.788),
-      rgba(255, 255, 255, 0.788)
+    rgba(255, 255, 255, 0.788),
+    rgba(255, 255, 255, 0.788)
     ),
     url("../images/partners-header.png");
   background-size: cover;
@@ -1392,4 +1393,32 @@ main .hvr-icon-forward:hover {
 
 * {
   cursor: default;
+}
+/* certificates section  */
+.section-holder-certificates {
+  /* min-height: 100vh; */
+  padding: 0 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.certificates_holder {
+  max-height: 70%;
+  /* max-height: 700px; */
+  display: block;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.certificates_head{
+  
+  font-family: "Roboto Slab", serif !important;
+  /* font-weight: 700;
+  font-size: 66px;
+  padding: 20px 0;
+  text-align: center; */
+
 }

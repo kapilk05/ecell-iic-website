@@ -1,7 +1,10 @@
 .row {
   justify-content: center;
 }
-
+.row1 {
+  justify-content: center;
+  margin: 0px auto;
+}
 .col-md-3 {
   /* padding: 25px 15px; */
 }
@@ -18,7 +21,7 @@ p {
   color: #00000054;
 }
 
-.faculty h2 {
+.faculty h2{
   /* margin-bottom: 1em; */
 }
 
