@@ -1,308 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no"
-    />
-    <!-- <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no" />
+  <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     /> -->
-    <!-- <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+  <!-- <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/hover.css" />
-    <link rel="stylesheet" href="/css/testimonials.css" />
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/hover.css" />
+  <link rel="stylesheet" href="/css/testimonials.css" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Bootstrap + jQuery CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap + jQuery CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Other CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
-    />
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
+  <!-- Other CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
 
-    <!-- Sweet Alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Sweet Alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <!-- Owl Carousel -->
-    <link
-      rel="stylesheet"
-      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
-    />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet"
+    href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" />
 
-    <!-- <script
+  <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://use.fontawesome.com/314c24a530.js"></script>
-    <title>DJSCE E-Cell</title>
-  </head>
-  <body data-spy="scroll" data-target="#navbar">
-    <nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top">
-      <a class="nav-link logo logo-nav navbar-brand" href="/"
-        ><img src="/images/logo.png" alt="" /> DJSCE E-cell
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://use.fontawesome.com/314c24a530.js"></script>
+  <title>DJSCE E-Cell</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top">
+    <a class="nav-link logo logo-nav navbar-brand" href="/"><img src="/images/logo.png" alt="" /> DJSCE E-cell
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
+        <li class="nav-item">
+          <a class="nav-link hvr-underline-from-left" href="#aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-underline-from-left" href="#features">Get Started <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-underline-from-left" href="#acheivements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-underline-from-left" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-underline-from-left" href="#partners-section">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hvr-underline-from-left" href="/team">Team</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a class="nav-btn hvr-icon-forward" id="get-in-touch" href="#contactus">
+          Get in touch
+        </a>
+      </span>
+    </div>
+  </nav>
+
+  <!--    Video   -->
+  <div class="fullscreen-video-wrap">
+    <video id="vid" src="./video/startup.mp4" autoplay="true" loop="true" muted></video>
+  </div>
+  <div class="header-overlay"></div>
+
+  <!--    Hero Section    -->
+  <div class="v-header container">
+    <div class="header-content text-md-center">
+      <h1>The destination of innovation, the store house of ideas</h1>
+      <p class="white-text">
+        We are here to provide a healthy ecosystem to make your idea happen,
+        to make you an entrepreneur
+      </p>
+      <a class="btn hvr-icon-forward" href="#features">
+        Launch your Startup
+        <i class="zmdi zmdi-arrow-right hvr-icon"></i>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    </div>
+    <div class="arrow-symbol" style="z-index: 2">
+      <a href="#aboutus">
+        <i class="fa fa-angle-down fa-5x" style="color: #fff"></i>
+      </a>
+    </div>
+  </div>
 
-      <div class="navbar-collapse collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
-          <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#aboutus"
-              >About Us</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#features"
-              >Get Started <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#acheivements"
-              >Acheivements</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#events"
-              >Events</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="#partners-section"
-              >Partners</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hvr-underline-from-left" href="/team"
-              >Team</a
-            >
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a
-            class="nav-btn hvr-icon-forward"
-            id="get-in-touch"
-            href="#contactus"
-          >
-            Get in touch
+  <!--    Main content    -->
+  <main>
+    <!--    About   -->
+    <div id="aboutus" class="section-holder container">
+      <!--  Intro -->
+      <h1 class="blue-text">About us</h1>
+
+      <div class="row intro-sec" style="justify-content: space-around">
+        <div class="col-md-5 intro" style="text-align: left">
+          <h2>We help convert ideas to startups.</h2>
+          <p>
+            At Ecell, we help you bring your ideas into reality. We provide
+            mentorship and guidance by providing outline of each step in
+            detail for a better structured business growth. We help potential
+            entrepreneurs connect with incubator centres and provide technical
+            assistance and marketing advisory throughout the way.
+          </p>
+          <a href="/about" class="hvr-icon-forward">
+            Read More
+            <i class="zmdi zmdi-arrow-right hvr-icon"></i>
           </a>
-        </span>
-      </div>
-    </nav>
-
-    <!--    Video   -->
-    <div class="fullscreen-video-wrap">
-      <video
-        id="vid"
-        src="./video/startup.mp4"
-        autoplay="true"
-        loop="true"
-        muted
-      ></video>
-    </div>
-    <div class="header-overlay"></div>
-
-    <!--    Hero Section    -->
-    <div class="v-header container">
-      <div class="header-content text-md-center">
-        <h1>The destination of innovation, the store house of ideas</h1>
-        <p class="white-text">
-          We are here to provide a healthy ecosystem to make your idea happen,
-          to make you an entrepreneur
-        </p>
-        <a class="btn hvr-icon-forward" href="#features">
-          Launch your Startup
-          <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-        </a>
-      </div>
-      <div class="arrow-symbol" style="z-index: 2">
-        <a href="#aboutus">
-          <i class="fa fa-angle-down fa-5x" style="color: #fff"></i>
-        </a>
-      </div>
-    </div>
-
-    <!--    Main content    -->
-    <main>
-      <!--    About   -->
-      <div id="aboutus" class="section-holder container">
-        <!--  Intro -->
-        <h1 class="blue-text">About us</h1>
-
-        <div class="row intro-sec" style="justify-content: space-around">
-          <div class="col-md-5 intro" style="text-align: left">
-            <h2>We help convert ideas to startups.</h2>
-            <p>
-              At Ecell, we help you bring your ideas into reality. We provide
-              mentorship and guidance by providing outline of each step in
-              detail for a better structured business growth. We help potential
-              entrepreneurs connect with incubator centres and provide technical
-              assistance and marketing advisory throughout the way.
-            </p>
-            <a href="/about" class="hvr-icon-forward">
-              Read More
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <div class="img-container">
-              <!-- <img src="/images/mission_vision.jpg" class="mission_vision" /> -->&nbsp;
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-container">
+            <!-- <img src="/images/mission_vision.jpg" class="mission_vision" /> -->&nbsp;
           </div>
         </div>
+      </div>
 
-        <!--  Counter  -->
-        <div class="container counter">
-          <div class="section">
-            <div class="container">
-              <div class="grey-text">At DJ-ECELL</div>
+      <!--  Counter  -->
+      <div class="container counter">
+        <div class="section">
+          <div class="container">
+            <div class="grey-text">At DJ-ECELL</div>
 
-              <div class="social-media-content">
-                <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
-                  We Are Growing Quickly
-                </h2>
-                <div class="container iconcont">
-                  <div class="numbers-container row">
-                    <div class="col-lg-3">
-                      <div class="counterholder">
-                        <a
-                          href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr"
-                          target="_blank"
-                        >
-                          <i class="fab fa-instagram" id="allicon"></i>
-                        </a>
-                        <div class="item-animate">
-                          <h2 class="counteranimation">400</h2>
-                        </div>
-
-                        <a
-                          href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr"
-                          target="_blank"
-                        >
-                          <p class="social-media-text">Instagram Followers</p>
-                        </a>
+            <div class="social-media-content">
+              <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
+                We Are Growing Quickly
+              </h2>
+              <div class="container iconcont">
+                <div class="numbers-container row">
+                  <div class="col-lg-3">
+                    <div class="counterholder">
+                      <a href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr" target="_blank">
+                        <i class="fab fa-instagram" id="allicon"></i>
+                      </a>
+                      <div class="item-animate">
+                        <h2 class="counteranimation">400</h2>
                       </div>
+
+                      <a href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr" target="_blank">
+                        <p class="social-media-text">Instagram Followers</p>
+                      </a>
                     </div>
-                    <div class="col-lg-3">
-                      <div class="counterholder">
-                        <a href="https://www.facebook.com/djsce.ecell.7">
-                          <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
-                        </a>
-                        <div class="item-animate">
-                          <h2 class="counteranimation">400</h2>
-                        </div>
-
-                        <a href="https://www.facebook.com/djsce.ecell.7">
-                          <p class="social-media-text">Facebook Followers</p>
-                        </a>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="counterholder">
+                      <a href="https://www.facebook.com/djsce.ecell.7">
+                        <i class="fab fa-facebook-f fab-lg" id="allicon"></i>
+                      </a>
+                      <div class="item-animate">
+                        <h2 class="counteranimation">400</h2>
                       </div>
+
+                      <a href="https://www.facebook.com/djsce.ecell.7">
+                        <p class="social-media-text">Facebook Followers</p>
+                      </a>
                     </div>
-                    <div class="col-lg-3">
-                      <div class="counterholder">
-                        <a
-                          href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw"
-                        >
-                          <i class="fab fa-youtube" id="allicon"></i>
-                        </a>
-                        <div class="item-animate">
-                          <h2 class="counteranimation">100</h2>
-                        </div>
-
-                        <a
-                          href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw"
-                          target="_blank"
-                        >
-                          <p class="social-media-text">YouTube Subscribers</p>
-                        </a>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="counterholder">
+                      <a href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw">
+                        <i class="fab fa-youtube" id="allicon"></i>
+                      </a>
+                      <div class="item-animate">
+                        <h2 class="counteranimation">100</h2>
                       </div>
+
+                      <a href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw" target="_blank">
+                        <p class="social-media-text">YouTube Subscribers</p>
+                      </a>
                     </div>
-                    <div class="col-lg-3">
-                      <div class="counterholder">
-                        <a href="https://www.linkedin.com/company/dj-e-cell">
-                          <i class="fab fa-linkedin" id="allicon"></i>
-                        </a>
-                        <div class="item-animate">
-                          <h2 class="counteranimation">40</h2>
-                        </div>
-
-                        <a
-                          href="https://www.linkedin.com/company/dj-e-cell"
-                          target="_blank"
-                        >
-                          <p class="social-media-text">LinkedIn Connections</p>
-                        </a>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="counterholder">
+                      <a href="https://www.linkedin.com/company/dj-e-cell">
+                        <i class="fab fa-linkedin" id="allicon"></i>
+                      </a>
+                      <div class="item-animate">
+                        <h2 class="counteranimation">40</h2>
                       </div>
+
+                      <a href="https://www.linkedin.com/company/dj-e-cell" target="_blank">
+                        <p class="social-media-text">LinkedIn Connections</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -311,321 +238,286 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!--    Get Started    -->
-      <div id="features">
-        <div class="container text-md-center section-holder">
-          <h1 class="blue-text">Get Started</h1>
-          <div class="row">
-            <div class="feature col-lg-4 purple">
-              <span class="circle">
-                <ion-icon name="school-outline"></ion-icon>
-              </span>
-              <h4>Mentorship</h4>
-              <p>
-                We have an able faculty that does a great job mentoring and
-                supporting prospective entrepreneurs.
-              </p>
-            </div>
-            <div class="feature col-lg-4 blue">
-              <span class="circle">
-                <ion-icon name="construct-outline"></ion-icon>
-              </span>
-              <h4>Technical Assistance</h4>
-              <p>
-                We help to format all the plans, precautions, pros and cons by
-                assessing the ideas of the budding startups so that it works
-                efficiently.
-              </p>
-            </div>
-            <div class="feature col-lg-4 green">
-              <span class="circle">
-                <span
-                  class="iconify"
-                  data-icon="la:piggy-bank-solid"
-                  data-inline="false"
-                ></span>
-              </span>
-              <h4>VCs & Angel Network</h4>
-              <p>
-                We provide a good platform to connect with investors and help on
-                how and whom to pitch regarding a particular investment.
-              </p>
-            </div>
-            <div class="feature col-lg-4 yellow">
-              <span class="circle">
-                <ion-icon name="rocket-outline"></ion-icon>
-              </span>
-              <h4>Accelerators & Incubator</h4>
-              <p>
-                We help startups by connecting them to accelerators and
-                incubators which help them grow succesfully and in a more guided
-                way.
-              </p>
-            </div>
-            <div class="feature col-lg-4 red">
-              <span class="circle">
-                <ion-icon name="trending-up-outline"></ion-icon>
-              </span>
-              <h4>Market Advisory</h4>
-              <p>
-                Our experienced mentors and faculty assist and guide you for the
-                correct investments based on the current market which shall give
-                you better returns in future.
-              </p>
-            </div>
+    <!--    Get Started    -->
+    <div id="features">
+      <div class="container text-md-center section-holder">
+        <h1 class="blue-text">Get Started</h1>
+        <div class="row">
+          <div class="feature col-lg-4 purple">
+            <span class="circle">
+              <ion-icon name="school-outline"></ion-icon>
+            </span>
+            <h4>Mentorship</h4>
+            <p>
+              We have an able faculty that does a great job mentoring and
+              supporting prospective entrepreneurs.
+            </p>
+          </div>
+          <div class="feature col-lg-4 blue">
+            <span class="circle">
+              <ion-icon name="construct-outline"></ion-icon>
+            </span>
+            <h4>Technical Assistance</h4>
+            <p>
+              We help to format all the plans, precautions, pros and cons by
+              assessing the ideas of the budding startups so that it works
+              efficiently.
+            </p>
+          </div>
+          <div class="feature col-lg-4 green">
+            <span class="circle">
+              <span class="iconify" data-icon="la:piggy-bank-solid" data-inline="false"></span>
+            </span>
+            <h4>VCs & Angel Network</h4>
+            <p>
+              We provide a good platform to connect with investors and help on
+              how and whom to pitch regarding a particular investment.
+            </p>
+          </div>
+          <div class="feature col-lg-4 yellow">
+            <span class="circle">
+              <ion-icon name="rocket-outline"></ion-icon>
+            </span>
+            <h4>Accelerators & Incubator</h4>
+            <p>
+              We help startups by connecting them to accelerators and
+              incubators which help them grow succesfully and in a more guided
+              way.
+            </p>
+          </div>
+          <div class="feature col-lg-4 red">
+            <span class="circle">
+              <ion-icon name="trending-up-outline"></ion-icon>
+            </span>
+            <h4>Market Advisory</h4>
+            <p>
+              Our experienced mentors and faculty assist and guide you for the
+              correct investments based on the current market which shall give
+              you better returns in future.
+            </p>
           </div>
         </div>
-        <!--  Get Started -->
-        <div class="wrapper">
-          <div class="main container section-holder">
-            <h4>Have a business idea?</h4>
-            <h1 class="cta">Launch your startup!</h1>
-            <button class="btn hvr-icon-forward" onclick="showForm()">
-              Get Started
-              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-            </button>
-            <!-- Flexbox container for aligning the toasts -->
-            <!-- <div class="container">
+      </div>
+      <!--  Get Started -->
+      <div class="wrapper">
+        <div class="main container section-holder">
+          <h4>Have a business idea?</h4>
+          <h1 class="cta">Launch your startup!</h1>
+          <button class="btn hvr-icon-forward" onclick="showForm()">
+            Get Started
+            <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+          </button>
+          <!-- Flexbox container for aligning the toasts -->
+          <!-- <div class="container">
               <div class="toast mt-3">
                 <div class="toast-header">Form Submission Successful</div>
                 <div class="toast-body">Your data has been recorded!</div>
               </div>
             </div> -->
 
-            <!--    Idea Submission Form    -->
-            <div class="container" id="idea_submission">
-              <div class="row">
-                <div class="col-md-2"></div>
+          <!--    Idea Submission Form    -->
+          <div class="container" id="idea_submission">
+            <div class="row">
+              <div class="col-md-2"></div>
 
-                <div class="col-md-8 idea_form">
-                  <form id="startup_idea" name="idea" autocomplete="off">
-                    <h1>Submit your Idea</h1>
-                    <label for="name">Full Name</label>
-                    <input
-                      name="Name"
-                      type="text"
-                      id="idea_name"
-                      required
-                    /><br />
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label for="email" style="margin-top: 20px"
-                          >Email</label
-                        >
-                        <input
-                          name="Email"
-                          type="email"
-                          id="idea_email"
-                          autocomplete="off"
-                          required
-                        /><br />
-                      </div>
-                      <div class="col-md-6">
-                        <label for="contact" style="margin-top: 20px"
-                          >Contact Number</label
-                        >
-                        <input
-                          name="Contact"
-                          type="tel"
-                          id="idea_contact"
-                          autocomplete="off"
-                          required
-                        /><br />
-                      </div>
+              <div class="col-md-8 idea_form">
+                <form id="startup_idea" name="idea" autocomplete="off">
+                  <h1>Submit your Idea</h1>
+                  <label for="name">Full Name</label>
+                  <input name="Name" type="text" id="idea_name" required /><br />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="email" style="margin-top: 20px">Email</label>
+                      <input name="Email" type="email" id="idea_email" autocomplete="off" required /><br />
                     </div>
+                    <div class="col-md-6">
+                      <label for="contact" style="margin-top: 20px">Contact Number</label>
+                      <input name="Contact" type="tel" id="idea_contact" autocomplete="off" required /><br />
+                    </div>
+                  </div>
 
-                    <div class="row">
-                      <div class="col-md-6 radioStudent">
-                        Are you a student?<br />
-                        <div class="radioButton">
-                          <input
-                            type="radio"
-                            name="Student"
-                            id="Yes"
-                            onclick="showStudent();"
-                            value="Yes"
-                            required
-                          />
-                          <label for="Yes" style="margin: 0px 5px 0">Yes</label
-                          ><br />
-                          <input
-                            type="radio"
-                            id="No"
-                            name="Student"
-                            value="No"
-                          />
-                          <label for="No" style="margin: 0px 5px 0">No</label
-                          ><br />
-                        </div>
-                      </div>
-                      <div class="col-md-6 radioBusiness">
-                        Type of business
-                        <select id="business" name="Business">
-                          <option value="Sole Proprietorship" selected>
-                            Sole Proprietorship
-                          </option>
-                          <br />
-                          <option value="Partnership">Partnership</option>
-                          <br /></select
-                        ><br />
+                  <div class="row">
+                    <div class="col-md-6 radioStudent">
+                      Are you a student?<br />
+                      <div class="radioButton">
+                        <input type="radio" name="Student" id="Yes" onclick="showStudent();" value="Yes" required />
+                        <label for="Yes" style="margin: 0px 5px 0">Yes</label><br />
+                        <input type="radio" id="No" name="Student" value="No" />
+                        <label for="No" style="margin: 0px 5px 0">No</label><br />
                       </div>
                     </div>
-                    <div class="row" id="studentInfo">
-                      <div class="col-md-6" style="margin-top: 20px">
-                        <select id="stream" name="Stream">
-                          <option value="CSE" selected>CSE</option>
-                          <br />
-                          <option value="Computer">Computer</option>
-                          <br />
-                          <option value="IT">IT</option>
-                          <br />
-                          <option value="EXTC">EXTC</option>
-                          <br />
-                          <option value="Electronics">Electronics</option>
-                          <br />
-                          <option value="Chemical">Chemical</option>
-                          <br />
-                          <option value="Mechanical">Mechanical</option>
-                          <br /></select
-                        ><br />
-                      </div>
-                      <div class="col-md-6" style="margin-top: 20px">
-                        <select id="year" name="Year">
-                          <option value="FE" selected>FE</option>
-                          <br />
-                          <option value="SE">SE</option>
-                          <br />
-                          <option value="TE">TE</option>
-                          <br />
-                          <option value="BE">BE</option>
-                          <br /></select
-                        ><br />
-                      </div>
+                    <div class="col-md-6 radioBusiness">
+                      Type of business
+                      <select id="business" name="Business">
+                        <option value="Sole Proprietorship" selected>
+                          Sole Proprietorship
+                        </option>
+                        <br />
+                        <option value="Partnership">Partnership</option>
+                        <br />
+                      </select><br />
                     </div>
-                    <textarea
-                      rows="4"
-                      cols="72"
-                      name="Description"
-                      form="startup_idea"
-                      placeholder="Tell us about your idea!"
-                      style="margin-top: 20px; color: #fff"
-                      required
-                    ></textarea>
-                    <button
-                      class="btn"
-                      type="submit"
-                      id="submit_idea"
-                      style="margin-top: 10px"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                </div>
-                <div class="col-md-2"></div>
+                  </div>
+                  <div class="row" id="studentInfo">
+                    <div class="col-md-6" style="margin-top: 20px">
+                      <select id="stream" name="Stream">
+                        <option value="CSE" selected>CSE</option>
+                        <br />
+                        <option value="Computer">Computer</option>
+                        <br />
+                        <option value="IT">IT</option>
+                        <br />
+                        <option value="EXTC">EXTC</option>
+                        <br />
+                        <option value="Electronics">Electronics</option>
+                        <br />
+                        <option value="Chemical">Chemical</option>
+                        <br />
+                        <option value="Mechanical">Mechanical</option>
+                        <br />
+                      </select><br />
+                    </div>
+                    <div class="col-md-6" style="margin-top: 20px">
+                      <select id="year" name="Year">
+                        <option value="FE" selected>FE</option>
+                        <br />
+                        <option value="SE">SE</option>
+                        <br />
+                        <option value="TE">TE</option>
+                        <br />
+                        <option value="BE">BE</option>
+                        <br />
+                      </select><br />
+                    </div>
+                  </div>
+                  <textarea rows="4" cols="72" name="Description" form="startup_idea"
+                    placeholder="Tell us about your idea!" style="margin-top: 20px; color: #fff" required></textarea>
+                  <button class="btn" type="submit" id="submit_idea" style="margin-top: 10px">
+                    Submit
+                  </button>
+                </form>
               </div>
+              <div class="col-md-2"></div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--Startups-->
-      <div id="acheivements">
-        <div class="container section-holder">
-          <h1 class="">Startups</h1>
-          <div class="row" id="card_display">
-            <div class="col-lg-4" id="column_startup">
-              <div class="container">
-                <img class="startup_holder" src="/images/clofactory.png" />
+    <!--Startups-->
+    <div id="acheivements">
+      <div class="container section-holder">
+        <h1 class="">Startups</h1>
+        <div class="row" id="card_display">
+          <div class="col-lg-4" id="column_startup">
+            <div class="container">
+              <img class="startup_holder" src="/images/clofactory.png" />
 
-                <p>
-                  The vision of Clofactory is to revolutionize the clothing
-                  industry, from the traditional retail model. Clofactory stands
-                  to deliver a seamless shirting experience with shirts that are
-                  tailored to fit and premium fabrics to go with them.The
-                  company is involved in the manufacture of other textiles.
-                </p>
-                <a
-                  class="hvr-icon-forward"
-                  href="http://www.djsce.ac.in/e-cell/pdf/clofactory.pdf"
-                >
-                  Read More
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                </a>
-              </div>
+              <p>
+                The vision of Clofactory is to revolutionize the clothing
+                industry, from the traditional retail model. Clofactory stands
+                to deliver a seamless shirting experience with shirts that are
+                tailored to fit and premium fabrics to go with them.The
+                company is involved in the manufacture of other textiles.
+              </p>
+              <a class="hvr-icon-forward" href="http://www.djsce.ac.in/e-cell/pdf/clofactory.pdf">
+                Read More
+                <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+              </a>
             </div>
-            <div class="col-lg-4" id="column_startup">
-              <div class="container">
-                <img class="startup_holder" src="/images/wearthreads.jpg" />
+          </div>
+          <div class="col-lg-4" id="column_startup">
+            <div class="container">
+              <img class="startup_holder" src="/images/wearthreads.jpg" />
 
-                <p>
-                  We are into sustainable clothing, we make t-shirts from
-                  recycled plastic bottles. Our main aim is to reduce the amount
-                  of plastic in the environment. So, we put it to a great use,
-                  we make garments out of it which are 100% safe and hygienic to
-                  wear. One t-shirt recycles 15 plastic bottles.
-                </p>
-                <a
-                  class="hvr-icon-forward"
-                  href="http://www.djsce.ac.in/e-cell/pdf/wearthreads.pdf"
-                >
-                  Read More
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
-                </a>
-              </div>
+              <p>
+                We are into sustainable clothing, we make t-shirts from
+                recycled plastic bottles. Our main aim is to reduce the amount
+                of plastic in the environment. So, we put it to a great use,
+                we make garments out of it which are 100% safe and hygienic to
+                wear. One t-shirt recycles 15 plastic bottles.
+              </p>
+              <a class="hvr-icon-forward" href="http://www.djsce.ac.in/e-cell/pdf/wearthreads.pdf">
+                Read More
+                <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+              </a>
             </div>
-            <div class="col-lg-4" id="column_startup">
-              <div class="container">
-                <img class="startup_holder" src="/images/D-webbox.jpeg" />
+          </div>
+          <div class="col-lg-4" id="column_startup">
+            <div class="container">
+              <img class="startup_holder" src="/images/D-webbox.jpeg" />
 
-                <p>
-                  We inspire Dreams, build Designs, create Digitization and
-                  celebrate success. We are an agency where success isn’t
-                  defined by how much we bill or how fast we grow, but by our
-                  ability to produce exceptional work and build genuine
-                  partnerships with our clients. We keep things lean and simple.
-                </p>
-                <a class="hvr-icon-forward">
-                  Read More
-                  <i
-                    class="zmdi zmdi-arrow-right hvr-icon"
-                    href="https://www.dwebbox.com/"
-                  ></i>
-                </a>
-              </div>
+              <p>
+                We inspire Dreams, build Designs, create Digitization and
+                celebrate success. We are an agency where success isn’t
+                defined by how much we bill or how fast we grow, but by our
+                ability to produce exceptional work and build genuine
+                partnerships with our clients. We keep things lean and simple.
+              </p>
+              <a class="hvr-icon-forward">
+                Read More
+                <i class="zmdi zmdi-arrow-right hvr-icon" href="https://www.dwebbox.com/"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!--    Events    -->
-      <div id="events" class="section-holder">
-        <h1 class="">Events</h1>
-        <div class="btn-wrapper">
-          <div id="myBtnContainer">
-            <p class="my-btn btn-active" onclick="filterSelection('2019-20')">
-              2019&nbsp;-&nbsp;20
-            </p>
-            <p class="my-btn" onclick="filterSelection('2018-19')">
-              2018&nbsp;-&nbsp;19
-            </p>
-            <p class="my-btn" onclick="filterSelection('all')">
-              All
-            </p>
+    <!--Certificates-->
+    <div>
+      <div class="container section-holder-certificates">
+        <h1 class="certificates_head"><b>Certificates</b></h1>
+        <div class="row" id="card_display">
+          <div class="col-lg-10" id="column_startup">
+            <!-- <div id="column_startup"> -->
+            <!-- <div class="container"> -->
+            <div>
+              <img class="certificates_holder" src="/images/certificates/Certificate.jpeg" />
+            </div>
+            <!-- </div>
+           <div id="column_startup"> -->
+            <div>
+              <img class="certificates_holder" src="/images/certificates/IIC Certificate.png" />
+            </div>
           </div>
+
         </div>
-        <div class="cards">
-          <% events_list.forEach(e => { %>
+      </div>
+    </div>
+
+    <!--    Events    -->
+    <div id="events" class="section-holder">
+      <h1 class="">Events</h1>
+      <div class="btn-wrapper">
+        <div id="myBtnContainer">
+          <p class="my-btn btn-active" onclick="filterSelection('2020-21')">
+            2020&nbsp;-&nbsp;21
+          </p>
+          <p class="my-btn" onclick="filterSelection('2019-20')">
+            2019&nbsp;-&nbsp;20
+          </p>
+          <p class="my-btn" onclick="filterSelection('2018-19')">
+            2018&nbsp;-&nbsp;19
+          </p>
+          <p class="my-btn" onclick="filterSelection('all')">
+            All
+          </p>
+        </div>
+      </div>
+      <div class="cards">
+        <% events_list.forEach(e=> { %>
           <div class="card-container <%= e.tag %>">
             <div class="card">
-              <div
-                class="img-holder"
-                style="
-                  background-image: url('./images/<%= e.id %>/<%= e.coverImage %>'");
-                "
-              ></div>
+              <div class="img-holder" style="
+                  background-image: url('./images/<%= e.id %>/<%= e.coverImage %>');
+                "></div>
               <div class="content">
-                <h3><%= e.title %></h3>
+                <h3>
+                  <%= e.title %>
+                </h3>
                 <p>
                   <%- e.shortDesc %>
                 </p>
@@ -634,116 +526,93 @@
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
               </div>
+
             </div>
           </div>
-        <% }) %>
-        </div>
+          <% }) %>
       </div>
-      <!--    Testimonials    -->
-      <div
-        id="testimonials"
-        class="testimonial9 py-5 bg-light"
-        style="padding-top: 6rem !important"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5" style="margin-top: 2em">
-              <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
-                What People Are Saying
-              </h2>
-              <p>
-                We care what our customers think of us and so should you. We are
-                partners in your business and your success.
-              </p>
-            </div>
-            <div class="col-lg-6 ml-auto">
-              <div class="owl-carousel owl-theme testi9">
-                <!-- item -->
-                <div class="item">
-                  <div
-                    class="card testimonial-card card-shadow border-0 mb-4 position-relative"
-                  >
-                    <div class="p-4">
-                      <h5 class="font-weight-light">
-                        DJS E-cell has been influential in triggering awareness,
-                        interest, desire and sustained action towards building
-                        the entrepreneurial spirit required among the students
-                        in a significant way.
-                      </h5>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center ml-3">
-                    <div class="customer-thumb">
-                      <img
-                        src="images/Testimonials/img4.jpeg"
-                        alt="wrapkit"
-                        class="rounded-circle mr-3"
-                      />
-                    </div>
-                    <div class="testimonial-by">
-                      <h6 class="font-weight-bold mb-0">Dr. Hari Vasudevan</h6>
-                      <span class="font-13"
-                        >Principal, Dwarkadas J.Sanghvi College of
-                        Engineering</span
-                      >
-                    </div>
+    </div>
+
+    <!--    Testimonials    -->
+    <div id="testimonials" class="testimonial9 py-5 bg-light" style="padding-top: 6rem !important">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5" style="margin-top: 2em">
+            <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
+              What People Are Saying
+            </h2>
+            <p>
+              We care what our customers think of us and so should you. We are
+              partners in your business and your success.
+            </p>
+          </div>
+          <div class="col-lg-6 ml-auto">
+            <div class="owl-carousel owl-theme testi9">
+              <!-- item -->
+              <div class="item">
+                <div class="card testimonial-card card-shadow border-0 mb-4 position-relative">
+                  <div class="p-4">
+                    <h5 class="font-weight-light">
+                      DJS E-cell has been influential in triggering awareness,
+                      interest, desire and sustained action towards building
+                      the entrepreneurial spirit required among the students
+                      in a significant way.
+                    </h5>
                   </div>
                 </div>
-                <!-- item -->
-                <div class="item">
-                  <div
-                    class="card testimonial-card card-shadow border-0 mb-4 position-relative"
-                  >
-                    <div class="p-4">
-                      <h5 class="font-weight-light">
-                        It’s amazing to see confluence of talent and spirit come
-                        together. DJSCE E-Cell is a nursery of entrepreneurs.
-                      </h5>
-                    </div>
+                <div class="d-flex align-items-center ml-3">
+                  <div class="customer-thumb">
+                    <img src="images/Testimonials/img4.jpeg" alt="wrapkit" class="rounded-circle mr-3" />
                   </div>
-                  <div class="d-flex align-items-center ml-3">
-                    <div class="customer-thumb">
-                      <img
-                        src="/images/Testimonials/img3.jpeg"
-                        alt="wrapkit"
-                        class="rounded-circle mr-3"
-                      />
-                    </div>
-                    <div class="testimonial-by">
-                      <h6 class="font-weight-bold mb-0">
-                        Dr. Sunil Karamchandani
-                      </h6>
-                      <span class="font-13">Chairman, E-Cell</span>
-                    </div>
+                  <div class="testimonial-by">
+                    <h6 class="font-weight-bold mb-0">Dr. Hari Vasudevan</h6>
+                    <span class="font-13">Principal, Dwarkadas J.Sanghvi College of
+                      Engineering</span>
                   </div>
                 </div>
-                <!-- item -->
-                <div class="item">
-                  <div
-                    class="card testimonial-card card-shadow border-0 mb-4 position-relative"
-                  >
-                    <div class="p-4">
-                      <h5 class="font-weight-light">
-                        E-Cell has been quite active in bridging the gap between
-                        the industry and the academia by inviting respective
-                        industry experts and giving them a platform to ignite
-                        the curiosity of the students through interactive
-                        seminars.
-                      </h5>
-                    </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="card testimonial-card card-shadow border-0 mb-4 position-relative">
+                  <div class="p-4">
+                    <h5 class="font-weight-light">
+                      It’s amazing to see confluence of talent and spirit come
+                      together. DJSCE E-Cell is a nursery of entrepreneurs.
+                    </h5>
                   </div>
-                  <div class="d-flex align-items-center ml-3">
-                    <div class="customer-thumb">
-                      <img
-                        src="images/Testimonials/img1.jpeg"
-                        alt="wrapkit"
-                        class="rounded-circle mr-3"
-                      />
-                    </div>
-                    <div class="testimonial-by">
-                      <h6 class="font-weight-bold mb-0">Nimesh Sajjan Bumb</h6>
-                      <span class="font-13">Co-founder at Master Bridge</span>
-                    </div>
+                </div>
+                <div class="d-flex align-items-center ml-3">
+                  <div class="customer-thumb">
+                    <img src="/images/Testimonials/img3.jpeg" alt="wrapkit" class="rounded-circle mr-3" />
+                  </div>
+                  <div class="testimonial-by">
+                    <h6 class="font-weight-bold mb-0">
+                      Dr. Sunil Karamchandani
+                    </h6>
+                    <span class="font-13">Chairman, E-Cell</span>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item">
+                <div class="card testimonial-card card-shadow border-0 mb-4 position-relative">
+                  <div class="p-4">
+                    <h5 class="font-weight-light">
+                      E-Cell has been quite active in bridging the gap between
+                      the industry and the academia by inviting respective
+                      industry experts and giving them a platform to ignite
+                      the curiosity of the students through interactive
+                      seminars.
+                    </h5>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center ml-3">
+                  <div class="customer-thumb">
+                    <img src="images/Testimonials/img1.jpeg" alt="wrapkit" class="rounded-circle mr-3" />
+                  </div>
+                  <div class="testimonial-by">
+                    <h6 class="font-weight-bold mb-0">Nimesh Sajjan Bumb</h6>
+                    <span class="font-13">Co-founder at Master Bridge</span>
                   </div>
                 </div>
               </div>
@@ -751,126 +620,106 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!--Partner-->
-      <div id="partners-section" style="padding-top: 60px">
-        <div id="partner">
-          <div
-            class="container section-holder"
-            style="margin-bottom: 0; padding: 50px"
-          >
-            <h1 class="cta">Become A Partner</h1>
-            <a href="/partners">
-              <button class="btn hvr-icon-forward">
-                Learn More
+    <!--Partner-->
+    <div id="partners-section" style="padding-top: 60px">
+      <div id="partner">
+        <div class="container section-holder" style="margin-bottom: 0; padding: 50px">
+          <h1 class="cta">Become A Partner</h1>
+          <a href="/partners">
+            <button class="btn hvr-icon-forward">
+              Learn More
+              <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--    Contact Form    -->
+    <div id="contactus" class="container-contact">
+      <div class="row map">
+        <div class="col-md-6 col-sm-12 map">
+          <div id="map"></div>
+        </div>
+        <div class="col-md-6 col-sm-12 contact-details">
+          <h1 class="blue-text">Contact Us</h1>
+
+          <form name="contact" id="contactform">
+            <div class="col-md-12">
+              <label for="name"> Full Name</label>
+              <input class="idea-input" name="Name" type="text" id="name" /><br />
+            </div>
+            <div class="col-md-12">
+              <label for="email" style="margin-top: 20px">Email</label>
+              <input class="idea-input" name="Email" type="email" id="email" required autocomplete="off" /><br />
+            </div>
+            <div class="col-md-12">
+              <label for="message" style="margin-top: 20px">Message</label>
+              <textarea class="idea-input" rows="4" cols="100" name="Message" form="contactform"
+                id="message"></textarea>
+            </div>
+            <div class="submit_form" style="text-align: center">
+              <button class="btn hvr-icon-forward" type="submit">
+                Send
                 <i class="zmdi zmdi-arrow-right hvr-icon"></i>
               </button>
-            </a>
-          </div>
+            </div>
+            <div class="location">
+              <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
+                Reach Us
+              </h2>
+              <div class="row">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>
+                  Dwarkadas J Sanghvi,<br />
+                  Gulmohar Road, J. V. P. D. Scheme,<br />
+                  Vile Parle(W), Mumbai
+                </p>
+              </div>
+              <div class="row">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p class="college-mail">ecell.djsce@gmail.com</p>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
 
-      <!--    Contact Form    -->
-      <div id="contactus" class="container-contact">
-        <div class="row map">
-          <div class="col-md-6 col-sm-12 map">
-            <div id="map"></div>
-          </div>
-          <div class="col-md-6 col-sm-12 contact-details">
-            <h1 class="blue-text">Contact Us</h1>
-
-            <form name="contact" id="contactform">
-              <div class="col-md-12">
-                <label for="name"> Full Name</label>
-                <input
-                  class="idea-input"
-                  name="Name"
-                  type="text"
-                  id="name"
-                /><br />
-              </div>
-              <div class="col-md-12">
-                <label for="email" style="margin-top: 20px">Email</label>
-                <input
-                  class="idea-input"
-                  name="Email"
-                  type="email"
-                  id="email"
-                  required
-                  autocomplete="off"
-                /><br />
-              </div>
-              <div class="col-md-12">
-                <label for="message" style="margin-top: 20px">Message</label>
-                <textarea
-                  class="idea-input"
-                  rows="4"
-                  cols="100"
-                  name="Message"
-                  form="contactform"
-                  id="message"
-                ></textarea>
-              </div>
-              <div class="submit_form" style="text-align: center">
-                <button class="btn hvr-icon-forward" type="submit">
-                  Send
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+    <!--Footer-->
+    <div id="footer">
+      <div class="container">
+        <div class="" style="margin: auto; text-align: center">
+          <img class="footer-logo" src="/images/ecell.png" alt="" />
+          <!-- <img class="footer-logo" src="images/logo.png" alt="" /> -->
+        </div>
+        <div class="row footer-links">
+          <div class="col-md-4">
+            <div class="col-heading">About</div>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/team">Our Team</a></li>
+              <li><a href="/#contactus">Contact Us</a></li>
+              <li>
+                <button class="footer-idea-link" onclick="showForm()">
+                  Submit your idea
                 </button>
-              </div>
-              <div class="location">
-                <h2 class="b-h1 grey counter-heading" style="font-weight: 300">
-                  Reach Us
-                </h2>
-                <div class="row">
-                  <ion-icon name="location-outline"></ion-icon>
-                  <p>
-                    Dwarkadas J Sanghvi,<br />
-                    Gulmohar Road, J. V. P. D. Scheme,<br />
-                    Vile Parle(W), Mumbai
-                  </p>
-                </div>
-                <div class="row">
-                  <ion-icon name="mail-outline"></ion-icon>
-                  <p class="college-mail">ecell.djsce@gmail.com</p>
-                </div>
-              </div>
-            </form>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-
-      <!--Footer-->
-      <div id="footer">
-        <div class="container">
-          <div class="" style="margin: auto; text-align: center">
-            <img class="footer-logo" src="/images/ecell.png" alt="" />
-            <!-- <img class="footer-logo" src="images/logo.png" alt="" /> -->
+          <div class="col-md-4">
+            <div class="col-heading">Learn More</div>
+            <ul>
+              <li><a href="/#acheivements">Startups</a></li>
+              <li><a href="/#acheivements">Achievements</a></li>
+              <li><a href="/#events">Events</a></li>
+              <li><a href="/#testimonials">Testimonials</a></li>
+            </ul>
           </div>
-          <div class="row footer-links">
-            <div class="col-md-4">
-              <div class="col-heading">About</div>
-              <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/team">Our Team</a></li>
-                <li><a href="/#contactus">Contact Us</a></li>
-                <li>
-                  <button class="footer-idea-link" onclick="showForm()">
-                    Submit your idea
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <div class="col-heading">Learn More</div>
-              <ul>
-                <li><a href="/#acheivements">Startups</a></li>
-                <li><a href="/#acheivements">Achievements</a></li>
-                <li><a href="/#events">Events</a></li>
-                <li><a href="/#testimonials">Testimonials</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <!-- <div class="col-heading">Get In Touch</div>
+          <div class="col-md-4">
+            <!-- <div class="col-heading">Get In Touch</div>
               <ul>
                 <li>ecell.djsce@gmail.com</li>
                 <li>
@@ -879,236 +728,224 @@
                   Vile Parle(W), Mumbai
                 </li>
               </ul> -->
-              <div class="col-heading">Social Media</div>
-              <p>Follow us on social media to get the latest updates from us</p>
-              <div class="footer-icons-social">
-                <a
-                  href="https://www.linkedin.com/company/dj-e-cell"
-                  target="_blank"
-                  ><i class="footer-social fab fa-linkedin" id="allicon"></i
-                ></a>
-                <a href="https://www.facebook.com/djsce.ecell.7" target="_blank"
-                  ><i
-                    class="footer-social fab fab fa-facebook-f fab-lg"
-                    id="allicon"
-                  ></i>
-                </a>
-                <a href="https://twitter.com/EcellD?s=12" target="_blank"
-                  ><i class="footer-social fab fa-twitter" id="allicon"></i
-                ></a>
-                <a
-                  href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr"
-                  target="_blank"
-                  ><i class="footer-social fab fa-instagram" id="allicon"></i
-                ></a>
-                <a
-                  href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw"
-                  target="_blank"
-                  ><i class="footer-social fab fa-youtube" id="allicon"></i
-                ></a>
-              </div>
+            <div class="col-heading">Social Media</div>
+            <p>Follow us on social media to get the latest updates from us</p>
+            <div class="footer-icons-social">
+              <a href="https://www.linkedin.com/company/dj-e-cell" target="_blank"><i
+                  class="footer-social fab fa-linkedin" id="allicon"></i></a>
+              <a href="https://www.facebook.com/djsce.ecell.7" target="_blank"><i
+                  class="footer-social fab fab fa-facebook-f fab-lg" id="allicon"></i>
+              </a>
+              <a href="https://twitter.com/EcellD?s=12" target="_blank"><i class="footer-social fab fa-twitter"
+                  id="allicon"></i></a>
+              <a href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr" target="_blank"><i
+                  class="footer-social fab fa-instagram" id="allicon"></i></a>
+              <a href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw" target="_blank"><i
+                  class="footer-social fab fa-youtube" id="allicon"></i></a>
             </div>
           </div>
-          <div class="all-rights container">
-            © 2020 DJSCE E-Cell - All Rights Reserved
-          </div>
+        </div>
+        <div class="all-rights container">
+          © 2020 DJSCE E-Cell - All Rights Reserved
         </div>
       </div>
+    </div>
 
-      <div id="takeup">
-        <a href="# ">
-          <ion-icon name="arrow-up-outline"></ion-icon>
-        </a>
-      </div>
-      <script src="/js/nav.js"></script>
-      <script src="/js/forms.js"></script>
+    <div id="takeup">
+      <a href="# ">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+    </div>
+    <script src="/js/nav.js"></script>
+    <script src="/js/forms.js"></script>
 
-      <script>
-        function scrolled() {
-          $("nav").addClass("scrolled");
-          $("nav").addClass("navbar-light");
-          $("nav").removeClass("navbar-dark");
-        }
-        function unscrolled() {
-          $("nav").removeClass("scrolled");
-          $("nav").removeClass("navbar-light");
-          $("nav").addClass("navbar-dark");
-        }
-        $(window).scroll(function () {
-          // console.log($(".navbar-collapse").hasClass("show"));
-          if (
-            $(this).scrollTop() > 20 ||
-            $(".navbar-collapse").hasClass("show")
-          )
-            scrolled();
-          else unscrolled();
-        });
-
-        $(".navbar-toggler").click(() => {
-          if (
-            $(".navbar-collapse").hasClass("show") &
-            ($(window).scrollTop() <= 20)
-          ) {
-            unscrolled();
-          } else {
-            scrolled();
-          }
-        });
-
-        mapboxgl.accessToken =
-          "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
-        var map = new mapboxgl.Map({
-          container: "map",
-          style: "mapbox://styles/mapbox/streets-v11",
-          center: [72.837424, 19.108731],
-          zoom: 12.5,
-        });
-        // disable map zoom when using scroll
-        map.scrollZoom.disable();
-        var marker = new mapboxgl.Marker()
-          .setLngLat([72.837424, 19.108731])
-          .addTo(map);
-
-        function showForm() {
-          document.getElementById("idea_submission").style.display = "block";
-          $("html,body").animate(
-            {
-              scrollTop: $("#idea_submission").offset().top,
-            },
-            100
-          );
-        }
-
-        function showStudent() {
-          document.getElementById("studentInfo").style.display = "flex";
-          document.getElementById("No").onclick = function () {
-            document.getElementById("studentInfo").style.display = "none";
-          };
-        }
-
-        // $("#submit_idea").click(function (event) {
-        //   event.preventDefault();
-        //   console.log("hi");
-        //   $(".toast").addClass("show");
-        //   setTimeout(() => {
-        //     $(".toast").removeClass("show");
-        //   }, 5000);
-        //   console.log("bye");
-        // });
-
-        $(window).scroll(startCounter);
-        function startCounter() {
-          if ($(window).scrollTop() > 600) {
-            $(window).off("scroll", startCounter);
-            $(".counteranimation").each(function () {
-              var $this = $(this);
-              jQuery({ Counter: 0 }).animate(
-                { Counter: $this.text() },
-                {
-                  duration: 1100,
-                  easing: "swing",
-                  step: function () {
-                    $this.text(Math.ceil(this.Counter) + "+");
-                  },
-                }
-              );
-            });
-          }
-        }
-
-        // var $form = $("form#startup_idea"),
-        //   url =
-        //     "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
-
-        // $("#submit_idea").on("click", function (e) {
-        //   e.preventDefault();
-        //   var jqxhr = $.ajax({
-        //     url: url,
-        //     method: "GET",
-        //     dataType: "json",
-        //     data: $form.serializeObject(),
-        //   })
-        //     .success
-        //     // Do what you want with this Uper all yours!
-        //     ();
-        // });
-        filterSelection("2019-20"); // Execute the function and show all columns
-        function filterSelection(c) {
-          var x, i;
-          x = document.getElementsByClassName("card-container");
-          if (c == "all") c = "";
-          // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-          for (i = 0; i < x.length; i++) {
-            removeClass(x[i], "show_events");
-            if (x[i].className.indexOf(c) > -1) addClass(x[i], "show_events");
-          }
-        }
-
-        // Show filtered elements
-        function addClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-              element.className += " " + arr2[i];
-            }
-          }
-        }
-
-        // Hide elements that are not selected
-        function removeClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-          }
-          element.className = arr1.join(" ");
-        }
-
-        // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("my-btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("btn-active");
-            current[0].className = current[0].className.replace(
-              " btn-active",
-              ""
-            );
-            this.className += " btn-active";
-          });
-        }
-      </script>
-      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    </main>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script>
-      // Testimonials
-
-      $(".testi9").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          1650: {
-            items: 1,
-          },
-        },
+      function scrolled() {
+        $("nav").addClass("scrolled");
+        $("nav").addClass("navbar-light");
+        $("nav").removeClass("navbar-dark");
+      }
+      function unscrolled() {
+        $("nav").removeClass("scrolled");
+        $("nav").removeClass("navbar-light");
+        $("nav").addClass("navbar-dark");
+      }
+      $(window).scroll(function () {
+        // console.log($(".navbar-collapse").hasClass("show"));
+        if (
+          $(this).scrollTop() > 20 ||
+          $(".navbar-collapse").hasClass("show")
+        )
+          scrolled();
+        else unscrolled();
       });
 
-      var v = document.getElementById("vid");
-      v.playbackRate = 0.7;
+      $(".navbar-toggler").click(() => {
+        if (
+          $(".navbar-collapse").hasClass("show") &
+          ($(window).scrollTop() <= 20)
+        ) {
+          unscrolled();
+        } else {
+          scrolled();
+        }
+      });
+
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoic2Fha3NoaXNoYWgiLCJhIjoiY2tjMzBhd2p2MjI1NjJybmFlazh6Y2RudCJ9.MhchJI1OMSvcS4v_N354FQ";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [72.837424, 19.108731],
+        zoom: 12.5,
+      });
+      // disable map zoom when using scroll
+      map.scrollZoom.disable();
+      var marker = new mapboxgl.Marker()
+        .setLngLat([72.837424, 19.108731])
+        .addTo(map);
+
+      function showForm() {
+        document.getElementById("idea_submission").style.display = "block";
+        $("html,body").animate(
+          {
+            scrollTop: $("#idea_submission").offset().top,
+          },
+          100
+        );
+      }
+
+      function showStudent() {
+        document.getElementById("studentInfo").style.display = "flex";
+        document.getElementById("No").onclick = function () {
+          document.getElementById("studentInfo").style.display = "none";
+        };
+      }
+
+      // $("#submit_idea").click(function (event) {
+      //   event.preventDefault();
+      //   console.log("hi");
+      //   $(".toast").addClass("show");
+      //   setTimeout(() => {
+      //     $(".toast").removeClass("show");
+      //   }, 5000);
+      //   console.log("bye");
+      // });
+
+      $(window).scroll(startCounter);
+      function startCounter() {
+        if ($(window).scrollTop() > 600) {
+          $(window).off("scroll", startCounter);
+          $(".counteranimation").each(function () {
+            var $this = $(this);
+            jQuery({ Counter: 0 }).animate(
+              { Counter: $this.text() },
+              {
+                duration: 1100,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.ceil(this.Counter) + "+");
+                },
+              }
+            );
+          });
+        }
+      }
+
+      // var $form = $("form#startup_idea"),
+      //   url =
+      //     "https://script.google.com/macros/s/AKfycbwFxy4hsIK-JeblK2dDbI7G4RJf2LPNhO3U1Ss8q24KsvVaeb16/exec";
+
+      // $("#submit_idea").on("click", function (e) {
+      //   e.preventDefault();
+      //   var jqxhr = $.ajax({
+      //     url: url,
+      //     method: "GET",
+      //     dataType: "json",
+      //     data: $form.serializeObject(),
+      //   })
+      //     .success
+      //     // Do what you want with this Uper all yours!
+      //     ();
+      // });
+      filterSelection("2020-21"); // Execute the function and show all columns
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("card-container");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          removeClass(x[i], "show_events");
+          if (x[i].className.indexOf(c) > -1) addClass(x[i], "show_events");
+        }
+      }
+
+      // Show filtered elements
+      function addClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function removeClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("my-btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("btn-active");
+          current[0].className = current[0].className.replace(
+            " btn-active",
+            ""
+          );
+          this.className += " btn-active";
+        });
+      }
     </script>
-  </body>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </main>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+  <script>
+    // Testimonials
+
+    $(".testi9").owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        1650: {
+          items: 1,
+        },
+      },
+    });
+
+    var v = document.getElementById("vid");
+    v.playbackRate = 0.7;
+  </script>
+</body>
+
 </html>

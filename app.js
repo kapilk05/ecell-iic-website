@@ -7,30 +7,31 @@ const list = require('./events');
 const app = express();
 
 // listen for requests
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 5000);
 
 // register view engine
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
+
 app.get('/', (req, res) => {
   // res.sendFile('./views/index.html', { root: __dirname });
-  res.render('index',{events_list:list});
+  res.render('index', { events_list: list });
 });
 
 app.get('/about', (req, res) => {
   res.sendFile('./views/about.html', { root: __dirname });
-//   res.render('about');
+  //   res.render('about');
 });
 
 app.get('/team', (req, res) => {
   res.sendFile('./views/team.html', { root: __dirname });
-//   res.render('team');
+  //   res.render('team');
 });
 
 app.get('/partners', (req, res) => {
   res.sendFile('./views/partners.html', { root: __dirname });
-//   res.render('partners');
+  //   res.render('partners');
 });
 
 function getEventImages(id) {
@@ -43,9 +44,9 @@ function getEventImages(id) {
 
       }
       else {
-          files.forEach(function (file) {
-            images.push(path.join('/images',id,file));
-          });
+        files.forEach(function (file) {
+          images.push(path.join('/images', id, file));
+        });
         resolve(images);
       }
     });
@@ -53,18 +54,20 @@ function getEventImages(id) {
 };
 
 app.get('/events/:id', (req, res) => {
-    const selected_event = list.find(c => c.id === req.params.id);
-    if (!selected_event) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: darkred;">Ooops... Cant find what you are looking for!</h2>');
-  getEventImages(req.params.id) 
+  const selected_event = list.find(c => c.id === req.params.id);
+  if (!selected_event) res.status(404).send('<h2 style="font-family: Malgun Gothic; color: darkred;">Ooops... Cant find what you are looking for!</h2>');
+  getEventImages(req.params.id)
     .then((images) => {
       selected_event.images = images;
-    res.render('detail', { event: selected_event });})
-    .catch((error) => {return null} );
-    
+      res.render('detail', { event: selected_event });
+    })
+    .catch((error) => { return null });
+
 });
 
 // 404 page
 // app.use((req, res) => {
 //   res.status(404).sendFile('./views/404.html', { root: __dirname });
 // });
+
 
