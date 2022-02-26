@@ -148,7 +148,7 @@ contactForm.addEventListener('submit', (e) => {
     redirect: 'follow',
   }
 
-  fetch('http://localhost:5000/api/email/new', requestOptions)
+  fetch('https://ecell-contact-us.herokuapp.com/api/email/new', requestOptions)
     .then((response) => {
       response.text()
       contactForm.reset()
