@@ -1,7 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
+const cors = require('cors');
 const list = require('./events');
+const router = require('./emails/account');
 
 // express app
 const app = express();
@@ -9,9 +11,14 @@ const app = express();
 // listen for requests
 app.listen(process.env.PORT || 5000);
 
+app.use(express.json())
+app.use(cors())
+
 // register view engine
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+app.use('/api/email', router)
+
 
 
 app.get('/', (req, res) => {
