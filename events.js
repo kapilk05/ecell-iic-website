@@ -1,5 +1,68 @@
 events_list = [
   {
+    id: 'journeyofastartup22',
+    title: 'Journey of a Startup',
+    date: '2021-22',
+    conductedBy: 'DJ-Ecell',
+    desc: `
+    Journey of a Startup is a panel discussion where the speakers would be sharing their startup journey and answering some of your questions.
+        `,
+    coverImage: 'journeyofastartup.jpeg',
+    shortDesc:
+      'Journey of a Startup is a panel discussion where the speakers would be sharing their startup journey and answering some of your questions.',
+    tag: '2021-22',
+  },
+  {
+    id: 'ideationseminar22',
+    title: 'Ideation Seminar',
+    date: '2021-22',
+    conductedBy: 'DJ-Ecell',
+    desc: `
+    The Ideation seminar will be conducted by Mr. Karan Tanna (CEO of Ghost Kitchen) where the audience will get an insight into the ideation process of a startup, which will further aid the participants in the Ideathon competition.
+        `,
+    coverImage: 'ideationseminar.jpeg',
+    shortDesc:
+      'The Ideation seminar will be conducted by Mr. Karan Tanna (CEO of Ghost Kitchen) where the audience will get an insight into the ideation process of a startup, which will further aid the participants in the Ideathon competition.',
+    tag: '2021-22',
+  },
+  {
+    id: 'ideathon22',
+    title: 'Ideathon',
+    date: '2021-22',
+    conductedBy: 'DJ-Ecell',
+    desc: `
+    Ideathon is a business hackathon where participants will come up with a potential solution for a given problem statement, covering stages such as ideation, implementation, funding, marketing and branding with guidance from mentors.
+        `,
+    coverImage: 'ideathon.jpeg',
+    shortDesc:
+      '"Ideathon" is a business hackathon where participants will come up with a potential solution for a given problem statement, covering stages such as ideation, implementation, funding, marketing and branding with guidance from mentors.',
+    tag: '2021-22',
+  },
+  {
+    id: 'marketingseminar22',
+    title: 'Marketing Seminar',
+    date: '2021-22',
+    conductedBy: 'DJ-Ecell',
+    desc: `
+    The marketing seminar will be conducted by Mr Aakash Shah, Founder of One Hand Clap, where students will understand the fundamentals of marketing and its importance in building a company.        `,
+    coverImage: 'marketingseminar.jpeg',
+    shortDesc:
+    'The marketing seminar will be conducted by Mr Aakash Shah, Founder of One Hand Clap, where students will understand the fundamentals of marketing and its importance in building a company.',
+    tag: '2021-22',
+  },
+  {
+    id: 'rushhour22',
+    title: 'Rush Hour',
+    date: '2021-22',
+    conductedBy: 'DJ-Ecell',
+    desc: `
+    Rush Hour is a fast paced competition that calls for excellent marketing skills. Team participation is required and the teams will be assigned products to sell. The team earning the maximum number of points will be declared the Rush Hour champion.        `,
+    coverImage: 'rushhour.jpeg',
+    shortDesc:
+    'Rush Hour is a fast paced competition that calls for excellent marketing skills. Team participation is required and the teams will be assigned products to sell. The team earning the maximum number of points will be declared the Rush Hour champion.',
+    tag: '2021-22',
+  },
+  {
     id: 'codeIt',
     title: 'CodeIt',
     date: '2020-21',
