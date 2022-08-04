@@ -629,7 +629,10 @@
         <h1 class="">Events</h1>
         <div class="btn-wrapper">
           <div id="myBtnContainer">
-            <p class="my-btn btn-active" onclick="filterSelection('2020-21')">
+            <p class="my-btn" onclick="filterSelection('2021-22')">
+              2021&nbsp;-&nbsp;22
+            </p>
+            <p class="my-btn" onclick="filterSelection('2020-21')">
               2020&nbsp;-&nbsp;21
             </p>
             <p class="my-btn" onclick="filterSelection('2019-20')">
@@ -653,7 +656,7 @@
               ></div>
               <div class="content">
                 <h3><%= e.title %></h3>
-                <p><%- e.shortDesc %></p>
+                <p><%- e.shortDesc.slice(0,100) %>...</p>
                 <a href="/events/<%= e.id %>" class="hvr-icon-forward">
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
