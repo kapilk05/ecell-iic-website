@@ -263,11 +263,11 @@ nav .nav-btn {
   border-radius: 0;
 }
 
-.arrow-symbol {
-  /* position: absolute; */
-  /* padding-top: 300px; */
-  /* padding-left: 520px; */
-}
+/* .arrow-symbol {
+  position: absolute;
+  padding-top: 300px;
+  padding-left: 520px;
+} */
 
 .fa fa-angle-down {
   z-index: 20 !important;
@@ -886,9 +886,9 @@ select {
   font-size: 3em;
 }
 
-.img-container {
-  /* margin-top: 150px; */
-}
+/* .img-container {
+  margin-top: 150px;
+} */
 .mission_vision {
   max-width: 100%;
   border-radius: 1px;
@@ -934,9 +934,9 @@ select {
     font-size: 14px;
   }
   
-  .logo {
-    /* margin: auto !important; */
-  }
+  /* .logo {
+    margin: auto !important;
+  } */
   
   canvas {
     width: 100vw;
@@ -1199,9 +1199,9 @@ select {
   }
 }
 
-#aboutus {
-  /* background: #fff; */
-}
+/* #aboutus {
+  background: #fff;
+} */
 
 #aboutus .img-container {
   height: 30vh;
