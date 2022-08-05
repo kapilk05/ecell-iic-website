@@ -10,7 +10,7 @@ const router = require('./emails/account');
 const app = express();
 
 // listen for requests
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 8000);
 
 app.use(express.json())
 app.use(cors())
