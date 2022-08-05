@@ -3,6 +3,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 body {
   color: #2c2c2c;
 }
@@ -25,8 +26,8 @@ h3 {
   font-size: 20px !important;
 }
 
-h4 {
-}
+/* h4 {
+} */
 
 ul li,
 a {
@@ -71,10 +72,12 @@ button {
   margin: 0 10px;
   border-radius: 0.4em;
 }
+
 .primary {
   color: #fff;
   background: #fe836c;
 }
+
 .secondary {
   color: #fe836c;
   background: rgba(255, 255, 255, 0);
