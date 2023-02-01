@@ -1,236 +1,335 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1,user-scalable=no" />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/css/team.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/floating.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/hover.css" />
 
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="/css/team.css" />
-  <link rel="stylesheet" href="/css/global.css" />
-  <link rel="stylesheet" href="/css/floating.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/hover.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    <!-- Bootstrap + jQuery CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap + jQuery CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Other CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-  <!-- Other CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
-  <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-  <!-- Sweet Alert -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <script src="/js/main.js"></script>
 
-  <!-- Owl Carousel -->
-  <link rel="stylesheet"
-    href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" />
-  <script src="/js/main.js"></script>
-
-  <!-- <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="https://use.fontawesome.com/314c24a530.js"></script>
-  <title>Meet Our Team | DJSCE E-Cell</title>
-  <style>
-    h5 {
-      font-weight: 500;
-    }
-  </style>
-</head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://use.fontawesome.com/314c24a530.js"></script>
+    <title>Meet Our Team | DJSCE E-Cell</title>
+    <style>
+      h5 {
+        font-weight: 500;
+      }
+    </style>
+  </head>
 
-<body>
-  <nav id="navbar" class="navbar navbar-expand-xl navbar-light fixed-top scrolled">
-    <a class="nav-link logo logo-nav navbar-brand" href="/"><img src="/images/logo.png" alt="" /> DJSCE E-cell
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-xl navbar-light fixed-top scrolled"
+    >
+      <a class="nav-link logo logo-nav navbar-brand" href="/"
+        ><img src="/images/logo.png" alt="" /> DJSCE E-cell
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="navbar-collapse collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
-        <li class="nav-item">
-          <a class="nav-link hvr-underline-from-left" href="/#aboutus">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hvr-underline-from-left" href="/#features">Get Started <span
-              class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hvr-underline-from-left" href="/#acheivements">Achievements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hvr-underline-from-left" href="/#events">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hvr-underline-from-left" href="/#partners-section">Partners</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hvr-underline-from-left active">Team</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        <a class="nav-btn hvr-icon-forward" href="/#contactus">
-          Get in touch
-        </a>
-      </span>
-    </div>
-  </nav>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-auto nav-pills" id="navitems">
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#aboutus"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#features"
+              >Get Started <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#acheivements"
+              >Achievements</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="/#events"
+              >Events</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link hvr-underline-from-left"
+              href="/#partners-section"
+              >Partners</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left active">Team</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a class="nav-btn hvr-icon-forward" href="/#contactus">
+            Get in touch
+          </a>
+        </span>
+      </div>
+    </nav>
 
-  <div class="container section-holder col-xl-8" id="team_container">
-    <h1>Meet Our Team</h1>
-    <p class="intro">
-      Ecell has come a long way and it's growth is built on the foundation of
-      teamwork and mutual support. The dedication and hard work put in by the
-      designated faculty members and the committee have helped us reach our
-      goals.
-    </p>
-    <div class="row faculty" id="team">
-      <div class="col-md-12">
-        <h2>Faculty Mentors</h2>
+    <div class="container section-holder col-xl-8" id="team_container">
+      <h1>Meet Our Team</h1>
+      <p class="intro">
+        Ecell has come a long way and it's growth is built on the foundation of
+        teamwork and mutual support. The dedication and hard work put in by the
+        designated faculty members and the committee have helped us reach our
+        goals.
+      </p>
+      <div class="row faculty" id="team">
+        <div class="col-md-12">
+          <h2>Faculty Mentors</h2>
+        </div>
+        <div class="col-md-12 first-row">
+          <h4 class="peach-text">Chairman</h4>
+          <h5>Dr. Sunil Karamchandani</h5>
+          <p class="peach-text">Electronics & Telecommunication</p>
+        </div>
       </div>
-      <div class="col-md-12 first-row">
-        <h4 class="peach-text">Chairman</h4>
-        <h5>Dr. Sunil Karamchandani</h5>
-        <p class="peach-text">Electronics & Telecommunication</p>
+      <h4 class="peach-text">Members</h4>
+      <div class="row faculty">
+        <div class="col-md-4">
+          <h5>Dr. Atul Dhale</h5>
+          <p class="peach-text" class="newstyle">Production</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dr. Ram Mangrulkar</h5>
+          <p class="peach-text" class="newstyle">Computer</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Dr. Rashmi Kumar</h5>
+          <p class="peach-text" class="newstyle">Chemical</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Mangla Monica</h5>
+          <p class="peach-text" class="newstyle">Information Technology</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Pratik Kanani</h5>
+          <p class="peach-text" class="newstyle">Computer</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Shashikant Auti</h5>
+          <p class="peach-text" class="newstyle">Mechanical</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Prof. Mayur Parulekar</h5>
+          <p class="peach-text" class="newstyle">Electronics</p>
+        </div>
+        <!-- <div class="col-md-4">
+          <h5>Prof. Purva Raut</h5>
+          <p class="peach-text" class="newstyle">Information Technology</p>
+        </div> -->
+        <div class="col-md-4">
+          <h5>Dr. Vinayak H Khatawate</h5>
+          <p class="peach-text" class="newstyle">Mechanical</p>
+        </div>
       </div>
-    </div>
-    <h4 class="peach-text">Members</h4>
-    <div class="row faculty">
-      <div class="col-md-4">
-        <h5>Dr. Atul Dhale</h5>
-        <p class="peach-text" class="newstyle">Production</p>
+      <div class="row core" id="team">
+        <div class="col-md-12">
+          <h2>E-CELL CORE COMMITTEE 2022-23</h2>
+        </div>
+        <div class="col-md-3 first-row">
+          <div
+            class="team_member"
+            style="background-image: url(./images/Team/Core-22/Saksham1.jpg)"
+          ></div>
+          <!-- <h5>Dhruv Jain</h5>
+          <p class="peach-text">Chairperson</p> -->
+          <h5>Saksham</h5>
+          <p class="peach-text">Secretary</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h5>Dr. Ram Mangrulkar</h5>
-        <p class="peach-text" class="newstyle">Computer</p>
+      <div class="col-md-3 first-row row1">
+        <!-- <div
+          class="team_member"
+          style="background-image: url(./images/Team/Core/srushti.jpeg)"
+        ></div> -->
+        <!-- <h5>Srushti Jain</h5>
+        <p class="peach-text">Co-Chairperson</p> -->
       </div>
-      <div class="col-md-4">
-        <h5>Dr. Rashmi Kumar</h5>
-        <p class="peach-text" class="newstyle">Chemical</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Dr. Vaibhavi Sonetha</h5>
-        <p class="peach-text" class="newstyle">Bio Medical</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Prof. Pratik Kanani</h5>
-        <p class="peach-text" class="newstyle">Computer</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Prof. Pavan Kumar Borra</h5>
-        <p class="peach-text" class="newstyle">Electronics</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Prof. Mayur Parulekar</h5>
-        <p class="peach-text" class="newstyle">Electronics</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Prof. Purva Raut</h5>
-        <p class="peach-text" class="newstyle">Information Technology</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Dr. Vinayak H Khatawate</h5>
-        <p class="peach-text" class="newstyle">Mechanical</p>
-      </div>
-    </div>
-    <div class="row core" id="team">
-      <div class="col-md-12">
-        <h2>E-CELL CORE COMMITTEE 2021-22</h2>
-      </div>
-      <div class="col-md-3 first-row">
-        <div class="team_member" style="background-image: url(./images/Team/Core20-21/dhruv1.jpeg)"></div>
-        <h5>Dhruv Jain</h5>
-        <p class="peach-text">Chairperson</p>
-      </div>
-    </div>
-    <div class="col-md-3 first-row row1">
-      <div class="team_member" style="background-image: url(./images/Team/Core/srushti.jpeg)"></div>
-      <h5>Srushti Jain</h5>
-      <p class="peach-text">Co-Chairperson</p>
-    </div>
 
-    <div class="row core">
-      <div class="col-md-3 first-row">
-        <div class="team_member" style="background-image: url(./images/Team/Core/Ambar.jpeg)"></div>
-        <h5>Ambar Mehta</h5>
-        <p class="peach-text">Secretary</p>
+      <div class="row core">
+        <div class="col-md-3 first-row">
+          <div
+            class="team_member"
+            style="background-image: url(./images/Team/Core-22/Bhavesh.jpg)"
+          ></div>
+          <h5>Bhavesh</h5>
+          <p class="peach-text">Chairperson</p>
+        </div>
+        <div class="col-md-3 first-row">
+          <div
+            class="team_member"
+            style="background-image: url(./images/Team/Core-22/Bhargavee.jpeg)"
+          ></div>
+          <h5>Bhargavee</h5>
+          <p class="peach-text">Co-Chairperson</p>
+        </div>
       </div>
-      <div class="col-md-3 first-row">
-        <div class="team_member" style="background-image: url(./images/Team/Core/preya.jpg)"></div>
-        <h5>Preya Pandya</h5>
-        <p class="peach-text">Secretary</p>
+      <div class="col-md-3 first-row row1">
+        <div
+          class="team_member"
+          style="background-image: url(./images/Team/Core-22/default_pic.jpeg)"
+        ></div>
+        <h5>Anushka</h5>
+        <p class="peach-text">Admin</p>
       </div>
-    </div>
-    <div class="col-md-3 first-row row1">
-      <div class="team_member" style="background-image: url(./images/Team/Core/tarjini.jpg)"></div>
-      <h5>Tarjini Mehta</h5>
-      <p class="peach-text">Head of Administrator</p>
-    </div>
 
-    <div class="row core">
-      <div class="col-md-3">
-        <div class="team_member" style="background-image: url(./images/Team/Core/manan.jpg)"></div>
-        <h5>Manan Doshi</h5>
-        <p class="peach-text" class="newstyle">Vice Chairperson Events</p>
-      </div>
-      <div class="col-md-3">
-        <div class="team_member" style="background-image: url(./images/Team/Core/manasi.jpg)"></div>
-        <h5>Manasi Marathe</h5>
-        <p class="peach-text" class="newstyle">Vice Chairperson Events</p>
-      </div>
-      <div class="col-md-3">
-        <div class="team_member" style="background-image: url(./images/Team/Core/arya.jpeg)"></div>
-        <h5>Arya Dharia</h5>
-        <p class="peach-text" class="newstyle">Vice Chairperson PR</p>
-      </div>
-      <div class="col-md-3">
-        <div class="team_member" style="background-image: url(./images/Team/Core20-21/rishi.jpg)"></div>
-        <h5>Rishi Savla</h5>
-        <p class="peach-text" class="newstyle">Vice Chairperson Marketing</p>
-      </div>
-      <div class="col-md-3">
-        <div class="team_member" style="background-image: url(./images/Team/Core/devanshu.jpeg)"></div>
-        <h5>Devanshu Shah</h5>
-        <p class="peach-text" class="newstyle">Vice Chairperson Technical</p>
-      </div>
-      <div class="col-md-3">
-        <div class="team_member" style="background-image: url(./images/Team/Core/samyak.jpg)"></div>
-        <h5>Samyak Shah</h5>
-        <p class="peach-text" class="newstyle">Vice Chairperson Creatives</p>
-      </div>
-      <!-- <div class="col-md-3">
+      <div class="row core">
+        <div class="col-md-3">
+          <div
+            class="team_member"
+            style="background-image: url(./images/Team/Core-22/Asim.jpg)"
+          ></div>
+          <h5>Asim</h5>
+          <p class="peach-text" class="newstyle">
+            Vice Chairperson Public Relations
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="team_member"
+            style="
+              background-image: url(./images/Team/Core-22/default_pic.jpeg);
+            "
+          ></div>
+          <h5>RUCHI</h5>
+          <p class="peach-text" class="newstyle">Vice Chairperson Events</p>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="team_member"
+            style="
+              background-image: url(./images/Team/Core-22/default_pic.jpeg);
+            "
+          ></div>
+          <h5>Krish</h5>
+          <p class="peach-text" class="newstyle">Vice Chairperson Technical</p>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="team_member"
+            style="
+              background-image: url(./images/Team/Core-22/default_pic.jpeg);
+            "
+          ></div>
+          <h5>Advait</h5>
+          <p class="peach-text" class="newstyle">Vice Chairperson Creatives</p>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="team_member"
+            style="
+              background-image: url(./images/Team/Core-22/default_pic.jpeg);
+            "
+          ></div>
+          <h5>Pratham</h5>
+          <p class="peach-text" class="newstyle">Vice Chairperson Finance</p>
+        </div>
+        <div class="col-md-3">
+          <div
+            class="team_member"
+            style="
+              background-image: url(./images/Team/Core-22/default_pic.jpeg);
+            "
+          ></div>
+          <h5>Rushi</h5>
+          <p class="peach-text" class="newstyle">Vice Chairperson Marketing</p>
+        </div>
+        <!-- <div class="col-md-3">
         <div class="team_member" style="background-image: url(./images/Team/Core/Sanjit.jpg)"></div>
         <h5>Sanjit Verma</h5>
         <p class="peach-text" class="newstyle">VCP of PR</p>
@@ -265,46 +364,46 @@
         <h5>Sayantan Roy</h5>
         <p class="peach-text" class="newstyle">HOD Marketing</p>
       </div> -->
+      </div>
     </div>
-  </div>
-  <!-- <div class="blob1 floating red small"></div>
+    <!-- <div class="blob1 floating red small"></div>
     <div class="blob2 floating red medium"></div>
     <div class="blob3 floating yellow big"></div> -->
-  <!-- <img
+    <!-- <img
       src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_%28blue_dots%29.svg"
       alt=""
     /> -->
-  <div id="footer">
-    <div class="container">
-      <div class="" style="margin: auto; text-align: center">
-        <img class="footer-logo" src="/images/ecell.png" alt="" />
-        <!-- <img class="footer-logo" src="images/logo.png" alt="" /> -->
-      </div>
-      <div class="row footer-links">
-        <div class="col-md-4">
-          <div class="col-heading">About</div>
-          <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/team">Our Team</a></li>
-            <li><a href="/#contactus">Contact Us</a></li>
-            <li>
-              <button class="footer-idea-link" onclick="showForm()">
-                Submit your idea
-              </button>
-            </li>
-          </ul>
+    <div id="footer">
+      <div class="container">
+        <div class="" style="margin: auto; text-align: center">
+          <img class="footer-logo" src="/images/ecell.png" alt="" />
+          <!-- <img class="footer-logo" src="images/logo.png" alt="" /> -->
         </div>
-        <div class="col-md-4">
-          <div class="col-heading">Learn More</div>
-          <ul>
-            <li><a href="/#acheivements">Startups</a></li>
-            <li><a href="/#acheivements">Achievements</a></li>
-            <li><a href="/#events">Events</a></li>
-            <li><a href="/#testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <!-- <div class="col-heading">Get In Touch</div>
+        <div class="row footer-links">
+          <div class="col-md-4">
+            <div class="col-heading">About</div>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/team">Our Team</a></li>
+              <li><a href="/#contactus">Contact Us</a></li>
+              <li>
+                <button class="footer-idea-link" onclick="showForm()">
+                  Submit your idea
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="col-heading">Learn More</div>
+            <ul>
+              <li><a href="/#acheivements">Startups</a></li>
+              <li><a href="/#acheivements">Achievements</a></li>
+              <li><a href="/#events">Events</a></li>
+              <li><a href="/#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <!-- <div class="col-heading">Get In Touch</div>
                   <ul>
                     <li>ecell.djsce@gmail.com</li>
                     <li>
@@ -313,35 +412,50 @@
                       Vile Parle(W), Mumbai
                     </li>
                   </ul> -->
-          <div class="col-heading">Social Media</div>
-          <p>Follow us on social media to get the latest updates from us</p>
-          <div class="footer-icons-social">
-            <a href="https://www.linkedin.com/company/dj-e-cell" target="_blank"><i
-                class="footer-social fab fa-linkedin" id="allicon"></i></a>
-            <a href="https://www.facebook.com/djsce.ecell.7" target="_blank"><i
-                class="footer-social fab fab fa-facebook-f fab-lg" id="allicon"></i>
-            </a>
-            <a href="https://twitter.com/EcellD?s=12" target="_blank"><i class="footer-social fab fa-twitter"
-                id="allicon"></i></a>
-            <a href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr" target="_blank"><i
-                class="footer-social fab fa-instagram" id="allicon"></i></a>
-            <a href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw" target="_blank"><i
-                class="footer-social fab fa-youtube" id="allicon"></i></a>
+            <div class="col-heading">Social Media</div>
+            <p>Follow us on social media to get the latest updates from us</p>
+            <div class="footer-icons-social">
+              <a
+                href="https://www.linkedin.com/company/dj-e-cell"
+                target="_blank"
+                ><i class="footer-social fab fa-linkedin" id="allicon"></i
+              ></a>
+              <a href="https://www.facebook.com/djsce.ecell.7" target="_blank"
+                ><i
+                  class="footer-social fab fab fa-facebook-f fab-lg"
+                  id="allicon"
+                ></i>
+              </a>
+              <a href="https://twitter.com/EcellD?s=12" target="_blank"
+                ><i class="footer-social fab fa-twitter" id="allicon"></i
+              ></a>
+              <a
+                href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr"
+                target="_blank"
+                ><i class="footer-social fab fa-instagram" id="allicon"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw"
+                target="_blank"
+                ><i class="footer-social fab fa-youtube" id="allicon"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="all-rights container" style="color: rgba(255, 255, 255, 0.7)">
-        © 2020 DJSCE E-Cell - All Rights Reserved
+        <div
+          class="all-rights container"
+          style="color: rgba(255, 255, 255, 0.7)"
+        >
+          © 2020 DJSCE E-Cell - All Rights Reserved
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="takeup">
-    <a href="# ">
-      <ion-icon name="arrow-up-outline"></ion-icon>
-    </a>
-  </div>
-</body>
-<script src="/js/genericnav.js"></script>
-
+    <div id="takeup">
+      <a href="# ">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+    </div>
+  </body>
+  <script src="/js/genericnav.js"></script>
 </html>
