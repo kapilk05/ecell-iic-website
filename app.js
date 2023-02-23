@@ -4,7 +4,16 @@ const express = require('express');
 const cors = require('cors');
 const list = require('./events');
 const router = require('./emails/account');
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
+mongoose.connect('mongodb://localhost:27017/regiData',
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
+  }
+);
 
 // express app
 const app = express();
@@ -20,6 +29,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use('/api/email', router)
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
 app.get("/", (req, res) => {
   // res.sendFile('./views/index.html', { root: __dirname });
   res.render("index", { events_list: list });
@@ -34,6 +47,16 @@ app.get("/team", (req, res) => {
   res.sendFile("./views/team.html", { root: __dirname });
   //   res.render('team');
 });
+
+app.get("/register", (req, res) => {
+  res.sendFile("./views/register.html", { root: __dirname });
+
+});
+
+app.post("/register", (req, res) => {
+  console.log(req.body)
+
+})
 
 app.get("/partners", (req, res) => {
   res.sendFile("./views/partners.html", { root: __dirname });
@@ -57,6 +80,8 @@ function getEventImages(id) {
   });
 }
 
+
+
 app.get("/events/:id", (req, res) => {
   const selected_event = list.find((c) => c.id === req.params.id);
   if (!selected_event)
@@ -75,7 +100,4 @@ app.get("/events/:id", (req, res) => {
     });
 });
 
-// 404 page
-// app.use((req, res) => {
-//   res.status(404).sendFile('./views/404.html', { root: __dirname });
-// });
+// mongodb + srv://mahajanuday144:<password>@cluster0.5fknryq.mongodb.net/?retryWrites=true&w=majority
