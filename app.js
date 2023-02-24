@@ -5,16 +5,10 @@ const cors = require('cors');
 const list = require('./events');
 const router = require('./emails/account');
 const bodyParser = require('body-parser')
-const mongoose = require('mongoose')
+const MongoDBConnected = require('./regiConn')
+const { schema, User } = require('./regiSchema')
 
-mongoose.connect('mongodb://localhost:27017/regiData',
-  {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-  }
-);
-
+MongoDBConnected()
 // express app
 const app = express();
 
@@ -32,6 +26,8 @@ app.use('/api/email', router)
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+app.use(bodyParser.json())
 
 app.get("/", (req, res) => {
   // res.sendFile('./views/index.html', { root: __dirname });
@@ -54,8 +50,14 @@ app.get("/register", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
-  console.log(req.body)
+  // console.log(req.body)
+  const newUser = new User(req.body)
+  newUser.save()
+    .then(() => {
+      console.log('User created successfully')
 
+    })
+    .catch((err) => console.log('Error creating user', err))
 })
 
 app.get("/partners", (req, res) => {
@@ -80,8 +82,6 @@ function getEventImages(id) {
   });
 }
 
-
-
 app.get("/events/:id", (req, res) => {
   const selected_event = list.find((c) => c.id === req.params.id);
   if (!selected_event)
@@ -100,4 +100,4 @@ app.get("/events/:id", (req, res) => {
     });
 });
 
-// mongodb + srv://mahajanuday144:<password>@cluster0.5fknryq.mongodb.net/?retryWrites=true&w=majority
+// app.listen(8000, ()=>console.log("Server running on 8000"))
