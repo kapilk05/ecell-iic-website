@@ -5,7 +5,8 @@ const schema = new mongoose.Schema(
     {
         tName: {
             type: String,
-            required: true
+            required: true,
+            unique: true
             // validate: (value) => {
             //     return validator.notEmpty(value)
             // }

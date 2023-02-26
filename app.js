@@ -18,9 +18,11 @@ app.listen(process.env.PORT || 8000);
 app.use(express.json())
 app.use(cors())
 
-// register view engine
+// Require static assets from public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
+
 app.use('/api/email', router)
 
 app.use(bodyParser.urlencoded({
@@ -49,15 +51,23 @@ app.get("/register", (req, res) => {
 
 });
 
-app.post("/register", (req, res) => {
+app.post("/form1", (req, res) => {
   // console.log(req.body)
   const newUser = new User(req.body)
+  let teamId
   newUser.save()
-    .then(() => {
+    .then((doc) => {
       console.log('User created successfully')
-
+      console.log('Instance ID : ', doc._id.toString())
+      teamId = doc.id.toString()
+      res.render("regiSucc", { teamId: teamId })
     })
     .catch((err) => console.log('Error creating user', err))
+
+})
+
+app.post("/form2", (req, res) => {
+  // content for identification and updation of the database
 })
 
 app.get("/partners", (req, res) => {
