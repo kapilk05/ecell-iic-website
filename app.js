@@ -52,7 +52,7 @@ app.get("/register", (req, res) => {
   res.render('register', { htmlContent: "" })
 });
 
-app.post("/form1", (req, res) => {
+app.post("/createTeam", (req, res) => {
 
   const newTeamObj = {
     tName: req.body.tName,
@@ -85,7 +85,7 @@ app.post("/form1", (req, res) => {
     .catch((err) => console.log('Error registering player\n', err))
 })
 
-app.post("/form2", (req, res) => {
+app.post("/joinTeam", (req, res) => {
   // content for identification and updation of the database
   let id = mongoose.Types.ObjectId(req.body.teamId)
   const query = Database.where({ _id: id });
