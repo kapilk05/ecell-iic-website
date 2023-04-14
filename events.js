@@ -47,7 +47,7 @@ events_list = [
     The marketing seminar will be conducted by Mr Aakash Shah, Founder of One Hand Clap, where students will understand the fundamentals of marketing and its importance in building a company.        `,
     coverImage: 'marketingseminar.jpeg',
     shortDesc:
-    'The marketing seminar will be conducted by Mr Aakash Shah, Founder of One Hand Clap, where students will understand the fundamentals of marketing and its importance in building a company.',
+      'The marketing seminar will be conducted by Mr Aakash Shah, Founder of One Hand Clap, where students will understand the fundamentals of marketing and its importance in building a company.',
     tag: '2021-22',
   },
   {
@@ -59,7 +59,7 @@ events_list = [
     Rush Hour is a fast paced competition that calls for excellent marketing skills. Team participation is required and the teams will be assigned products to sell. The team earning the maximum number of points will be declared the Rush Hour champion.        `,
     coverImage: 'rushhour.jpeg',
     shortDesc:
-    'Rush Hour is a fast paced competition that calls for excellent marketing skills. Team participation is required and the teams will be assigned products to sell. The team earning the maximum number of points will be declared the Rush Hour champion.',
+      'Rush Hour is a fast paced competition that calls for excellent marketing skills. Team participation is required and the teams will be assigned products to sell. The team earning the maximum number of points will be declared the Rush Hour champion.',
     tag: '2021-22',
   },
   {
@@ -315,9 +315,44 @@ events_list = [
         `,
     coverImage: 'event_img.png',
     shortDesc:
-      'Studnets learnt about funding ventures, the risks of sharing your ideas and finally how can we scale our business.',
+      'Students learnt about funding ventures, the risks of sharing your ideas and finally how can we scale our business.',
     tag: '2018-19',
   },
+  {
+    id: 'fieldVisitMIT22',
+    title: 'Field visit to MIT-ADT College, Pune',
+    date: '12th August, 2022',
+    conductedBy: 'DJSCE E-CELL committee',
+    desc: `
+        Field visit to MIT-ADT College, Pune
+        <br />
+        Date: 12-08-2022
+        <br />
+        Members who accompanied us : 
+        <br />
+        Dr. Sunil Karamchandani
+        <br />
+        Dr. Ramchandra Mangrulkar
+        <br />
+        Prof. Richa Sharma
+        <br />
+        Prof. Sharlene Rebeiro
+        <br />
+        DJSCE’s Entrepreneurship Cell had conducted a field visit to MIT-ADT incubation centre. Dwarkadas J. Sanghvi College of Engineering is a mentor institute under the Mentor-Mentee Scheme for IIC institutions 2021-22, MIC.
+        <br />
+        The entrepreneurship wave has risen in India which is not going to subside any time soon. This fact was further established when we visited the incubation centre of MIT-ADT, Pune .
+        <br />
+        We were greeted by Prof. Mrudang Shukla who gave us a tour around the facilities offered to new startups, such as recreation lounge, co-working space, fabrication lab, etc. The facilities were well equipped to meet all needs required by students.
+        <br />
+        Their vision to nurture the startups and build an ecosystem for entrepreneurship was clearly reflected in the learning environment  they created.
+        <br />
+        We are inspired and grateful to be able to visit this incubation centre and encourage the journey of nurturing young entrepreneurs as well as creating a societal impact.
+        `,
+    coverImage: 'event_img.jpeg',
+    shortDesc:
+      'We were inspired and grateful to be able to visit this incubation centre and encourage the journey of nurturing young entrepreneurs as well as creating a societal impact',
+    tag: '2022-23',
+  }
   // {
   //     "id": "redbull-event",
   //     "title": "Redbull Event",
