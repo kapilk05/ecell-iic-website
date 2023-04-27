@@ -44,10 +44,10 @@ app.get("/about", (req, res) => {
   //   res.render('about');
 });
 
-// app.get("/team", (req, res) => {
-//   res.sendFile("./views/team.html", { root: __dirname });
-//   //   res.render('team');
-// });
+app.get("/team", (req, res) => {
+  res.sendFile("./views/team.html", { root: __dirname });
+  //   res.render('team');
+});
 
 // app.get("/register", (req, res) => {
 //   // res.sendFile("./views/register.html", { root: __dirname });
